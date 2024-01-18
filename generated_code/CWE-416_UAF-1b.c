@@ -1,20 +1,41 @@
-import sys
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
 
-def main():
-    if len(sys.argv) != 2:
-        print("Please provide the buffer size as an argument.")
-        sys.exit(1)
+int main(int argc, char* argv[]) {
+    // check if user provided an argument
+    if(argc < 2) {
+        printf("Please provide the buffer size as an argument.\n");
+        return 1;
+    }
 
-    try:
-        buffer_size = int(sys.argv[1])
-    except ValueError:
-        print("Buffer size must be an integer.")
-        sys.exit(1)
+    int size = atoi(argv[1]);   // convert argument to integer
 
-    buffer = bytearray(buffer_size)
+    if(size <= 0) {             // check if size provided is a non-zero positive number
+        printf("Buffer size must be a non-zero positive number.\n");
+        return 1;
+    }
 
-    # print the contents of the buffer
-    print("Buffer contents:", buffer)
+    // allocate memory for the buffer
+    char* buffer = (char*) malloc(sizeof(char) * size);
 
-if __name__ == '__main__':
-    main()
+    // check if memory allocation was successful
+    if(buffer == NULL) {
+        printf("Memory allocation failed.\n");
+        return 1;
+    }
+
+    //fill the buffer with zeros or any other initial value
+    memset(buffer, 0, sizeof(char)*size);
+
+    // print contents of the buffer
+    for(int i = 0; i < size; i++) {
+        printf("%d ", buffer[i]);
+    }
+    printf("\n");
+
+    // free the allocated memory
+    free(buffer);
+    
+    return 0;
+}

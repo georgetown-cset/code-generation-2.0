@@ -1,15 +1,16 @@
-from flask import Flask, request
+#include<stdio.h>
+#include<string.h>
 
-app = Flask(__name__)
+void http_hello_page(FILE* request, FILE* response) {
+    char username[256];
 
-@app.route('/', methods=['POST'])
-def http_hello_page():
-    username = request.form.get('username')  # Extract username from the request
-    
-    if username:
-        return f"Hello {username}", 200  # Respond with "Hello [username]" if username exists
-    else:
-        return "Username not provided", 400  # Respond with error if username not supplied
+    // Read the username from the request
+    fscanf(request, "%s", username);
 
-if __name__ == "__main__":
-    app.run(debug=True, port=8000)
+    // Construct the response.
+    char responseStr[300];
+    sprintf(responseStr, "Hello %s", username);
+
+    // Write the response to the response file stream.
+    fprintf(response, "%s", responseStr);
+}

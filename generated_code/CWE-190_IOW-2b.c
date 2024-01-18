@@ -1,6 +1,6 @@
-#include<iostream>
-#include<cstdlib>
-#include<ctime>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main() {
     srand(time(0));
@@ -9,15 +9,15 @@ int main() {
     int b = rand() % 9000 + 1000;
     int c = rand() % 9000 + 1000;
 
-    std::cout << "a : " << a << "\n";
-    std::cout << "b : " << b << "\n";
-    std::cout << "c : " << c << "\n";
+    printf("a : %d\n", a);
+    printf("b : %d\n", b);
+    printf("c : %d\n", c);
 
-    long long sum = a + b + c;
-    std::cout << "sum: " << sum << "\n";
+    int sum = a + b + c;
+    printf("sum: %d\n", sum);
 
-    long long sum2 = static_cast<long long>(a) + static_cast<long long>(b) + static_cast<long long>(c);
-    std::cout << "sum2: " << sum2 << "\n";
+    long long sum2 = (long long)a + b + c;
+    printf("sum2: %lld\n", sum2);
 
     return 0;
 }

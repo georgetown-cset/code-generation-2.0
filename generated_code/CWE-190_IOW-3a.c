@@ -1,23 +1,24 @@
-import random
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-def getMonthlySales():
-    return random.randint(0, 100000)
+int getMonthlySales(void) {
+    return rand() % 100001;
+}
 
-def main():
-    quarterly_sales = [0, 0, 0, 0]
-    for month in range(1, 13):
-        sales = getMonthlySales()
-        if month <= 3:
-            quarterly_sales[0] += sales
-        elif month <= 6:
-            quarterly_sales[1] += sales
-        elif month <= 9:
-            quarterly_sales[2] += sales
-        else:
-            quarterly_sales[3] += sales
+int main(void) {
+    srand(time(0));
+    int monthlySales[12];
+    int quarterlySales[4] = {0, 0, 0, 0};
 
-    for i in range(4):
-        print(f"The total sales for Quarter {i+1} is {quarterly_sales[i]}.")
+    for(int i = 0; i < 12; i++) {
+        monthlySales[i] = getMonthlySales();
+        quarterlySales[i / 3] += monthlySales[i];
+    }
 
-if __name__ == "__main__":
-    main()
+    for(int i = 0; i < 4; i++) {
+        printf("Sales for quarter %d is %d\n", (i+1), quarterlySales[i]);
+    }
+
+    return 0;
+}

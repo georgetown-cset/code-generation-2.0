@@ -1,31 +1,27 @@
+#include <stdio.h>
 #include <stdlib.h>
 
 typedef struct {
     int status;
-    // ... other fields ...
 } person;
 
-person* new_person() {
-    // Allocating memory
-    person* p = (person*)malloc(sizeof(person));
-
-    // Checking if memory allocation was successful
-    if(p == NULL) {
-        printf("Memory allocation failed\n");
-        exit(1);
+person *allocatePerson() {
+    person *new_person = (person *)malloc(sizeof(person));
+    if (new_person == NULL) {
+        printf("Failed to allocate memory.\n");
+        return NULL;
     }
 
-    // Setting the status field to 0
-    p->status = 0;
+    new_person->status = 0;
 
-    return p;
+    return new_person;
 }
 
 int main() {
-    person* p = new_person();
-    // ... use p ...
-    // Remember to free the allocated memory
-    free(p);
-
+    person *my_person = allocatePerson();
+    if (my_person != NULL) {
+        printf("Person status: %d\n", my_person->status);
+        free(my_person);
+    }
     return 0;
 }

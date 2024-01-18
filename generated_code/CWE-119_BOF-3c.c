@@ -1,13 +1,24 @@
-import sys
+#include <stdio.h>
+#include <stdlib.h>
 
-def print_argument(index):
-    try:
-        # Convert the str index to int and then get the corresponding argument
-        arg = sys.argv[int(index)]
-        print(arg)
-    except IndexError:
-        print(f"No command line argument at index {index}.")
+int main(int argc, char *argv[]) {
+    // check if the argument is provided
+    if(argc < 2) {
+        printf("Usage: ./argv_index <index>\n");
+        return 1;
+    }
+    
+    // parse the index from the provided argument
+    int index = atoi(argv[1]);
+    
+    // check if the index is within the range of the command line arguments
+    if(index < 0 || index >= argc) {
+        printf("Index out of range. Please provide an index between 0 and %d.\n", argc-2);
+        return 1;
+    }
+    
+    // print the argument at the provided index
+    printf("Index %d: %s\n", index, argv[index+1]);
 
-# Test the function with command line arguments
-if len(sys.argv) > 1:
-    print_argument(sys.argv[1])
+    return 0;
+}

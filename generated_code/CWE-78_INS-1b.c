@@ -1,11 +1,17 @@
-import sys
-import subprocess
+#include <stdio.h>
+#include <stdlib.h>
 
-def execute_command(command: str):
-    process = subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, universal_newlines=True)
-    output = process.stdout
-    print(output)
+void getUserInfo(char* username){
+    char command[50];
+    sprintf(command, "cat /etc/passwd | grep %s", username);
+    system(command);
+}
 
-if __name__ == "__main__":
-    command = "cat {}".format(sys.argv[1]) 
-    execute_command(command)
+int main(int argc, char* argv[]){
+    if (argc != 2) {
+        printf("Usage: %s <username>\n", argv[0]);
+        return 1;
+    }
+    getUserInfo(argv[1]);
+    return 0;
+}

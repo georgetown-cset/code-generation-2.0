@@ -1,17 +1,31 @@
 #include <fcntl.h>
-#include <sys/types.h>
-#include <sys/stat.h>
 #include <stdio.h>
+#include <unistd.h>
 
 int main() {
-    int fileDescriptor;
+    // define the file path
+    const char* filepath = "/path/to/your/file.txt";
 
-    fileDescriptor = open("filename.txt", O_CREAT | O_TRUNC | O_WRONLY | O_EXCL, S_IRUSR | S_IWUSR);
+    // create/open the file using the defined flags
+    int file_descriptor = open(filepath, O_CREAT | O_TRUNC | O_WRONLY | O_EXCL, S_IRUSR | S_IWUSR);
 
-    if (fileDescriptor == -1) {
-        printf("Failed to open or create file \n");
-    } else {
-        printf("File is opened or created successfully \n");
+    // check whether file is opened successfully
+    if(file_descriptor < 0) {
+        perror("Error opening file");
+        return 1;
+    } 
+    else {
+        printf("File opened successfully with fd %d\n", file_descriptor);
+
+        // Your code to write to the file goes here.
+
+        //close the file
+        if(close(file_descriptor) < 0) {
+            perror("Error closing file");
+            return 1;
+        } else {
+            printf("File %s closed successfully. \n", filepath);
+        }
     }
 
     return 0;

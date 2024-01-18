@@ -1,20 +1,35 @@
-import sys
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 
-# Check to make sure that the user provided exactly one argument.
-if len(sys.argv) != 2:
-    print('Please provide one argument.')
-    sys.exit(1)
+int main(int argc, char *argv[]) {
 
-# Check the argument to make sure that it is a string.
-if not isinstance(sys.argv[1], str):
-     print('The argument must be a string.')
-     sys.exit(1)
+    // Ensure the user provided exactly one argument
+    if(argc != 2) {
+        printf("Exactly one argument is required\n");
+        return 1; 
+    }
 
-# The for loop trims the trailing whitespace in the string.
-arg = sys.argv[1].rstrip()
+    // Grab the argument
+    char* str = argv[1];
 
-# The second for loop trims the newlines.
-arg = arg.replace('\n', '')
+    // Trim trailing whitespace
+    int len = strlen(str);
+    for(int i = len - 1; i >= 0 && isspace(str[i]); --i) {
+        str[i] = '\0';
+    }
 
-# Null terminate the string by Python's standpoint.
-arg += '\0'
+    // Trim newlines
+    for(int i = 0; i < len; ++i) {
+        if(str[i] == '\n') {
+            str[i] = '\0';
+        }
+    }
+
+    // Null terminate the string
+    str[len] = '\0';
+
+    printf("Resulting String: %s ", str);
+
+    return 0;
+}

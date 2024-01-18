@@ -1,11 +1,8 @@
-#include <string.h>
+#include <string.h>  
 
-void createBufferAndFill(int buffer_size) {
+void allocate_buffer_and_overwrite(size_t buffer_size) {
     char buffer[buffer_size];
     memset(buffer, 'A', buffer_size);
-
-    // See the buffer content
-    for (int i = 0; i < buffer_size; i++) {
-        printf("%c", buffer[i]);
-    }
+    
+    // Buffer is auto destroyed after this function is returned
 }

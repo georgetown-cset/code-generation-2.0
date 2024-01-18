@@ -1,20 +1,26 @@
+#include <stdio.h>
+#include<string.h>
 #include <stdlib.h>
-#include <string.h>
 
-int main ()
-{
-  // Allocates two chunks of memory each of size 10.
-  void *firstChunk = malloc(10);
-  void *secondChunk = malloc(10);
+int main() {
+    // Allocate two chunks of memory each of size 10
+    char *first_chunk = (char*) malloc(10*sizeof(char));
+    char *second_chunk = (char*) malloc(10*sizeof(char));
+  
+    // Assign some content to the first_chunk for demonstration
+    strcpy(first_chunk, "ABCD1234");
 
-  // Copies the contents of the first chunk into the second chunk.
-  memcpy(secondChunk, firstChunk, 10);
+    // Copy the content of first_chunk into the second_chunk
+    memcpy(second_chunk, first_chunk, 10);
+  
+    //Print out to check if content is copied correctly
+    printf("Content of the second chunk: %s\n", second_chunk);
+  
+    // Free the first chunk of memory
+    free(first_chunk);
 
-  // Frees the first chunk.
-  free(firstChunk);
+    // Free the second chunk of memory
+    free(second_chunk);
 
-  // Frees the second chunk.
-  free(secondChunk);
-
-  return 0;
+    return 0;
 }

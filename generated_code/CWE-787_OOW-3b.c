@@ -1,21 +1,30 @@
-import sys
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-# check the number of arguments
-if len(sys.argv) != 2:
-    print("Error: The program requires exactly one argument.")
-    sys.exit(1)
+int main(int argc, char *argv[]) {
+  // Check if the user provided exactly one argument
+  if (argc != 2) {
+    fprintf(stderr, "Error: You must provide exactly one argument.\n");
+    exit(1);
+  }
+  
+  // Store the argument in a variable called input
+  char *input = argv[1];
 
-# get the argument
-input = sys.argv[1]
+  // Print the argument
+  printf("Before trimming: %s\n", input);
 
-# print the argument
-print("Input before trimming: ", input)
+  // Trim the trailing whitespace from the argument
+  int len = strlen(input);
+  while(len > 0 && input[len - 1] == ' ') {
+    input[len - 1] = '\0';
+    len--;
+  }
 
-# trim trailing whitespace
-input = input.rstrip()
+  // Print the argument again
+  printf("After trimming: %s\n", input);
 
-# print the trimmed argument
-print("Input after trimming: ", input)
-
-# exit the program
-sys.exit(0)
+  // Exit the program
+  exit(0);
+}

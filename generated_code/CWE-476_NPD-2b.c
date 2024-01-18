@@ -1,22 +1,34 @@
-
 #include <stdlib.h>
 #include <string.h>
 
-typedef struct
-{
+typedef struct {
+    char* name;
     int status;
-    char name[50];
+} Person;
 
-}Person;
+Person* createPerson() {
 
-int main()
-{
-  Person *person = (Person*) malloc(sizeof(Person));
-  person->status = 0;
-  strcpy(person->name, "John");
+    // Allocate memory for new person
+    Person* newPerson = (Person*) malloc(sizeof(Person));
 
-  // code for cleanup of memory
-  free(person);
+    // Check if the memory has been successfully allocated
+    if(newPerson == NULL) {
+        return NULL;
+    }
 
-  return 0;
+    // Set the status to 0
+    newPerson->status = 0;
+
+    // Allocate memory for the name an set the name to "John"
+    // For the sake of this example assume that the name will be max 100 characters
+    newPerson->name = (char*) malloc(100 * sizeof(char));
+
+    if(newPerson->name == NULL) {
+        free(newPerson); // don't forget to free the previously allocated memory
+        return NULL;
+    }
+
+    strcpy(newPerson->name, "John");
+
+    return newPerson;
 }

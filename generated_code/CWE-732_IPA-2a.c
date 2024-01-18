@@ -1,22 +1,38 @@
-#include <fcntl.h>
+#include <sys/types.h>
 #include <sys/stat.h>
+#include <fcntl.h>
 #include <unistd.h>
 #include <string.h>
+#include <stdio.h>
 
 int main() {
-    char *important_config = "the_star_wars_is_a_great_movie";
+    // File name.
+    const char *file = "important_config";
 
-    int fd = open("important_config", O_RDWR | O_CREAT, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+    // Open the file for reading and writing.
+    // Create it if it does not exist.
+    int fd = open(file, O_RDWR | O_CREAT, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
 
+    // Check if the file opened successfully.
     if (fd == -1) {
-        perror("open");
+        perror("Error opening the file");
+        return 1;
+    }
+    
+    // Define the string to write to the file.
+    char config[] = "important_config";
+
+    // Write the string to the file.
+    ssize_t bytes_written = write(fd, config, sizeof(config));
+
+    // Check if the write was successful.
+    if (bytes_written != sizeof(config)) {
+        // Error occurred.
+        perror("Error writing to the file");
         return 1;
     }
 
-    if (write(fd, important_config, strlen(important_config)) == -1) {
-        perror("write");
-    }
-
+    // Close the file.
     close(fd);
 
     return 0;

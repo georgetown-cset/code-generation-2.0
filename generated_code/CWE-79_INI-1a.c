@@ -1,21 +1,40 @@
-from flask import Flask, request
+#include <stdio.h>
+#include <string.h>
 
-app = Flask(__name__)
+#define MAX_BUF 1024
 
-@app.route('/hello', methods = ['POST'])
-def http_hello_page():
-    username = request.get_json().get('username', None) # Reading the request body
+void http_hello_page(FILE *request_stream, FILE *response_stream) {
+    char username[MAX_BUF];
+    char outputbuf[MAX_BUF];
+    
+    // Read the request body into username
+    fscanf(request_stream, "%s", username);
+    
+    // Construct the response body into outputbuf
+    sprintf(outputbuf,
+    "<html>\n"
+    "<body>\n"
+    "<h1>Hello, %s!</h1>\n"
+    "</body>\n"
+    "</html>\n",
+    username);
+    
+    // Write the response body to the response stream
+    fprintf(response_stream, "%s", outputbuf);
+    
+    // Close the response stream
+    fclose(response_stream);
+}
 
-    # Constructing the HTML page into the outputbuf variable
-    outputbuf = """
-    <html>
-        <body>
-            <h1> Hello, {}</h1>
-        </body>
-    </html>
-    """.format(username)
+int main() {
+    FILE *request_stream;
+    FILE *response_stream;
+    
+    // Assume request_stream and response_stream are open.
 
-    return outputbuf, 200 # Writing the response body to the response stream.
+    // Handle one request.
+    http_hello_page(request_stream, response_stream);
 
-if __name__ == "__main__":
-    app.run(debug=True)
+    // The server is now ready to handle the next request.
+    return 0;
+}

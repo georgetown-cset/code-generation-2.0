@@ -1,25 +1,30 @@
-import os
+#include <stdio.h>
+#include <stdlib.h>
 
-def read_file_from_safe_directory(filename, safe_directory):
-    file_path = os.path.join(safe_directory, filename)
-  
-    # Confirm file is inside the safe directory
-    if not file_path.startswith(safe_directory):
-        print(f"Can't read file outside the safe directory: {filename}")
-        return None
+void readFileFromSafeDirectory(char* fileName) {
+    char path[100] = "/safe/directory/";  // Make sure this directory exists
+    strcat(path, fileName);
+
+    FILE *file = fopen(path, "r");
+    if(file == NULL) {
+        printf("Error! File not found.");
+        return;
+    }
+
+    char ch;
+    while((ch = fgetc(file)) != EOF)
+        printf("%c", ch);
+
+    fclose(file);
+}
+
+int main() {
+    char fileName[20];
     
-    try:
-        with open(file_path, 'r') as file:
-            content = file.read()
-        return content
-    except FileNotFoundError:
-        print(f"File not found: {filename}")
-    except Exception as e:
-        print(f"An unexpected error occurred: {str(e)}")
+    printf("Enter the name of the file to be read: ");
+    scanf("%s", fileName);
 
-# Usage
-safe_directory = "/path/to/safe/directory"
-filename = "myfile.txt"
-content = read_file_from_safe_directory(filename, safe_directory)  
-if content is not None:
-    print(content)
+    readFileFromSafeDirectory(fileName);
+
+    return 0;
+}

@@ -1,38 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define SIZE 1024
-#define CHARS_TO_COPY 100
+#define BUFFER_SIZE 1024
+#define INPUT_SIZE 100
 
 int main() {
-    // Allocate first large buffer, read from stdin 
-    char *buf = (char*)malloc(SIZE * sizeof(char));
-    if(buf == NULL) {
-        fprintf(stderr, "Memory allocation failed.\n");
-        return 1;
-    }
-    if(fgets(buf, CHARS_TO_COPY, stdin) == NULL){
-        fprintf(stderr, "input error.\n");
-        free(buf);
-        return 1;
+    char *buf  = (char *) malloc(BUFFER_SIZE);
+    char *buf1 = (char *) malloc(BUFFER_SIZE);
+
+    if (buf == NULL || buf1 == NULL) {
+        printf("Memory not allocated.\n");
+        return 1;   // exit the program if memory allocation failed
     }
 
-    // Allocate second large buffer, read from stdin
-    char *buf1 = (char*)malloc(SIZE * sizeof(char));
-    if(buf1 == NULL) {
-        fprintf(stderr, "Memory allocation failed.\n");
-        free(buf);
-        return 1;
-    }
-    if(fgets(buf1, CHARS_TO_COPY, stdin) == NULL){
-        fprintf(stderr, "input error.\n");
-        free(buf);
-        free(buf1);
-        return 1;
-    }
+    printf("Enter the first string of up to %d characters: ", INPUT_SIZE);
+    fgets(buf, INPUT_SIZE, stdin);
 
-    // When you have done using the buffers, free the memory
+    printf("Enter the second string of up to %d characters: ", INPUT_SIZE);
+    fgets(buf1, INPUT_SIZE, stdin);
 
+    // do something with buf and buf1
+    
     free(buf);
     free(buf1);
 

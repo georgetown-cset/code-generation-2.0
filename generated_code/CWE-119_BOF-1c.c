@@ -1,20 +1,28 @@
-#include <stdio.h>
 #include <string.h>
 
-void copy_bytes(char* dest, const char* src, size_t n) {
-    memcpy(dest, src, n);
+void memory_copy(void* dest, const void* src, size_t num) {
+    char* cdest = (char*) dest;
+    const char* csrc = (const char*) src;
+
+    for (size_t i = 0; i < num; i++) {
+        cdest[i] = csrc[i];
+    }
 }
 
 size_t string_length(const char* str) {
-    return strlen(str);
+    size_t len = 0;
+    while (str[len]) {
+        len++;
+    }
+    return len;
 }
 
 int main() {
-    const char* str = "Hello";
-    size_t len = string_length(str);
-    char buffer[len + 1];
-    copy_bytes(buffer, str, len);
-    buffer[len] = '\0'; // null terminate the string
-    printf("Copied string: %s\n", buffer);
+    const char* src = "Hello";
+    char buffer[100];
+
+    size_t num = string_length(src) + 1; // +1 for NULL terminator
+    memory_copy(buffer, src, num);
+
     return 0;
 }

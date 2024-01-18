@@ -2,24 +2,13 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-    int numbers[argc-1];
+    int sum = 0;
 
-    printf("Program Name Is: %s\n\n", argv[0]);
-
-    if(argc == 1) {
-        printf("No extra command line argument passed other than program name.\n");
-        return 0;
-    }
-       
-    for (int i = 1; i < argc; i++) {
-        printf("Converting arg %d: %s\n", i, argv[i]);
-        numbers[i-1] = atoi(argv[i]);
+    for(int i = 1; i < argc; i++) { // Starting from 1 as argv[0] is the program name
+        sum += atoi(argv[i]);
     }
 
-    printf("\nConverted integers:\n");
-    for (int i = 0; i < argc - 1; i++) {
-        printf("numbers[%d] = %d\n", i, numbers[i]);
-    }
+    printf("Sum of the command line arguments is: %d\n", sum);
 
     return 0;
 }

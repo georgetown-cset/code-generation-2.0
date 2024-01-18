@@ -1,27 +1,56 @@
-import hashlib
+#include <stdio.h>
+#include <stdlib.h>
 
-def calculate_checksum(buffer):
-    sha = hashlib.sha1()
-    sha.update(buffer.encode())
-    return sha.hexdigest()
+// Compute a simple checksum on the given buffer
+unsigned int compute_checksum(char *buf, size_t len) {
+    unsigned int checksum = 0;
+    for (size_t i = 0; i < len; i++) {
+        checksum += buf[i];
+    }
+    return checksum;
+}
 
-def read_file(file_path):
-    with open(file_path, "r") as f:
-        content = f.read()
-    return content
+int main() {
+    FILE *input = fopen("input.txt", "rb");
+    if (input == NULL) {
+        fprintf(stderr, "Error: Could not open input file\n");
+        return 1;
+    }
 
-def save_to_file(file_path, bytes_read, checksum):
-    with open(file_path, "w") as f:
-        f.write(f"Bytes Read: {bytes_read}\nChecksum: {checksum}")
+    // Seek to the end of the file to get the file size
+    fseek(input, 0, SEEK_END);
+    size_t len = ftell(input);
+    fseek(input, 0, SEEK_SET);
 
-def process_file(input_file, output_file):
-    buffer = read_file(input_file)
-    bytes_read = len(buffer)
-    checksum = calculate_checksum(buffer)
-    if checksum == '0' * 40:  # for SHA1, empty string hash is '0' repeated 40 times
-        buffer = "Buffer is empty"
-    save_to_file(output_file, bytes_read, checksum)
+    // Allocate a buffer and read the file into it
+    char *buf = malloc(len);
+    if (buf == NULL) {
+        fprintf(stderr, "Error: Could not allocate memory\n");
+        fclose(input);
+        return 1;
+    }
+    fread(buf, 1, len, input);
+    fclose(input);
 
-input_file = "path_to_your_input_file"
-output_file = "path_to_your_output_file"
-process_file(input_file, output_file)
+    // Compute the checksum
+    unsigned int checksum = compute_checksum(buf, len);
+    free(buf);
+
+    // If the checksum is zero, the buffer was empty
+    if (checksum == 0) {
+        printf("Buffer is empty\n");
+    }
+
+    FILE *output = fopen("output.txt", "w");
+    if (output == NULL) {
+        fprintf(stderr, "Error: Could not open output file\n");
+        return 1;
+    }
+
+    // Write the number of bytes read and the checksum to the output file
+    fprintf(output, "Bytes read: %zu\n", len);
+    fprintf(output, "Checksum: %u\n", checksum);
+    fclose(output);
+
+    return 0;
+}

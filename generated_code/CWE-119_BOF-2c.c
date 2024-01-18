@@ -1,15 +1,24 @@
-# Create an array of strings called vehicles
-vehicles = ["Car", "Truck", "Bicycle", "Motorcycle", "Bus"]
+#include <stdio.h>
 
-# Prompts the user for the index of a vehicle
-idx = int(input("Enter the index of the vehicle: "))
+int main(){
+    char* vehicles[] = {"Car", "Bike", "Truck", "Bus", "Boat", "Train", "Plane"};
+    int num_vehicles = sizeof(vehicles) / sizeof(char*);
+    int index;
 
-# Try to get and print the vehicle at the entered index
-try:
-    print("The vehicle at index", idx, "is", vehicles[idx])
-except IndexError:
-    print("Invalid index")
-
-# Loop through the array and print out each vehicle
-for vehicle in vehicles:
-    print(vehicle)
+    printf("Enter the index of the vehicle (0 to %d):\n", num_vehicles - 1);
+    scanf("%d", &index);
+	
+    if (index >= 0 && index < num_vehicles){
+        printf("You selected: %s\n", vehicles[index]);
+    }
+    else{
+        printf("Invalid index\n");
+    }
+	
+    printf("All vehicles:\n");
+    for(int i = 0; i < num_vehicles; i++){
+        printf("%s\n", vehicles[i]);
+    }
+	
+    return 0;
+}

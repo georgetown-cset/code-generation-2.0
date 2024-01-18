@@ -1,17 +1,18 @@
-import sys
+#include <stdio.h>
+#include <stdlib.h>
 
-def add_offset(value, offset=1000):
-    return value + offset
+const int OFFSET = 1000;
 
-if len(sys.argv) > 1:
-    try:
-        # trying to convert command line argument to integer
-        input_value = int(sys.argv[1])
-    except ValueError:
-        print("Please provide a numeric input.")
-        sys.exit(1)  # Exiting with non-zero value for error
+int main(int argc, char *argv[]) {
+    if (argc < 2) {
+        printf("Please provide a number as command line argument\n");
+        return 1;
+    }
 
-    output = add_offset(input_value)
-    print(f"The input value with offset is: {output}")
-else:
-    print("Please provide an input value.")
+    int value = atoi(argv[1]);
+    value += OFFSET;
+
+    printf("After adding offset, the value is: %d\n", value);
+
+    return 0;
+}

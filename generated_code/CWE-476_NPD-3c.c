@@ -2,21 +2,24 @@
 #include <stdlib.h>
 
 int main() {
-    char *buf = malloc(1024 * sizeof(char));
+    // Memory allocation for buffer
+    char *buf = (char*) malloc(1024);
+
     if (buf == NULL) {
-        printf("Memory allocation failed!\n");
+        printf("Failed to allocate memory.\n");
         return -1;
     }
 
-    printf("Enter a string: ");
+    printf("Memory allocated successfully.\n");
 
-    if (fgets(buf, 11, stdin) != NULL) {
-        printf("You entered: %s\n", buf);
-    } else {
-        printf("Reading input failed!\n");
-    }
+    // Reading 10 characters from standard input
+    printf("Please enter a string of maximum 10 characters: ");
+    fgets(buf, 11, stdin); // 10 characters + 1 for null-terminator
 
-    free(buf);  // Don't forget to free the allocated memory
+    printf("Entered string is: %s\n", buf);
+
+    // Freeing allocated memory
+    free(buf);
 
     return 0;
 }

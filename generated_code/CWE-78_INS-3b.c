@@ -1,17 +1,27 @@
-import subprocess
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdarg.h>
 
-def execute_command(command):
-    process = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
-    output, error = process.communicate()
+void execute_command(const char *format, ...) {
+    va_list args;
+    char command[256];
 
-    if output:
-        print("Output: ", output)
-    if error:
-        print("Error: ", error)
+    // Initialize a variable argument list
+    va_start(args, format);
 
-def main():
-    command = 'ls {}'.format('/home/')
-    execute_command(command)
+    // Format the string
+    vsprintf(command, format, args);
 
-if __name__ == "__main__":
-    main()
+    // Execute the command
+    system(command);
+
+    // Cleanup the variable argument list
+    va_end(args);
+}
+
+int main() {
+    // Execute ls command using the function
+    execute_command("ls %s", "-l");
+
+    return 0;
+}

@@ -1,10 +1,16 @@
 #include <stdio.h>
 
-int main() {
-    char buffer[1024]; // create a buffer with a size of 1024 bytes
+int main(void) {
+    char buffer[1024];
     printf("Enter a string: ");
-    int charactersRead = scanf("%1023[^\n]%*c", buffer); // read until a newline character
-    printf("Characters read: %d\n", charactersRead);
-    printf("Buffer content: %s\n", buffer);
+    fgets(buffer, 1024, stdin);
+
+    // Remove newline character if present
+    size_t len = strlen(buffer);
+    if(len > 0 && buffer[len-1] == '\n'){
+        buffer[len-1] = '\0';
+    }
+
+    printf("Number of characters read in: %ld\n", strlen(buffer));
     return 0;
 }

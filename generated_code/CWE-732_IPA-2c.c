@@ -1,27 +1,34 @@
-#include <fcntl.h>
-#include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+void write_to_file(const char* filename, const char* config_data) {
+    int file_descriptor;
+
+    /* Open file for reading and writing, create if it doesn't exist */
+    file_descriptor = open(filename, O_RDWR | O_CREAT, 0700);
+
+    /* If file opened successfully */
+    if (file_descriptor != -1) {
+
+      /* Write config data to the file */
+      write(file_descriptor, config_data, strlen(config_data));
+
+      /* Close the file */
+      close(file_descriptor);
+    }
+    else {
+      printf("Failed to open file: %s\n", filename);
+    }
+}
 
 int main() {
-    const char *important_config = "Sample config file content\n";
-    int fd;
+    const char* important_config = "This is an important config";
+    const char* filename = "/path/to/your/file.txt";
 
-    /* Open the file with the specified flags and permissions (if it is created) */
-    fd = open("myfile.txt", O_RDWR | O_CREAT, 0700);
-    if (fd == -1) {
-        /* Handle error opening the file */
-    }
-
-    /* Write the string to the file */
-    if (write(fd, important_config, sizeof(important_config)) == -1) {
-        /* Handle error writing to the file */
-    }
-
-    /* Close the file descriptor */
-    if (close(fd) == -1) {
-        /* Handle error closing the file */
-    }
-
+    /* Function call to write data into a file */
+    write_to_file(filename, important_config);
+    
     return 0;
 }

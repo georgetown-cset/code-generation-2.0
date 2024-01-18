@@ -42,6 +42,8 @@ if __name__ == "__main__":
     # Load the data and filter for C prompts
     all_prompts = pd.read_csv("scripts/LLMSecEval-prompts.csv", header = 0)
     prompts = all_prompts[all_prompts["Language"].isin(["C"])]
+    prompts["NL Prompt"] = prompts["NL Prompt"].replace({"<language>": "C", "<lanuage>": "C"}, regex=True)
+    #print(prompts["NL Prompt"])
     print(len(prompts))
 
     # Create a queue to hold the prompts

@@ -1,16 +1,30 @@
-import subprocess
-import sys
+#include <stdlib.h>
+#include <stdio.h>
 
-def run_command(username):
-    try:
-        subprocess.check_output(['id', username])
-        return 0
-    except subprocess.CalledProcessError as e:
-        return e.returncode
+// Function to execute the id command
+int print_user_info(char *username) {
+    char command[50];
+    snprintf(command, sizeof(command), "id %s", username);
+    int ret = system(command);
+    return ret;
+}
 
-if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python script.py <username>")
-        sys.exit(1)
-    exit_status = run_command(sys.argv[1])
-    print("Exit status:", exit_status)
+int main(int argc, char *argv[]) {
+
+    // Checking if exactly one argument is provided
+    if(argc != 2) {
+        printf("Usage: %s <username>\n", argv[0]);
+        return 1;
+    }
+
+    // Execute the command and print the exit status
+    int ret = print_user_info(argv[1]);
+    printf("Command exit status: %d\n", ret);
+
+    if(ret == 0)
+        printf("Command execution successful\n");
+    else
+        printf("Command execution failed\n");
+
+    return 0;
+}

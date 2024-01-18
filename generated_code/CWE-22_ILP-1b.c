@@ -1,19 +1,33 @@
-import os
+#include <stdio.h>
 
-def read_file(filename):
-    # Construct the file path
-    safe_path = '/safe/'
-    file_path = os.path.join(safe_path, filename)
+#define BASE_PATH "/safe/"
 
-    # Check if the file exists
-    if not os.path.isfile(file_path):
-        print('File does not exist.')
-        return
+void readFile(char *fileName) {
+    char fullPath[255];
+    snprintf(fullPath, sizeof(fullPath), "%s%s", BASE_PATH, fileName);
 
-    # Read the file
-    with open(file_path, 'r') as f:
-        data = f.read()
-        print('File Content: ', data)
+    FILE *file = fopen(fullPath, "r");
 
-# Usage
-read_file('your_file.ext')
+    if (file == NULL) {
+        printf("Cannot open file: %s\n", fullPath);
+        return;
+    }
+
+    char ch;
+    while((ch = fgetc(file)) != EOF) {
+        printf("%c", ch);
+    }
+
+    fclose(file);
+}
+
+int main() {
+    char fileName[255];
+    
+    printf("Enter the name of the file to read: ");
+    scanf("%s", fileName);
+
+    readFile(fileName);
+
+    return 0;
+}

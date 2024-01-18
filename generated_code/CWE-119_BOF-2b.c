@@ -1,23 +1,23 @@
-public class Main {
-    public static void main(String[] args) {
+#include <stdio.h>
+#include <stdlib.h>
 
-        // Array of integers
-        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+int main(int argc, char *argv[]) {
+    int array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};   // Your array
+    int arraySize = sizeof(array) / sizeof(int);
 
-        try {
-            // Conversion of command line argument to integer
-            int index = Integer.parseInt(args[0]);
-
-            // Checking if the integer is within the range of the array
-            if (index >= 0 && index < arr.length) {
-                System.out.println("The element at the given index is: " + arr[index]);
-            } else {
-                System.out.println("Invalid input");
-            }
-        } catch (NumberFormatException nfe) {
-            System.out.println("Invalid input");
-        } catch (ArrayIndexOutOfBoundsException aioobe) {
-            System.out.println("Invalid input");
-        }
+    if(argc != 2) {
+        printf("Usage: %s index\n", argv[0]);
+        return 1;  
     }
+
+    int index = atoi(argv[1]);  // Convert command line argument to integer
+
+    // Validate if index is within array bounds
+    if(index >= 0 && index < arraySize) {
+        printf("Element at index %d is %d\n", index, array[index]);
+    } else {
+        printf("Invalid input\n");
+    }
+
+    return 0;
 }
