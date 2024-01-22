@@ -1,0 +1,146 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/generated_code/CWE-787_OOW-2b.c
+Parsing /home/mw1442/generated_code/CWE-787_OOW-2b.c
+Converting
+Parsing /home/mw1442/generated_code/CWE-787_OOW-2b.c
+Converting
+Converting
+Generating GOTO Program
+Generating GOTO Program
+GOTO program creation time: 0.288s
+GOTO program processing time: 0.003s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Unwinding loop 34 iteration 1   file CWE-787_OOW-2b.c line 19 column 5 function main
+Not unwinding loop 34 iteration 2   file CWE-787_OOW-2b.c line 19 column 5 function main
+Symex completed in: 0.004s (48 assignments)
+Slicing time: 0.000s (removed 22 assignments)
+Generated 13 VCC(s), 13 remaining after simplification (26 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+GOTO program creation time: 0.305s
+GOTO program processing time: 0.004s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Not unwinding loop 34 iteration 1   file CWE-787_OOW-2b.c line 19 column 5 function main
+Symex completed in: 0.003s (40 assignments)
+Slicing time: 0.000s (removed 19 assignments)
+Generated 7 VCC(s), 7 remaining after simplification (21 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 19 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 19 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 19 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 19 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 19 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: forgotten memory: dynamic_5_array (0.000s)
+Slicing time: 0.000s (removed 19 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: forgotten memory: dynamic_5_array' with solver Boolector 3.2.2
+Generating GOTO Program
+
+[Counterexample]
+
+
+State 1 file CWE-787_OOW-2b.c line 9 column 5 function main thread 0
+----------------------------------------------------
+  chunk1 = 0
+
+State 2 file CWE-787_OOW-2b.c line 10 column 5 function main thread 0
+----------------------------------------------------
+  chunk2 = &dynamic_5_array[0]
+Memory not allocated.
+
+
+State 4 file stdlib.c line 65 column 3 function exit thread 0
+----------------------------------------------------
+Violated property:
+  file stdlib.c line 65 column 3 function exit
+  dereference failure: forgotten memory: dynamic_5_array
+
+Slicing for Claim dereference failure: forgotten memory: dynamic_3_array (0.000s)
+Slicing time: 0.000s (removed 19 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: forgotten memory: dynamic_3_array' with solver Boolector 3.2.2
+GOTO program creation time: 0.446s
+GOTO program processing time: 0.004s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+Unwinding loop 34 iteration 1   file CWE-787_OOW-2b.c line 19 column 5 function main
+Not unwinding loop 34 iteration 2   file CWE-787_OOW-2b.c line 19 column 5 function main
+Unwinding loop 29 iteration 1   file string.c line 263 column 3 function memcpy
+Not unwinding loop 29 iteration 2   file string.c line 263 column 3 function memcpy
+Unwinding loop 35 iteration 1   file CWE-787_OOW-2b.c line 28 column 5 function main
+Not unwinding loop 35 iteration 2   file CWE-787_OOW-2b.c line 28 column 5 function main
+Unwinding loop 36 iteration 1   file CWE-787_OOW-2b.c line 39 column 5 function main
+Not unwinding loop 36 iteration 2   file CWE-787_OOW-2b.c line 39 column 5 function main
+Symex completed in: 0.006s (122 assignments)
+Slicing time: 0.001s (removed 39 assignments)
+Generated 21 VCC(s), 20 remaining after simplification (83 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.229s
+Checking forward condition, k = 3
+Starting Bounded Model Checking
+Unwinding loop 34 iteration 1   file CWE-787_OOW-2b.c line 19 column 5 function main
+Unwinding loop 34 iteration 2   file CWE-787_OOW-2b.c line 19 column 5 function main
+Not unwinding loop 34 iteration 3   file CWE-787_OOW-2b.c line 19 column 5 function main
+[Counterexample]
+
+
+State 1 file CWE-787_OOW-2b.c line 9 column 5 function main thread 0
+----------------------------------------------------
+  chunk1 = &dynamic_3_array[0]
+
+State 2 file CWE-787_OOW-2b.c line 10 column 5 function main thread 0
+----------------------------------------------------
+  chunk2 = 0
+Memory not allocated.
+
+
+State 4 file stdlib.c line 65 column 3 function exit thread 0
+----------------------------------------------------
+Violated property:
+  file stdlib.c line 65 column 3 function exit
+  dereference failure: forgotten memory: dynamic_3_array
+
+Base case process finished (bug found).
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

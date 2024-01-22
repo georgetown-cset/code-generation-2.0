@@ -1,0 +1,141 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/generated_code/CWE-476_NPD-1c.c
+/home/mw1442/generated_code/CWE-476_NPD-1c.c:24:9: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
+        printf("Failed to allocate memory for new person\n");
+        ^
+/home/mw1442/generated_code/CWE-476_NPD-1c.c:24:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+Converting
+Parsing /home/mw1442/generated_code/CWE-476_NPD-1c.c
+Parsing /home/mw1442/generated_code/CWE-476_NPD-1c.c
+/home/mw1442/generated_code/CWE-476_NPD-1c.c:24:9: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
+        printf("Failed to allocate memory for new person\n");
+        ^
+/home/mw1442/generated_code/CWE-476_NPD-1c.c:24:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+Converting
+/home/mw1442/generated_code/CWE-476_NPD-1c.c:24:9: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
+        printf("Failed to allocate memory for new person\n");
+        ^
+/home/mw1442/generated_code/CWE-476_NPD-1c.c:24:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+Converting
+Generating GOTO Program
+Generating GOTO Program
+GOTO program creation time: 0.257sGOTO program creation time: 0.261s
+GOTO program processing time: 0.002s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+
+Symex completed in: 0.003s (35 assignments)
+Slicing time: 0.001s (removed 15 assignments)
+Generated 11 VCC(s), 7 remaining after simplification (20 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+GOTO program processing time: 0.003sEncoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Symex completed in: 0.003s (35 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 11 VCC(s), 7 remaining after simplification (20 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: forgotten memory: dynamic_1_value (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: forgotten memory: dynamic_1_value' with solver Boolector 3.2.2
+Runtime decision procedure: 0.048s
+Inductive process finished (safety not proven).
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Generating GOTO Program
+
+[Counterexample]
+
+
+State 1 file CWE-476_NPD-1c.c line 9 column 5 function allocate_new_person thread 0
+----------------------------------------------------
+  p = ( struct __anon_typedef_person_at_CWE-476_NPD-1c_c__3_9 *)0
+
+State 2 file CWE-476_NPD-1c.c line 21 column 5 function main thread 0
+----------------------------------------------------
+  new_person = 0
+Failed to allocate memory for new person
+
+
+State 4  thread 0
+----------------------------------------------------
+Violated property:
+  dereference failure: invalidated dynamic object
+
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+GOTO program creation time: 0.369s
+GOTO program processing time: 0.001s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Symex completed in: 0.003s (35 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 11 VCC(s), 7 remaining after simplification (20 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file CWE-476_NPD-1c.c line 9 column 5 function allocate_new_person thread 0
+----------------------------------------------------
+  p = ( struct __anon_typedef_person_at_CWE-476_NPD-1c_c__3_9 *)0
+
+State 2 file CWE-476_NPD-1c.c line 21 column 5 function main thread 0
+----------------------------------------------------
+  new_person = 0
+Failed to allocate memory for new person
+
+
+State 4  thread 0
+----------------------------------------------------
+Violated property:
+  dereference failure: invalidated dynamic object freed
+
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.001s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

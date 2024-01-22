@@ -1,0 +1,97 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/generated_code/CWE-119_BOF-2c.c
+Converting
+Parsing /home/mw1442/generated_code/CWE-119_BOF-2c.c
+Parsing /home/mw1442/generated_code/CWE-119_BOF-2c.c
+Converting
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.242s
+GOTO program processing time: 0.001s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-2c.c line 19 column 5 function main
+Not unwinding loop 4 iteration 2   file CWE-119_BOF-2c.c line 19 column 5 function main
+Symex completed in: 0.001s (41 assignments)
+Slicing time: 0.000s (removed 18 assignments)
+Generated 7 VCC(s), 7 remaining after simplification (23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.005s
+Solving with solver Boolector 3.2.2
+Generating GOTO Program
+GOTO program creation time: 0.280s
+GOTO program processing time: 0.001s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Not unwinding loop 4 iteration 1   file CWE-119_BOF-2c.c line 19 column 5 function main
+Symex completed in: 0.009s (27 assignments)
+Slicing time: 0.000s (removed 14 assignments)
+Generated 7 VCC(s), 5 remaining after simplification (13 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 14 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.005s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim array bounds violated: array `vehicles' upper bound (0.000s)
+Slicing time: 0.000s (removed 14 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.005s
+Solving claim 'array bounds violated: array `vehicles' upper bound' with solver Boolector 3.2.2
+Generating GOTO Program
+GOTO program creation time: 0.324s
+GOTO program processing time: 0.001s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-2c.c line 19 column 5 function main
+Not unwinding loop 4 iteration 2   file CWE-119_BOF-2c.c line 19 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 10 VCC(s), 6 remaining after simplification (14 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.005s
+Solving with solver Boolector 3.2.2
+Slicing for Claim array bounds violated: array `vehicles' lower bound (0.000s)
+Slicing time: 0.000s (removed 14 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.005s
+Solving claim 'array bounds violated: array `vehicles' lower bound' with solver Boolector 3.2.2
+Slicing for Claim buffer overflow on scanf (0.000s)
+Slicing time: 0.001s (removed 14 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'buffer overflow on scanf' with solver Boolector 3.2.2
+
+[Counterexample]
+
+Enter the index of the vehicle (0 to 6):
+
+
+State 2 file CWE-119_BOF-2c.c line 9 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-119_BOF-2c.c line 9 column 5 function main
+  buffer overflow on scanf
+  0
+
+Slicing for Claim arithmetic overflow on sub (0.000s)
+Slicing time: 0.000s (removed 14 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.012s
+Solving claim 'arithmetic overflow on sub' with solver Boolector 3.2.2
+Base case process finished (bug found).
+
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

@@ -1,0 +1,48 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/generated_code/CWE-190_IOW-3c.c
+Parsing /home/mw1442/generated_code/CWE-190_IOW-3c.c
+Converting
+Parsing /home/mw1442/generated_code/CWE-190_IOW-3c.c
+Converting
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.230s
+GOTO program processing time: 0.001s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Symex completed in: 0.001s (19 assignments)
+Slicing time: 0.000s (removed 18 assignments)
+Generated 3 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.001s
+Forward condition process finished (safety proven).
+Generating GOTO Program
+GOTO program creation time: 0.258s
+GOTO program processing time: 0.000s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Symex completed in: 0.000s (19 assignments)
+Slicing time: 0.000s (removed 18 assignments)
+Generated 3 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.001s
+Checking base case, k = 2
+
+Starting Bounded Model Checking
+Symex completed in: 0.000s (19 assignments)
+Slicing time: 0.000s (removed 18 assignments)
+Generated 3 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.000s
+Checking base case, k = 3
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (19 assignments)
+Slicing time: 0.000s (removed 18 assignments)
+Generated 3 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.001s
+WARNING: inductive step process crashed.
+
+Solution found by the forward condition; all states are reachable (k = 2)
+VERIFICATION SUCCESSFUL

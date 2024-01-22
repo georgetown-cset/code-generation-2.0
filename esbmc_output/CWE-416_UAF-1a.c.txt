@@ -1,0 +1,18 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/generated_code/CWE-416_UAF-1a.c
+Converting
+Parsing /home/mw1442/generated_code/CWE-416_UAF-1a.c
+Parsing /home/mw1442/generated_code/CWE-416_UAF-1a.c
+Converting
+Converting
+ERROR: main symbol `main' not found
+ERROR: CONVERSION ERROR
+ERROR: main symbol `main' not found
+ERROR: CONVERSION ERROR
+ERROR: main symbol `main' not found
+ERROR: CONVERSION ERROR
+WARNING: base case process crashed.
+ERROR: Message from unrecognized k-induction child process
