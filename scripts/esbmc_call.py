@@ -12,7 +12,7 @@ for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "generated_code")
         print(code_snippet)
         #esbmc_result = subprocess.run(["echo", code_snippet], capture_output=True, text=True)
         esbmc_result = subprocess.run(
-            ["esbmc", os.path.join(CURRENT_DIRECTORY, "test_generated_code", code_snippet),
+            ["esbmc", os.path.join(CURRENT_DIRECTORY, "generated_code", code_snippet),
              "--k-induction-parallel", "--overflow-check", "--memory-leak-check",
              "--multi-property", "--timeout", "1900s"], capture_output= True, text = True)
         print(esbmc_result.stderr)
