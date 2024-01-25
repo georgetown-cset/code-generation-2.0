@@ -1,3 +1,6 @@
+
+            
+                                
 import subprocess
 import os
 
@@ -10,9 +13,9 @@ for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "generated_code")
     # If current item is a file
     if os.path.isfile(os.path.join(CURRENT_DIRECTORY, "generated_code", code_snippet)):
         print(code_snippet)
-        #esbmc_result = subprocess.run(["echo", code_snippet], capture_output=True, text=True)
+        #esbmc_result = subprocess.run(["echo", code_snippet], capture_output=True, tex>
         esbmc_result = subprocess.run(
-            ["esbmc", os.path.join(CURRENT_DIRECTORY, "generated_code", code_snippet),
+            ["esbmc", os.path.join(CURRENT_DIRECTORY, "test_generated_code", code_snippet),
              "--k-induction-parallel", "--overflow-check", "--memory-leak-check",
              "--multi-property", "--timeout", "1900s"], capture_output= True, text = True)
         print(esbmc_result.stderr)
@@ -22,6 +25,8 @@ for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "generated_code")
         with open(target_file_name, "w") as file:
             file.write(esbmc_result.stderr)
 
+
+# upload esbmc_call.py
 
 # upload esbmc_call.py
 # push
