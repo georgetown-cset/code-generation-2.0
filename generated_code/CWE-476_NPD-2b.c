@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -6,29 +7,30 @@ typedef struct {
     int status;
 } Person;
 
-Person* createPerson() {
-
-    // Allocate memory for new person
+Person* createPerson(char* name, int status) {
     Person* newPerson = (Person*) malloc(sizeof(Person));
-
-    // Check if the memory has been successfully allocated
     if(newPerson == NULL) {
+        printf("Memory allocation failed\n");
         return NULL;
     }
-
-    // Set the status to 0
-    newPerson->status = 0;
-
-    // Allocate memory for the name an set the name to "John"
-    // For the sake of this example assume that the name will be max 100 characters
-    newPerson->name = (char*) malloc(100 * sizeof(char));
-
+    newPerson->name = (char*) malloc(strlen(name) + 1);
     if(newPerson->name == NULL) {
-        free(newPerson); // don't forget to free the previously allocated memory
+        printf("Memory allocation for name failed\n");
+        free(newPerson);
         return NULL;
     }
-
-    strcpy(newPerson->name, "John");
-
+    strcpy(newPerson->name, name);
+    newPerson->status = status;
     return newPerson;
+}
+
+int main() {
+    Person *person;
+    person = createPerson("John", 0);
+    if(person != NULL) {
+        printf("Person Created: %s, %d\n", person->name, person->status);
+        free(person->name);
+        free(person);
+    }
+    return 0;
 }

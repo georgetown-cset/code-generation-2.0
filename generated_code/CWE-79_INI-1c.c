@@ -1,27 +1,71 @@
 #include <stdio.h>
 #include <string.h>
 
-char* escape_html(const char* input){
-    /* Customize this function to escape HTML depending on your requirements */
-    /* This sample function returns input as it is */
-    return input;
+int escape_html(const char* src, char* dest, int dest_size) {
+    static const char *entity_table[256] = {0};
+    if(dest_size <= 0) return -1;
+
+    if(!entity_table[0]) {
+        int i;
+        for(i = 0; i < 256; i++) {
+            entity_table[i] = NULL;
+
+            /* Map characters to corresponding HTML entities. */
+            switch(i) {
+            case '&':
+                entity_table[i] = "&amp;";
+                break;
+            case '"':
+                entity_table[i] = "&quot;";
+                break;
+            case '\'':
+                entity_table[i] = "&#39;";
+                break;
+            case '<':
+                entity_table[i] = "&lt;";
+                break;
+            case '>':
+                entity_table[i] = "&gt;";
+                break;
+            }
+        }
+    }
+
+    int di = 0, si = 0;
+    while(src[si] && di < dest_size - 1) {
+        if(entity_table[(unsigned char) src[si]]) {
+            strncpy(&dest[di], entity_table[(unsigned char)src[si]], dest_size - di - 1);
+            di += strlen(entity_table[(unsigned char)src[si]]);
+        } else {
+            dest[di] = src[si];
+            di++;
+        }
+        si++;
+    }
+
+    dest[di] = 0;
+    return 0;
 }
 
-void http_hello_page(FILE* request, FILE* response){
-    if(request == NULL || response == NULL) return;
+void http_hello_page(FILE* request, FILE* response) {
+    char username[256];
+    char escaped_username[1024];
 
-    char username[80];
+    /* Assume that username comes in a format such as: User: username */
+    if(fscanf(request, " User: %255s", username) != 1) {
+        fprintf(response, "Please enter username.");
+        return;
+    }
 
-    /* Assume the username is at the end of the request file */
-    /* Customize it according to your actual request format */
-    fseek(request, -sizeof(username), SEEK_END);
-    if(fgets(username, sizeof(username), request) == NULL) return;
+    if(escape_html(username, escaped_username, sizeof(escaped_username)) != 0) {
+        fprintf(response, "Error while escaping HTML.");
+        return;
+    }
 
-    /* Escape HTML */
-    char* escaped_username = escape_html(username);
+    fprintf(response,"Hello %s", escaped_username);
+}
 
-    /* Write to response */
-    char response_text[100];
-    snprintf(response_text, sizeof(response_text), "Hello, %s", escaped_username);
-    fputs(response_text, response);
+int main() {
+    // TODO: implement main
+    return 0;
 }

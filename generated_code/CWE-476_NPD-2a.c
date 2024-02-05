@@ -2,16 +2,15 @@
 
 typedef struct {
     int status;
-    // Other fields can be added here as necessary
-} person;
+} Person;
 
-person* allocate_person() {
-    person* new_person = (person*) malloc(sizeof(person));
-    // Check if the memory has been properly allocated
-    if (new_person == NULL) {
-        return NULL;
+Person* new_person(){
+    Person* person = (Person*)malloc(sizeof(Person));
+    if(person == NULL){
+       // Handle error here (such as printing error message and exiting program)
+       fprintf(stderr, "Memory allocation failed!\n");
+       exit(1);
     }
-    new_person->status = 0;
-    // Other initializations can be added here as necessary
-    return new_person;
+    person->status = 0;
+    return person;
 }
