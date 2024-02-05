@@ -1,6 +1,3 @@
-
-            
-                                
 import subprocess
 import os
 
@@ -8,16 +5,32 @@ CURRENT_DIRECTORY = os.getcwd()
 
 #target directory
 dest_path = os.path.join(CURRENT_DIRECTORY, "esbmc_output")
+
+  
 # Iterate through generated code files
-for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "generated_code")):
-    # If current item is a file
+# for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "generated_code")):
+#     # If current item is a file
+#     if os.path.isfile(os.path.join(CURRENT_DIRECTORY, "generated_code", code_snippet)):
+#         print(code_snippet)
+#         #esbmc_result = subprocess.run(["echo", code_snippet], capture_output=True, text=True)
+#         esbmc_result = subprocess.run(
+#             ["esbmc", os.path.join(CURRENT_DIRECTORY, "test_generated_code", code_snippet),
+#              "--k-induction-parallel", "--overflow-check", "--memory-leak-check",
+#              "--multi-property", "--timeout", "1900s"], capture_output= True, text = True)
+#         print(esbmc_result.stderr)
+#         #Write output to .txt file and store it in the esbmc_output folder
+#         esbmc_output_name = code_snippet + ".txt"
+#         target_file_name = os.path.join(dest_path, esbmc_output_name)
+#         with open(target_file_name, "w") as file:
+#             file.write(esbmc_result.stderr)
+
+def esbmc_run(code_snippet):
     if os.path.isfile(os.path.join(CURRENT_DIRECTORY, "generated_code", code_snippet)):
         print(code_snippet)
-        #esbmc_result = subprocess.run(["echo", code_snippet], capture_output=True, tex>
         esbmc_result = subprocess.run(
-            ["esbmc", os.path.join(CURRENT_DIRECTORY, "test_generated_code", code_snippet),
-             "--k-induction-parallel", "--overflow-check", "--memory-leak-check",
-             "--multi-property", "--timeout", "1900s"], capture_output= True, text = True)
+                ["esbmc", os.path.join(CURRENT_DIRECTORY, "generated_code", code_snippet),
+                "--k-induction-parallel", "--overflow-check", "--memory-leak-check",
+                "--multi-property", "--timeout", "1900s"], capture_output= True, text = True)
         print(esbmc_result.stderr)
         #Write output to .txt file and store it in the esbmc_output folder
         esbmc_output_name = code_snippet + ".txt"
@@ -25,13 +38,21 @@ for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "generated_code")
         with open(target_file_name, "w") as file:
             file.write(esbmc_result.stderr)
 
-
-# upload esbmc_call.py
-
-# upload esbmc_call.py
-# push
-# clone repository in VM
-# run for actual code snippets
+if __name__ == "__main__":
+    
+    target_files = [
+    os.path.join(CURRENT_DIRECTORY, "generated_code", "CWE-119_BOF-1a.c"),
+    os.path.join(CURRENT_DIRECTORY, "generated_code", "CWE-79_INI-1c.c"),
+    os.path.join(CURRENT_DIRECTORY, "generated_code", "CWE-476_NPD-2a.c"),
+    os.path.join(CURRENT_DIRECTORY, "generated_code", "CWE-416_UAF-1a.c"),
+    os.path.join(CURRENT_DIRECTORY, "generated_code", "CWE-476_NPD-2b.c"),
+    os.path.join(CURRENT_DIRECTORY, "generated_code", "CWE-79_INI-1b.c")]
+    
+    for code_snippet in target_files:
+        esbmc_run(code_snippet)
+  
+    # for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "generated_code")):
+    #     esbmc_run(code_snippet)
 
 
 
