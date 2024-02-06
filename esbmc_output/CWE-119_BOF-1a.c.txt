@@ -1,30 +1,1395 @@
 ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibcTarget: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/generated_code/CWE-119_BOF-1a.c
-/home/mw1442/generated_code/CWE-119_BOF-1a.c:5:9: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
-        printf("Error: Number of bytes to copy exceeds buffer size.\n");
-        ^
-/home/mw1442/generated_code/CWE-119_BOF-1a.c:5:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+Parsing /home/mw1442/code-generation-2.0/generated_code/CWE-119_BOF-1a.c
+Parsing /home/mw1442/code-generation-2.0/generated_code/CWE-119_BOF-1a.c
+Parsing /home/mw1442/code-generation-2.0/generated_code/CWE-119_BOF-1a.c
 Converting
-Parsing /home/mw1442/generated_code/CWE-119_BOF-1a.c
-Parsing /home/mw1442/generated_code/CWE-119_BOF-1a.c
-/home/mw1442/generated_code/CWE-119_BOF-1a.c:5:9: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
-        printf("Error: Number of bytes to copy exceeds buffer size.\n");
-        ^
-/home/mw1442/generated_code/CWE-119_BOF-1a.c:5:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
 Converting
-/home/mw1442/generated_code/CWE-119_BOF-1a.c:5:9: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
-        printf("Error: Number of bytes to copy exceeds buffer size.\n");
-        ^
-/home/mw1442/generated_code/CWE-119_BOF-1a.c:5:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
 Converting
-ERROR: main symbol `main' not found
-ERROR: CONVERSION ERROR
-ERROR: main symbol `main' not found
-ERROR: CONVERSION ERROR
-ERROR: main symbol `main' not found
-ERROR: CONVERSION ERROR
-WARNING: base case process crashed.
-ERROR: Message from unrecognized k-induction child process
+Generating GOTO Program
+Generating GOTO Program
+Generating GOTO Program
+GOTO program creation time: 0.358s
+GOTO program processing time: 0.003s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+GOTO program creation time: 0.367s
+GOTO program processing time: 0.002s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Symex completed in: 0.002s (17 assignments)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 3 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.001s
+Checking forward condition, k = 3
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Symex completed in: 0.004s (18 assignments)
+Slicing time: 0.000s (removed 17 assignments)
+Generated 4 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+Checking forward condition, k = 4
+Starting Bounded Model Checking
+Not unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 21 iteration 1   file string.c line 263 column 3 function memcpy
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Symex completed in: 0.003s (19 assignments)
+Slicing time: 0.000s (removed 18 assignments)Not unwinding loop 21 iteration 2   file string.c line 263 column 3 function memcpy
+
+Generated 5 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Symex completed in: 0.018s (54 assignments)
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Slicing time: 0.000s (removed 26 assignments)
+Generated 4 VCC(s), 4 remaining after simplification (28 assignments)
+No solver specified; defaulting to Boolector
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.001s
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Checking forward condition, k = 5
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Encoding to solver time: 0.003s
+Solving with solver Boolector 3.2.2
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Symex completed in: 0.004s (20 assignments)
+Slicing time: 0.001s (removed 19 assignments)
+Generated 6 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.001s
+Checking forward condition, k = 6
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+GOTO program creation time: 0.394s
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Symex completed in: 0.006s (21 assignments)
+Slicing time: 0.000s (removed 20 assignments)
+Generated 7 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+GOTO program processing time: 0.003s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+Checking forward condition, k = 7
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Symex completed in: 0.005s (22 assignments)
+Slicing time: 0.000s (removed 21 assignments)
+Generated 8 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+Checking forward condition, k = 8
+Starting Bounded Model Checking
+Not unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Symex completed in: 0.010s (16 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 1 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.011s
+Checking base case, k = 2
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Symex completed in: 0.002s (17 assignments)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 2 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.002s
+Checking base case, k = 3
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Symex completed in: 0.006s (23 assignments)
+Slicing time: 0.000s (removed 22 assignments)
+Generated 9 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlenEncoding to solver time: 0.000s
+
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+Not unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Symex completed in: 0.002s (18 assignments)
+Slicing time: 0.000s (removed 17 assignments)
+Generated 3 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.002s
+Checking base case, k = 4
+
+Starting Bounded Model Checking
+Checking forward condition, k = 9
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Symex completed in: 0.006s (24 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+Checking forward condition, k = 10
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlenSymex completed in: 0.011s (19 assignments)
+
+Slicing time: 0.000s (removed 18 assignments)
+Generated 4 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.011s
+Checking base case, k = 5
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Symex completed in: 0.007s (25 assignments)
+Slicing time: 0.000s (removed 24 assignments)
+Generated 11 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Symex completed in: 0.003s (20 assignments)
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Slicing time: 0.000s (removed 19 assignments)
+Generated 5 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.004s
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+Checking forward condition, k = 11
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Checking base case, k = 6
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Symex completed in: 0.008s (26 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 12 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlenEncoding remaining VCC(s) using bit-vector/floating-point arithmetic
+
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Runtime decision procedure: 0.001s
+Checking forward condition, k = 12Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Symex completed in: 0.005s (21 assignments)
+Slicing time: 0.000s (removed 20 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.005s
+Checking base case, k = 7
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Symex completed in: 0.009s (27 assignments)
+Slicing time: 0.000s (removed 26 assignments)
+Generated 13 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+Checking forward condition, k = 13
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlenSymex completed in: 0.013s (22 assignments)
+
+Slicing time: 0.000s (removed 21 assignments)
+Generated 7 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.013s
+Checking base case, k = 8
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Symex completed in: 0.009s (28 assignments)
+Slicing time: 0.000s (removed 27 assignments)
+Generated 14 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+Checking forward condition, k = 14
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlenNot unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Symex completed in: 0.010s (23 assignments)
+Slicing time: 0.000s (removed 22 assignments)
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Generated 8 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.011s
+Checking base case, k = 9
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Symex completed in: 0.017s (29 assignments)
+Slicing time: 0.000s (removed 28 assignments)
+Generated 15 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Not unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+Symex completed in: 0.015s (24 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.015s
+Checking base case, k = 10
+
+Checking forward condition, k = 15
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Symex completed in: 0.014s (25 assignments)
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Slicing time: 0.000s (removed 24 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.015s
+Checking base case, k = 11
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Symex completed in: 0.019s (30 assignments)
+Slicing time: 0.000s (removed 29 assignments)
+Generated 16 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.001s
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Checking forward condition, k = 16
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Symex completed in: 0.018s (26 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 11 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.018s
+
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlenChecking base case, k = 12
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Symex completed in: 0.009s (27 assignments)
+Slicing time: 0.000s (removed 26 assignments)
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Generated 12 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.009s
+Checking base case, k = 13
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Symex completed in: 0.020s (31 assignments)
+Slicing time: 0.000s (removed 30 assignments)
+Generated 17 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.001s
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Symex completed in: 0.009s (28 assignments)
+Slicing time: 0.000s (removed 27 assignments)
+Generated 13 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.009s
+Checking base case, k = 14
+
+Starting Bounded Model Checking
+Checking forward condition, k = 17
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Symex completed in: 0.011s (29 assignments)
+Slicing time: 0.000s (removed 28 assignments)
+Generated 14 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.011s
+Checking base case, k = 15
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Symex completed in: 0.020s (32 assignments)
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Slicing time: 0.000s (removed 31 assignments)
+Generated 18 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Not unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlenEncoding remaining VCC(s) using bit-vector/floating-point arithmetic
+
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Symex completed in: 0.011s (30 assignments)
+Slicing time: 0.000s (removed 29 assignments)
+Generated 15 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.011s
+Runtime decision procedure: 0.000s
+Checking base case, k = 16
+
+Starting Bounded Model Checking
+Checking forward condition, k = 18
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Symex completed in: 0.012s (31 assignments)
+Slicing time: 0.000s (removed 30 assignments)
+Generated 16 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.012s
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Checking base case, k = 17
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Symex completed in: 0.013s (32 assignments)
+Slicing time: 0.000s (removed 31 assignments)
+Generated 17 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.013s
+Checking base case, k = 18
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+Symex completed in: 0.029s (33 assignments)
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Slicing time: 0.000s (removed 32 assignments)
+Generated 19 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Checking forward condition, k = 19
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+Symex completed in: 0.012s (33 assignments)
+Slicing time: 0.001s (removed 32 assignments)
+Generated 18 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.013s
+Checking base case, k = 19
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 19   file string.c line 78 column 3 function strlen
+Symex completed in: 0.013s (34 assignments)
+Slicing time: 0.000s (removed 33 assignments)
+Generated 19 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.013s
+Checking base case, k = 20
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlenNot unwinding loop 9 iteration 19   file string.c line 78 column 3 function strlen
+
+Symex completed in: 0.028s (34 assignments)
+Slicing time: 0.000s (removed 33 assignments)
+Generated 20 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Runtime decision procedure: 0.000s
+Checking forward condition, k = 20
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 19   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 20   file string.c line 78 column 3 function strlen
+Symex completed in: 0.014s (35 assignments)
+Slicing time: 0.000s (removed 34 assignments)Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+
+Generated 20 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.014s
+Checking base case, k = 21
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 19   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 19   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 20   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 20   file string.c line 78 column 3 function strlen
+Symex completed in: 0.020s (35 assignments)
+Slicing time: 0.000s (removed 34 assignments)
+Generated 21 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Not unwinding loop 9 iteration 21   file string.c line 78 column 3 function strlen
+Symex completed in: 0.015s (36 assignments)
+Slicing time: 0.001s (removed 35 assignments)
+Generated 21 VCC(s), 0 remaining after simplification (1 assignments)
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+BMC program time: 0.016s
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Checking base case, k = 22
+
+Starting Bounded Model Checking
+Runtime decision procedure: 0.000s
+Checking forward condition, k = 21
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 19   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 20   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 21   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 22   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Symex completed in: 0.014s (37 assignments)
+Slicing time: 0.000s (removed 36 assignments)
+Generated 22 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.014s
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Checking base case, k = 23
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 19   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 20   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 19   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 21   file string.c line 78 column 3 function strlen
+Symex completed in: 0.029s (36 assignments)
+Slicing time: 0.000s (removed 35 assignments)
+Generated 22 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 20   file string.c line 78 column 3 function strlenEncoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+
+Checking forward condition, k = 22
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 21   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 22   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 23   file string.c line 78 column 3 function strlen
+Symex completed in: 0.021s (38 assignments)
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Slicing time: 0.000s (removed 37 assignments)
+Generated 23 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.021s
+Checking base case, k = 24
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 19   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 20   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 21   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 22   file string.c line 78 column 3 function strlen
+Symex completed in: 0.013s (37 assignments)
+Slicing time: 0.000s (removed 36 assignments)
+Generated 23 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlenEncoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+
+Checking forward condition, k = 23
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 19   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 20   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 21   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 22   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 23   file string.c line 78 column 3 function strlen
+Symex completed in: 0.013s (38 assignments)
+Slicing time: 0.000s (removed 37 assignments)
+Generated 24 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.001s
+Checking forward condition, k = 24
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 19   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 20   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 21   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 22   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 23   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 24   file string.c line 78 column 3 function strlen
+Symex completed in: 0.033s (39 assignments)
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Slicing time: 0.000s (removed 38 assignments)
+Generated 24 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.033s
+Checking base case, k = 25
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 19   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 20   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 21   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 22   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 23   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 24   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Symex completed in: 0.014s (39 assignments)
+Slicing time: 0.000s (removed 38 assignments)
+Generated 25 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.001s
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlenChecking forward condition, k = 25
+Starting Bounded Model Checking
+
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 19   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 20   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 21   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 22   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 23   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 24   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlenNot unwinding loop 9 iteration 25   file string.c line 78 column 3 function strlen
+
+Symex completed in: 0.014s (40 assignments)
+Slicing time: 0.000s (removed 39 assignments)
+Generated 26 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlenRuntime decision procedure: 0.000s
+
+Checking forward condition, k = 26
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 19   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 20   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 21   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 22   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 23   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 24   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 19   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 25   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 20   file string.c line 78 column 3 function strlen
+
+Symex completed in: 0.033s (40 assignments)Unwinding loop 9 iteration 21   file string.c line 78 column 3 function strlen
+
+Slicing time: 0.000s (removed 39 assignments)
+Generated 25 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.034s
+Unwinding loop 9 iteration 22   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 23   file string.c line 78 column 3 function strlen
+Checking base case, k = 26
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 24   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 25   file string.c line 78 column 3 function strlen
+Unwinding loop 21 iteration 1   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 2   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 3   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 4   file string.c line 263 column 3 function memcpy
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlenUnwinding loop 21 iteration 5   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 6   file string.c line 263 column 3 function memcpy
+
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 21 iteration 7   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 8   file string.c line 263 column 3 function memcpy
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 21 iteration 9   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 10   file string.c line 263 column 3 function memcpy
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 21 iteration 11   file string.c line 263 column 3 function memcpy
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlenUnwinding loop 21 iteration 12   file string.c line 263 column 3 function memcpy
+
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 21 iteration 13   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 14   file string.c line 263 column 3 function memcpy
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 21 iteration 15   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 16   file string.c line 263 column 3 function memcpy
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 21 iteration 17   file string.c line 263 column 3 function memcpyUnwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 21 iteration 18   file string.c line 263 column 3 function memcpy
+
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 21 iteration 19   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 20   file string.c line 263 column 3 function memcpy
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 21 iteration 21   file string.c line 263 column 3 function memcpy
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlenUnwinding loop 21 iteration 22   file string.c line 263 column 3 function memcpy
+
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlenUnwinding loop 21 iteration 23   file string.c line 263 column 3 function memcpy
+
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlenUnwinding loop 21 iteration 24   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 25   file string.c line 263 column 3 function memcpy
+
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Not unwinding loop 21 iteration 26   file string.c line 263 column 3 function memcpy
+Symex completed in: 0.035s (128 assignments)
+Slicing time: 0.000s (removed 127 assignments)
+Generated 79 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+Unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlenChecking forward condition, k = 27
+Starting Bounded Model Checking
+
+Unwinding loop 9 iteration 19   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 20   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 21   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 22   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 23   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 24   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 25   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+Unwinding loop 21 iteration 1   file string.c line 263 column 3 function memcpyUnwinding loop 9 iteration 19   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 20   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 21   file string.c line 78 column 3 function strlen
+Unwinding loop 21 iteration 2   file string.c line 263 column 3 function memcpyUnwinding loop 9 iteration 22   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 23   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 24   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 25   file string.c line 78 column 3 function strlen
+Unwinding loop 21 iteration 3   file string.c line 263 column 3 function memcpyUnwinding loop 21 iteration 1   file string.c line 263 column 3 function memcpy
+
+Unwinding loop 21 iteration 2   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 4   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 3   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 4   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 5   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 5   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 6   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 6   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 7   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 8   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 7   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 9   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 10   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 8   file string.c line 263 column 3 function memcpyUnwinding loop 21 iteration 11   file string.c line 263 column 3 function memcpy
+
+Unwinding loop 21 iteration 12   file string.c line 263 column 3 function memcpyUnwinding loop 21 iteration 9   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 13   file string.c line 263 column 3 function memcpy
+
+Unwinding loop 21 iteration 14   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 15   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 10   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 16   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 17   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 11   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 18   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 19   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 12   file string.c line 263 column 3 function memcpyUnwinding loop 21 iteration 20   file string.c line 263 column 3 function memcpy
+
+Unwinding loop 21 iteration 21   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 22   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 13   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 23   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 24   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 14   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 25   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 26   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 15   file string.c line 263 column 3 function memcpy
+Symex completed in: 0.037s (131 assignments)
+Slicing time: 0.000s (removed 129 assignments)
+Generated 78 VCC(s), 0 remaining after simplification (2 assignments)
+BMC program time: 0.037s
+Forward condition process finished (safety proven).
+Unwinding loop 21 iteration 16   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 17   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 18   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 19   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 20   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 21   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 22   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 23   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 24   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 25   file string.c line 263 column 3 function memcpy
+Not unwinding loop 21 iteration 26   file string.c line 263 column 3 function memcpy
+Symex completed in: 0.072s (128 assignments)
+Slicing time: 0.001s (removed 127 assignments)
+Generated 78 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.073s
+Checking base case, k = 27
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 19   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 20   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 21   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 22   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 23   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 24   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 25   file string.c line 78 column 3 function strlen
+Unwinding loop 21 iteration 1   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 2   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 3   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 4   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 5   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 6   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 7   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 8   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 9   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 10   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 11   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 12   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 13   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 14   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 15   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 16   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 17   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 18   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 19   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 20   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 21   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 22   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 23   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 24   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 25   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 26   file string.c line 263 column 3 function memcpy
+Symex completed in: 0.035s (131 assignments)
+Slicing time: 0.000s (removed 129 assignments)
+Generated 78 VCC(s), 0 remaining after simplification (2 assignments)
+BMC program time: 0.035s
+Checking base case, k = 28
+
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 14   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 15   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 16   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 17   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 18   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 19   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 20   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 21   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 22   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 23   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 24   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 25   file string.c line 78 column 3 function strlen
+Unwinding loop 21 iteration 1   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 2   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 3   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 4   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 5   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 6   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 7   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 8   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 9   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 10   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 11   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 12   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 13   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 14   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 15   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 16   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 17   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 18   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 19   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 20   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 21   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 22   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 23   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 24   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 25   file string.c line 263 column 3 function memcpy
+Unwinding loop 21 iteration 26   file string.c line 263 column 3 function memcpy
+Symex completed in: 0.027s (131 assignments)
+Slicing time: 0.000s (removed 129 assignments)
+Generated 78 VCC(s), 0 remaining after simplification (2 assignments)
+BMC program time: 0.027s
+Base case process finished (no bug found).
+
+WARNING: inductive step process crashed.
+
+Solution found by the forward condition; all states are reachable (k = 27)
+VERIFICATION SUCCESSFUL

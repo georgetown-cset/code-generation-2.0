@@ -2,26 +2,102 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/generated_code/CWE-79_INI-1c.c
-/home/mw1442/generated_code/CWE-79_INI-1c.cParsing /home/mw1442/generated_code/CWE-79_INI-1c.c:
-7:12: warning: returning 'const char *' from a function with result type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
-    return input;
-           ^~~~~
+Parsing /home/mw1442/code-generation-2.0/generated_code/CWE-79_INI-1c.c
 Converting
-Parsing /home/mw1442/generated_code/CWE-79_INI-1c.c
-/home/mw1442/generated_code/CWE-79_INI-1c.c:7:12: warning: returning 'const char *' from a function with result type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
-    return input;
-           ^~~~~
-/home/mw1442/generated_code/CWE-79_INI-1c.c:7:12: warning: returning 'const char *' from a function with result type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
-    return input;
-           ^~~~~
+Parsing /home/mw1442/code-generation-2.0/generated_code/CWE-79_INI-1c.c
+Parsing /home/mw1442/code-generation-2.0/generated_code/CWE-79_INI-1c.c
 Converting
 Converting
-ERROR: main symbol `main' not found
-ERROR: CONVERSION ERROR
-ERROR: main symbol `main' not found
-ERROR: CONVERSION ERROR
-ERROR: main symbol `main' not found
-ERROR: CONVERSION ERROR
-WARNING: base case process crashed.
-ERROR: Message from unrecognized k-induction child process
+Generating GOTO Program
+GOTO program creation time: 0.266s
+GOTO program processing time: 0.003s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Symex completed in: 0.002s (13 assignments)Generating GOTO Program
+
+Slicing time: 0.000s (removed 13 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
+BMC program time: 0.002s
+Checking base case, k = 2
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (13 assignments)
+Slicing time: 0.000s (removed 13 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
+BMC program time: 0.007s
+Checking base case, k = 3
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (13 assignments)
+Slicing time: 0.000s (removed 13 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
+BMC program time: 0.002s
+Checking base case, k = 4
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (13 assignments)
+Slicing time: 0.000s (removed 13 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
+BMC program time: 0.001s
+Checking base case, k = 5
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (13 assignments)
+Slicing time: 0.000s (removed 13 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
+BMC program time: 0.002s
+Checking base case, k = 6
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (13 assignments)
+Slicing time: 0.000s (removed 13 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
+BMC program time: 0.001s
+Checking base case, k = 7
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (13 assignments)GOTO program creation time: 0.300s
+
+Slicing time: 0.000s (removed 13 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
+BMC program time: 0.010s
+Checking base case, k = 8
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (13 assignments)
+Slicing time: 0.000s (removed 13 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
+BMC program time: 0.002s
+Checking base case, k = 9
+
+Starting Bounded Model Checking
+GOTO program processing time: 0.003s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Symex completed in: 0.001s (13 assignments)
+Slicing time: 0.000s (removed 13 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
+BMC program time: 0.001s
+Checking base case, k = 10
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (13 assignments)Symex completed in: 0.001s (13 assignments)
+Slicing time: 0.000s (removed 13 assignments)
+
+Slicing time: 0.001s (removed 13 assignments)Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
+BMC program time: 0.002s
+
+Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
+BMC program time: 0.002sChecking base case, k = 11
+
+Starting Bounded Model Checking
+
+Forward condition process finished (safety proven).
+Symex completed in: 0.001s (13 assignments)
+Slicing time: 0.000s (removed 13 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
+BMC program time: 0.001s
+
+Solution found by the forward condition; all states are reachable (k = 2)
+VERIFICATION SUCCESSFUL

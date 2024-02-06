@@ -2,17 +2,163 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/generated_code/CWE-79_INI-1b.c
-Parsing /home/mw1442/generated_code/CWE-79_INI-1b.c
+Parsing /home/mw1442/code-generation-2.0/generated_code/CWE-79_INI-1b.c
+Parsing /home/mw1442/code-generation-2.0/generated_code/CWE-79_INI-1b.c
 Converting
-Parsing /home/mw1442/generated_code/CWE-79_INI-1b.c
+Parsing /home/mw1442/code-generation-2.0/generated_code/CWE-79_INI-1b.c
 Converting
 Converting
-ERROR: main symbol `main' not found
-ERROR: CONVERSION ERROR
-ERROR: main symbol `main' not found
-ERROR: CONVERSION ERROR
-ERROR: main symbol `main' not found
-ERROR: CONVERSION ERROR
-WARNING: base case process crashed.
-ERROR: Message from unrecognized k-induction child process
+Generating GOTO Program
+Generating GOTO Program
+GOTO program creation time: 0.264s
+GOTO program creation time: 0.271s
+GOTO program processing time: 0.002s
+GOTO program processing time: 0.002s
+Checking base case, k = 1
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+
+Starting Bounded Model Checking
+WARNING: WARNING: no body for function perror
+no body for function perror
+WARNING: WARNING: no body for function perror
+Symex completed in: 0.003s (60 assignments)
+Slicing time: 0.000s (removed 30 assignments)
+Generated 11 VCC(s), 9 remaining after simplification (30 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving with solver Boolector 3.2.2
+no body for function perror
+Symex completed in: 0.010s (61 assignments)
+Slicing time: 0.000s (removed 30 assignments)
+Generated 12 VCC(s), 10 remaining after simplification (31 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: forgotten memory: dynamic_3_value (0.000s)
+Slicing time: 0.000s (removed 30 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: forgotten memory: dynamic_3_value' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: forgotten memory: dynamic_1_value (0.000s)
+Slicing time: 0.000s (removed 30 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: forgotten memory: dynamic_1_value' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 30 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.000s (removed 30 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 30 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmeticGenerating GOTO Program
+
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.000s (removed 30 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Slicing for Claim buffer overflow on fscanf (0.000s)
+Slicing time: 0.000s (removed 30 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'buffer overflow on fscanf' with solver Boolector 3.2.2
+GOTO program creation time: 0.344s
+GOTO program processing time: 0.002s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+WARNING: no body for function perror
+WARNING: no body for function perror
+Symex completed in: 0.003s (61 assignments)
+Slicing time: 0.001s (removed 30 assignments)
+Generated 12 VCC(s), 10 remaining after simplification (31 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.487s
+Inductive process finished (safety not proven).
+Runtime decision procedure: 0.599s
+Checking forward condition, k = 3
+Starting Bounded Model Checking
+WARNING: no body for function perror
+
+[Counterexample]
+
+WARNING: no body for function perror
+
+State 1 file CWE-79_INI-1b.c line 20 column 5 function main thread 0
+----------------------------------------------------
+  request = &dynamic_1_value
+
+State 2 file CWE-79_INI-1b.c line 26 column 5 function main thread 0
+----------------------------------------------------
+  response = &dynamic_3_value
+
+State 3 file CWE-79_INI-1b.c line 8 column 5 function http_hello_page thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-79_INI-1b.c line 8 column 5 function http_hello_page
+  buffer overflow on fscanf
+  0
+
+Symex completed in: 0.005s (60 assignments)Slicing for Claim dereference failure: forgotten memory: dynamic_3_value (0.000s)
+
+Slicing time: 0.000s (removed 30 assignments)
+No solver specified; defaulting to Boolector
+Slicing time: 0.000s (removed 30 assignments)
+Generated 11 VCC(s), 9 remaining after simplification (30 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmeticEncoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: forgotten memory: dynamic_3_value' with solver Boolector 3.2.2
+
+Slicing for Claim dereference failure: forgotten memory: dynamic_1_value (0.000s)
+Slicing time: 0.000s (removed 30 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving with solver Boolector 3.2.2
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: forgotten memory: dynamic_1_value' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file CWE-79_INI-1b.c line 20 column 5 function main thread 0
+----------------------------------------------------
+  request = &dynamic_1_value
+
+State 2 file CWE-79_INI-1b.c line 26 column 5 function main thread 0
+----------------------------------------------------
+  response = 0
+
+State 3 file stdlib.c line 65 column 3 function exit thread 0
+----------------------------------------------------
+Violated property:
+  file stdlib.c line 65 column 3 function exit
+  dereference failure: forgotten memory: dynamic_1_value
+
+Slicing for Claim dereference failure: forgotten memory: dynamic_1_value (0.000s)
+Slicing time: 0.000s (removed 30 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: forgotten memory: dynamic_1_value' with solver Boolector 3.2.2
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED
