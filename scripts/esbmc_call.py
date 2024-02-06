@@ -25,6 +25,8 @@ dest_path = os.path.join(CURRENT_DIRECTORY, "esbmc_output")
 #             file.write(esbmc_result.stderr)
 
 def esbmc_run(code_snippet):
+    #target directory
+    dest_path = os.path.join(CURRENT_DIRECTORY, "esbmc_output")
     if os.path.isfile(os.path.join(CURRENT_DIRECTORY, "generated_code", code_snippet)):
         print(code_snippet)
         esbmc_result = subprocess.run(
@@ -47,9 +49,6 @@ if __name__ == "__main__":
     os.path.join(CURRENT_DIRECTORY, "generated_code", "CWE-416_UAF-1a.c"),
     os.path.join(CURRENT_DIRECTORY, "generated_code", "CWE-476_NPD-2b.c"),
     os.path.join(CURRENT_DIRECTORY, "generated_code", "CWE-79_INI-1b.c")]
-    
-    #target directory
-    dest_path = os.path.join(CURRENT_DIRECTORY, "esbmc_output")
 
     
     for code_snippet in target_files:
