@@ -3,8 +3,6 @@ import os
 
 CURRENT_DIRECTORY = os.getcwd()
 
-#target directory
-dest_path = os.path.join(CURRENT_DIRECTORY, "esbmc_output")
 
   
 # Iterate through generated code files
@@ -25,8 +23,6 @@ dest_path = os.path.join(CURRENT_DIRECTORY, "esbmc_output")
 #             file.write(esbmc_result.stderr)
 
 def esbmc_run(code_snippet):
-    #target directory
-    dest_path = os.path.join(CURRENT_DIRECTORY, "esbmc_output")
     if os.path.isfile(os.path.join(CURRENT_DIRECTORY, "generated_code", code_snippet)):
         print(code_snippet)
         esbmc_result = subprocess.run(
@@ -36,7 +32,7 @@ def esbmc_run(code_snippet):
         print(esbmc_result.stderr)
         #Write output to .txt file and store it in the esbmc_output folder
         esbmc_output_name = code_snippet + ".txt"
-        target_file_name = os.path.join(dest_path, esbmc_output_name)
+        target_file_name = os.path.join("/home/mw1442/code-generation-2.0/esbmc_output", esbmc_output_name)
         with open(target_file_name, "w") as file:
             file.write(esbmc_result.stderr)
 
@@ -50,7 +46,10 @@ if __name__ == "__main__":
     os.path.join(CURRENT_DIRECTORY, "generated_code", "CWE-476_NPD-2b.c"),
     os.path.join(CURRENT_DIRECTORY, "generated_code", "CWE-79_INI-1b.c")]
 
-    
+    #target directory
+    #dest_path = os.path.join(CURRENT_DIRECTORY, "esbmc_output")
+    print(CURRENT_DIRECTORY)
+
     for code_snippet in target_files:
         esbmc_run(code_snippet)
   
