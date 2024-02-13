@@ -1,0 +1,758 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/103.c
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/103.cParsing /home/mw1442/code-generation-2.0/generated_wizard_coder/103.c
+/home/mw1442/code-generation-2.0/generated_wizard_coder/103.c:19:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+    close(file_descriptor);
+    ^
+Converting
+
+/home/mw1442/code-generation-2.0/generated_wizard_coder/103.c:19:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+    close(file_descriptor);
+    ^
+Converting
+/home/mw1442/code-generation-2.0/generated_wizard_coder/103.c:19:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+    close(file_descriptor);
+    ^
+Converting
+Generating GOTO Program
+Generating GOTO Program
+GOTO program creation time: 0.290s
+GOTO program processing time: 0.002s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+BMC program time: 0.002s
+Inductive process finished (safety not proven).
+GOTO program creation time: 0.309s
+GOTO program processing time: 0.002s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.003s
+Checking base case, k = 2
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.000s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 3
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.003s
+Checking base case, k = 4
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 5
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.000s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 6
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 7
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.000s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 8
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.001s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.003s
+Checking base case, k = 9
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.003s
+Checking base case, k = 10
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.001s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 11
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.000s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 12
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.003s
+Checking base case, k = 13
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.003s
+Checking base case, k = 14
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.003s
+Checking base case, k = 15
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 16
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.003s
+Checking base case, k = 17
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.003s
+Checking base case, k = 18
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.003s
+Checking base case, k = 19
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 20
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.000s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.001s
+Checking base case, k = 21
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.000s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 22
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 23
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.000s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 24
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 25
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.003s
+Checking base case, k = 26
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.000s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 27
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.001s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 28
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+Generating GOTO ProgramWARNING: no body for function close
+
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.003s
+Checking base case, k = 29
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.000s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 30
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 31
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.000s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 32
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 33
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.000s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 34
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.000s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 35
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 36
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 37
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.000s (25 assignments)
+Slicing time: 0.001s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 38
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 39
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.000s (25 assignments)
+GOTO program creation time: 0.402sSlicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 40
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+GOTO program processing time: 0.002s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Symex completed in: 0.000s (25 assignments)Slicing time: 0.000s (removed 23 assignments)
+
+No solver specified; defaulting to Boolector
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Encoding remaining VCC(s) using bit-vector/floating-point arithmeticChecking base case, k = 41
+
+Starting Bounded Model Checking
+
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+BMC program time: 0.001s
+WARNING: no body for function openForward condition process finished (safety proven).
+
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+
+Solution found by the forward condition; all states are reachable (k = 2)
+VERIFICATION SUCCESSFUL

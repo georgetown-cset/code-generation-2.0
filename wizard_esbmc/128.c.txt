@@ -1,0 +1,165 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/128.c
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/128.c
+Converting
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/128.c
+Converting
+Converting
+Generating GOTO Program
+Generating GOTO Program
+GOTO program creation time: 0.284s
+GOTO program processing time: 0.003s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Unwinding loop 2 iteration 1   file io.c line 133 column 3 function fgetsGenerating GOTO Program
+
+Not unwinding loop 2 iteration 2   file io.c line 133 column 3 function fgets
+Unwinding loop 12 iteration 1   file string.c line 127 column 3 function strchr
+Unwinding loop 16 iteration 1   file string.c line 182 column 3 function strcspn
+Unwinding loop 12 iteration 1   file string.c line 127 column 3 function strchr
+Not unwinding loop 16 iteration 2   file string.c line 182 column 3 function strcspn
+Symex completed in: 0.020s (179 assignments)
+Slicing time: 0.001s (removed 89 assignments)
+Generated 52 VCC(s), 25 remaining after simplification (90 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.004s
+Solving with solver Boolector 3.2.2
+GOTO program creation time: 0.336s
+GOTO program processing time: 0.003s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+GOTO program creation time: 0.341s
+Unwinding loop 2 iteration 1   file io.c line 133 column 3 function fgets
+Not unwinding loop 2 iteration 2   file io.c line 133 column 3 function fgets
+Unwinding loop 12 iteration 1   file string.c line 127 column 3 function strchr
+Not unwinding loop 12 iteration 2   file string.c line 127 column 3 function strchr
+GOTO program processing time: 0.004s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Unwinding loop 16 iteration 1   file string.c line 182 column 3 function strcspn
+Unwinding loop 12 iteration 1   file string.c line 127 column 3 function strchr
+Not unwinding loop 12 iteration 2   file string.c line 127 column 3 function strchr
+Not unwinding loop 16 iteration 2   file string.c line 182 column 3 function strcspn
+Not unwinding loop 2 iteration 1   file io.c line 133 column 3 function fgets
+Symex completed in: 0.009s (214 assignments)
+Not unwinding loop 12 iteration 1   file string.c line 127 column 3 function strchrSlicing time: 0.001s (removed 61 assignments)
+Generated 32 VCC(s), 30 remaining after simplification (153 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.005s
+Solving with solver Boolector 3.2.2
+
+Not unwinding loop 16 iteration 1   file string.c line 182 column 3 function strcspn
+Symex completed in: 0.013s (116 assignments)
+Slicing time: 0.000s (removed 64 assignments)
+Generated 28 VCC(s), 13 remaining after simplification (52 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: forgotten memory: dynamic_3_value (0.000s)
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: forgotten memory: dynamic_3_value' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: forgotten memory: dynamic_1_value (0.000s)
+Slicing time: 0.000s (removed 64 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: forgotten memory: dynamic_1_value' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 64 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on sub (0.000s)
+Slicing time: 0.000s (removed 64 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'arithmetic overflow on sub' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on sub (0.000s)
+Slicing time: 0.000s (removed 64 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'arithmetic overflow on sub' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on sub (0.000s)
+Slicing time: 0.000s (removed 64 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'arithmetic overflow on sub' with solver Boolector 3.2.2
+Slicing for Claim the pointer to a file object must be a valid argument (0.000s)
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'the pointer to a file object must be a valid argument' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file 128.c line 53 column 5 function main thread 0
+----------------------------------------------------
+  request = 0
+
+State 2 file 128.c line 54 column 5 function main thread 0
+----------------------------------------------------
+  response = 0
+
+State 3 file 128.c line 5 column 5 function http_hello_page thread 0
+----------------------------------------------------
+  username = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+
+State 4 file io.c line 123 column 3 function fgets thread 0
+----------------------------------------------------
+Violated property:
+  file io.c line 123 column 3 function fgets
+  the pointer to a file object must be a valid argument
+  (_Bool)(stream == stdin || stream != 0)
+
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED
