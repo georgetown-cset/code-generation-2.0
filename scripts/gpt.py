@@ -27,20 +27,6 @@ def generate_code(prompt):
     ]
 
 
-# def generate_code(prompt):
-#     """
-#     Generate code by completing the prompt.
-#     """
-#     completion = client.chat.completions.create(model="gpt-3.5-turbo",
-#     messages=[
-#         {"role": "user", "content": prompt.strip()}
-#     ])
-    
-#     return [
-#         c['message']['content']
-#         for c in completion['choices']
-#     ]
-
 PARSE_REGEX = re.compile(r'```[^\n]+\n(.*?)\n```', re.DOTALL)
 def parse_code(c_string):
     time.sleep(4)

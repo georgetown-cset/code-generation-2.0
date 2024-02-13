@@ -4,7 +4,7 @@ import os
 CURRENT_DIRECTORY = os.getcwd()
 
 #target directory
-dest_path = os.path.join(CURRENT_DIRECTORY, "wizard_esbmc")
+#dest_path = os.path.join(CURRENT_DIRECTORY, "wizard_esbmc")
 
   
 # Iterate through generated code files
@@ -24,9 +24,9 @@ dest_path = os.path.join(CURRENT_DIRECTORY, "wizard_esbmc")
 #         with open(target_file_name, "w") as file:
 #             file.write(esbmc_result.stderr)
 
-def esbmc_run(code_snippet, folder_name):
+def esbmc_run(code_snippet, folder_name, dest_name):
     #target directory
-    dest_path = os.path.join(CURRENT_DIRECTORY, "wizard_esbmc")
+    dest_path = os.path.join(CURRENT_DIRECTORY, dest_name)
     if os.path.isfile(os.path.join(CURRENT_DIRECTORY, folder_name, code_snippet)):
         print(code_snippet)
         esbmc_result = subprocess.run(
@@ -37,8 +37,11 @@ def esbmc_run(code_snippet, folder_name):
         #Write output to .txt file and store it in the esbmc_output folder
         esbmc_output_name = os.path.basename(code_snippet) + ".txt"
         target_file_name = os.path.join(dest_path, esbmc_output_name)
-        with open(target_file_name, "w") as file:
-            file.write(esbmc_result.stderr)
+        make_file(esbmc_result, target_file_name)
+
+def make_file(esbmc_result, target_file_name):
+    with open(target_file_name, "w") as file:
+        file.write(esbmc_result.stderr)
 
 if __name__ == "__main__":
     
@@ -57,8 +60,8 @@ if __name__ == "__main__":
     # for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "generated_code")):
     #     esbmc_run(code_snippet)
     
-    for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "generated_wizard_coder")):
-        esbmc_run(code_snippet, "generated_wizard_coder")
+    for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "generated_wizard_code")):
+        esbmc_run(code_snippet, "generated_wizard_coder", "wizard_esbmc")
 
 
 
