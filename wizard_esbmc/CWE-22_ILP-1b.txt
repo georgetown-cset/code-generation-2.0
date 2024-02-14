@@ -2,59 +2,59 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/43.c
-Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/43.c
-/home/mw1442/code-generation-2.0/generated_wizard_coder/43.c:5:33: error: expected ')'
-    FILE* file = fopen("/safe/" fileName, "r");
-                                ^
-/home/mw1442/code-generation-2.0/generated_wizard_coder/43.c:5:23: note: to match this '('
-    FILE* file = fopen("/safe/" fileName, "r");
-                      ^
-/home/mw1442/code-generation-2.0/generated_wizard_coder/43.c:11:34: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
-    char* fileContents = (char*) malloc(sizeof(char) * 1000);
-                                 ^
-/home/mw1442/code-generation-2.0/generated_wizard_coder/43.c:11:34: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
-/home/mw1442/code-generation-2.0/generated_wizard_coder/43.c:21:9: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
-        free(fileContents);
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/44.c
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/44.c
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/44.c
+/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:10:27: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
+    char* buffer = (char*)malloc(buffer_size);
+                          ^
+/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:10:27: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:18:9: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
+        free(buffer);
         ^
-/home/mw1442/code-generation-2.0/generated_wizard_coder/43.c:36:9: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
-        free(fileContents);
+/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:10:27: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
+    char* buffer = (char*)malloc(buffer_size);
+                          ^
+/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:10:27: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:18:9: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
+        free(buffer);
         ^
+/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:10:27: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
+    char* buffer = (char*)malloc(buffer_size);
+                          ^
+/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:10:27: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:18:9: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
+        free(buffer);
+        ^
+/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:33:37: error: use of undeclared identifier 'buffer'
+:33        printf("File content:\n%s", buffer);
+                                    ^
+:37: error: use of undeclared identifier 'buffer'
+        printf("File content:\n%s", buffer);
+/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:38:5: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
+                                    ^    free(buffer);
+    ^
+
+/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:38:5: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
+    free(buffer);
+    ^
+/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:38:10: error: use of undeclared identifier 'buffer'
+    free(buffer);
+         ^
 ERROR: PARSING ERROR
-Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/43.c
-/home/mw1442/code-generation-2.0/generated_wizard_coder/43.c/home/mw1442/code-generation-2.0/generated_wizard_coder/43.c:5:33: error: expected ')'
-    FILE* file = fopen("/safe/" fileName, "r");
-                                ^
-/home/mw1442/code-generation-2.0/generated_wizard_coder/43.c:5:23: note: to match this '('
-    FILE* file = fopen("/safe/" fileName, "r");
-                      ^
-:5:33: error: expected ')'
-    FILE* file = fopen("/safe/" fileName, "r");
-                                ^
-/home/mw1442/code-generation-2.0/generated_wizard_coder/43.c/home/mw1442/code-generation-2.0/generated_wizard_coder/43.c:11:34: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
-:5:    char* fileContents = (char*) malloc(sizeof(char) * 1000);
-                                 ^
-/home/mw1442/code-generation-2.0/generated_wizard_coder/43.c:11:34: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
-23: note: to match this '('
-    FILE* file = fopen("/safe/" fileName, "r");
-                      ^
-/home/mw1442/code-generation-2.0/generated_wizard_coder/43.c:21:9: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]/home/mw1442/code-generation-2.0/generated_wizard_coder/43.c:11:34: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
-
-    char* fileContents = (char*) malloc(sizeof(char) * 1000);        free(fileContents);
-        ^
-
-                                 ^
-/home/mw1442/code-generation-2.0/generated_wizard_coder/43.c:11:34: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
-/home/mw1442/code-generation-2.0/generated_wizard_coder/43.c:36:9: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
-        free(fileContents);/home/mw1442/code-generation-2.0/generated_wizard_coder/43.c:21:9: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
-
-        free(fileContents);
-        ^
-        ^
-ERROR: PARSING ERROR/home/mw1442/code-generation-2.0/generated_wizard_coder/43.c:36:9: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
-
-        free(fileContents);
-        ^
+/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:38:10: error: use of undeclared identifier 'buffer'
+    free(buffer);
+         ^
+ERROR: PARSING ERROR
+/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:33:37: error: use of undeclared identifier 'buffer'
+        printf("File content:\n%s", buffer);
+                                    ^
+/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:38:5: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
+    free(buffer);
+    ^
+/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:38:10: error: use of undeclared identifier 'buffer'
+    free(buffer);
+         ^
 ERROR: PARSING ERROR
 WARNING: base case process crashed.
 ERROR: Message from unrecognized k-induction child process

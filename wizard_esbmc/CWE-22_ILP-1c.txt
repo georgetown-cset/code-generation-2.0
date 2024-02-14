@@ -2,59 +2,104 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/44.c
-Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/44.c
-Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/44.c
-/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:10:27: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
-    char* buffer = (char*)malloc(buffer_size);
-                          ^
-/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:10:27: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
-/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:18:9: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
-        free(buffer);
-        ^
-/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:10:27: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
-    char* buffer = (char*)malloc(buffer_size);
-                          ^
-/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:10:27: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
-/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:18:9: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
-        free(buffer);
-        ^
-/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:10:27: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
-    char* buffer = (char*)malloc(buffer_size);
-                          ^
-/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:10:27: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
-/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:18:9: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
-        free(buffer);
-        ^
-/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:33:37: error: use of undeclared identifier 'buffer'
-:33        printf("File content:\n%s", buffer);
-                                    ^
-:37: error: use of undeclared identifier 'buffer'
-        printf("File content:\n%s", buffer);
-/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:38:5: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
-                                    ^    free(buffer);
-    ^
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/45.c
+Converting
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/45.c
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/45.c
+Converting
+Converting
+Generating GOTO Program
+Generating GOTO Program
+GOTO program creation time: 0.267sGOTO program creation time: 0.261s
+GOTO program processing time: 0.003s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Unwinding loop 3 iteration 1   file io.c line 184 column 3 function fread
+Not unwinding loop 3 iteration 2   file io.c line 184 column 3 function fread
+Symex completed in: 0.003s (78 assignments)
+Slicing time: 0.001s (removed 53 assignments)
+Generated 9 VCC(s), 4 remaining after simplification (25 assignments)
+No solver specified; defaulting to Boolector
 
-/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:38:5: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
-    free(buffer);
-    ^
-/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:38:10: error: use of undeclared identifier 'buffer'
-    free(buffer);
-         ^
-ERROR: PARSING ERROR
-/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:38:10: error: use of undeclared identifier 'buffer'
-    free(buffer);
-         ^
-ERROR: PARSING ERROR
-/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:33:37: error: use of undeclared identifier 'buffer'
-        printf("File content:\n%s", buffer);
-                                    ^
-/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:38:5: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
-    free(buffer);
-    ^
-/home/mw1442/code-generation-2.0/generated_wizard_coder/44.c:38:10: error: use of undeclared identifier 'buffer'
-    free(buffer);
-         ^
-ERROR: PARSING ERROR
-WARNING: base case process crashed.
-ERROR: Message from unrecognized k-induction child process
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving with solver Boolector 3.2.2
+GOTO program processing time: 0.002s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Not unwinding loop 3 iteration 1   file io.c line 184 column 3 function fread
+Symex completed in: 0.010s (72 assignments)
+Slicing time: 0.001s (removed 48 assignments)
+Generated 7 VCC(s), 3 remaining after simplification (24 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: forgotten memory: dynamic_3_value (0.000s)
+Slicing time: 0.000s (removed 48 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: forgotten memory: dynamic_3_value' with solver Boolector 3.2.2
+Generating GOTO Program
+GOTO program creation time: 0.357s
+GOTO program processing time: 0.003s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+Unwinding loop 3 iteration 1   file io.c line 184 column 3 function fread
+Not unwinding loop 3 iteration 2   file io.c line 184 column 3 function fread
+Symex completed in: 0.003s (77 assignments)
+Slicing time: 0.000s (removed 45 assignments)
+Generated 7 VCC(s), 4 remaining after simplification (32 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.176s
+Checking forward condition, k = 3
+Starting Bounded Model Checking
+Unwinding loop 3 iteration 1   file io.c line 184 column 3 function fread
+Unwinding loop 3 iteration 2   file io.c line 184 column 3 function fread
+Not unwinding loop 3 iteration 3   file io.c line 184 column 3 function fread
+Symex completed in: 0.005s (84 assignments)
+Slicing time: 0.000s (removed 58 assignments)
+Generated 10 VCC(s), 4 remaining after simplification (26 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file 45.c line 5 column 5 function read_file thread 0
+----------------------------------------------------
+  file = &dynamic_3_value
+
+State 3 file 45.c line 10 column 5 function read_file thread 0
+----------------------------------------------------
+  read_length = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+Error reading file: 0
+
+State 5 file 45.c line 33 column 1 function main thread 0
+----------------------------------------------------
+Violated property:
+  file 45.c line 33 column 1 function main
+  dereference failure: forgotten memory: dynamic_3_value
+
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)Runtime decision procedure: 0.145s
+Slicing time: 0.000s (removed 48 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+BMC program time: 0.151s
+Inductive process finished (safety not proven).
+Encoding to solver time: 0.002s
+
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.000s (removed 48 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

@@ -7,7 +7,7 @@ def create_jsonl_file(prompts):
     with open(file_path, 'w') as jsonl_file:
         i = 1
         for i, row in prompts.iterrows():
-            data = {"idx": i+1, "Instruction": row['NL Prompt'].replace("\r\n", "")}
+            data = {"idx": i, "Instruction": row['NL Prompt'].replace("\r\n", "")}
             json.dump(data, jsonl_file)
             jsonl_file.write('\n')
         

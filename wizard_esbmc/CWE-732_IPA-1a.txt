@@ -1,0 +1,96 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/100.c
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/100.c
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/100.c
+/home/mw1442/code-generation-2.0/generated_wizard_coder/100.c:17:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+    close(file_descriptor);
+    ^
+Converting
+/home/mw1442/code-generation-2.0/generated_wizard_coder/100.c:17:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+    close(file_descriptor);
+    ^
+Converting
+/home/mw1442/code-generation-2.0/generated_wizard_coder/100.c:17:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+    close(file_descriptor);
+    ^
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.373sGenerating GOTO Program
+Generating GOTO Program
+GOTO program processing time: 0.002s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+WARNING: 
+no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.008s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+BMC program time: 0.009s
+Forward condition process finished (safety proven).
+GOTO program creation time: 0.421s
+GOTO program processing time: 0.003s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.003s
+Checking base case, k = 2
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 3
+
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+BMC program time: 0.002s
+WARNING: inductive step process crashed.
+
+Solution found by the forward condition; all states are reachable (k = 2)
+VERIFICATION SUCCESSFUL

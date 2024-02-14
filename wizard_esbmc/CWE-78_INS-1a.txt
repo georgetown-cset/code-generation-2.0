@@ -1,0 +1,96 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/108.c
+/home/mw1442/code-generation-2.0/generated_wizard_coder/108.c:11:40: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    system(sprintf("getent passwd %s", username));
+                                       ^~~~~~~~
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/108.c
+/home/mw1442/code-generation-2.0/generated_wizard_coder/108.c:11:40: note: treat the string as an argument to avoid this
+    system(sprintf("getent passwd %s", username));
+                                       ^
+                                       "%s", 
+/home/mw1442/code-generation-2.0/generated_wizard_coder/108.c:11:12: warning: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+    system(sprintf("getent passwd %s", username));
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/esbmc.6413-951c-8eb3/headers/stdlib.h:34:25: note: passing argument to parameter 'command' here
+int system(const char * command);
+                        ^
+Converting
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/108.c
+/home/mw1442/code-generation-2.0/generated_wizard_coder/108.c:11:40: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    system(sprintf("getent passwd %s", username));
+                                       ^~~~~~~~
+/home/mw1442/code-generation-2.0/generated_wizard_coder/108.c:11:40: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    system(sprintf("getent passwd %s", username));
+                                       ^~~~~~~~
+/home/mw1442/code-generation-2.0/generated_wizard_coder/108.c:11:40: note: treat the string as an argument to avoid this
+    system(sprintf("getent passwd %s", username));
+                                       ^
+                                       "%s", 
+/home/mw1442/code-generation-2.0/generated_wizard_coder/108.c:11:12: warning: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+    system(sprintf("getent passwd %s", username));
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/esbmc.ffd2-79f1-58be/headers/stdlib.h:34:25: note: passing argument to parameter 'command' here
+int system(const char * command);
+                        ^
+Converting
+/home/mw1442/code-generation-2.0/generated_wizard_coder/108.c:11:40: note: treat the string as an argument to avoid this
+    system(sprintf("getent passwd %s", username));
+                                       ^
+                                       "%s", 
+/home/mw1442/code-generation-2.0/generated_wizard_coder/108.c:11:12: warning: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+    system(sprintf("getent passwd %s", username));
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/esbmc.96d7-3a4f-66c5/headers/stdlib.h:34:25: note: passing argument to parameter 'command' here
+int system(const char * command);
+                        ^
+Converting
+Generating GOTO Program
+Generating GOTO Program
+GOTO program creation time: 0.286s
+GOTO program processing time: 0.003s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+WARNING: no body for function system
+Symex completed in: 0.001s (19 assignments)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.001s
+Inductive process finished (safety not proven).
+GOTO program creation time: 0.305s
+GOTO program processing time: 0.004s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+WARNING: no body for function system
+Symex completed in: 0.001s (19 assignments)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (3 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim buffer overflow on scanf (0.000s)
+Slicing time: 0.000s (removed 16 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'buffer overflow on scanf' with solver Boolector 3.2.2
+
+[Counterexample]
+
+Enter username: 
+
+State 2 file 108.c line 8 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file 108.c line 8 column 5 function main
+  buffer overflow on scanf
+  0
+
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

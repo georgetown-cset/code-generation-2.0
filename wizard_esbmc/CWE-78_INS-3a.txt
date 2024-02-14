@@ -1,0 +1,85 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/114.c
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/114.c
+Converting
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/114.c
+Converting
+Converting
+Generating GOTO Program
+Generating GOTO Program
+GOTO program creation time: 0.282s
+GOTO program processing time: 0.002s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+GOTO program creation time: 0.284sWARNING: no body for function system
+Symex completed in: 0.002s (26 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 6 VCC(s), 5 remaining after simplification (11 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+
+GOTO program processing time: 0.002s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+WARNING: no body for function system
+Symex completed in: 0.002s (26 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 6 VCC(s), 5 remaining after simplification (11 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: forgotten memory: dynamic_2_array (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: forgotten memory: dynamic_2_array' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim buffer overflow on scanf (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmeticRuntime decision procedure: 0.027s
+
+Encoding to solver time: 0.001s
+Solving claim 'buffer overflow on scanf' with solver Boolector 3.2.2
+Inductive process finished (safety not proven).
+
+[Counterexample]
+
+
+State 1 file 114.c line 6 column 5 function main thread 0
+----------------------------------------------------
+  command = 0
+Enter the command to execute: 
+
+State 3 file 114.c line 10 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file 114.c line 10 column 5 function main
+  buffer overflow on scanf
+  0
+
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

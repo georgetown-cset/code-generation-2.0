@@ -2,65 +2,117 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/15.c
-Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/15.c
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/16.c
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/16.c
+/home/mw1442/code-generation-2.0/generated_wizard_coder/16.c:7:42: warning: sizeof on array function parameter will return size of 'int *' instead of 'int []' [-Wsizeof-array-argument]
+    else if (input >= 0 && input < sizeof(arr) / sizeof(arr[0])) {
+                                         ^
+/home/mw1442/code-generation-2.0/generated_wizard_coder/16.c:3:29: note: declared here
+int getValue(int input, int arr[]) {
+                            ^
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/16.c
+/home/mw1442/code-generation-2.0/generated_wizard_coder/16.c:7:48: warning: 'sizeof (arr)' will return the size of the pointer, not the array itself [-Wsizeof-pointer-div]
+    else if (input >= 0 && input < sizeof(arr) / sizeof(arr[0])) {
+                                   ~~~~~~~~~~~ ^
+/home/mw1442/code-generation-2.0/generated_wizard_coder/16.c:3:29: note: pointer 'arr' declared here
+int getValue(int input, int arr[]) {
+                            ^
 Converting
-Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/15.c
+/home/mw1442/code-generation-2.0/generated_wizard_coder/16.c:7:42: warning: sizeof on array function parameter will return size of 'int *' instead of 'int []' [-Wsizeof-array-argument]
+    else if (input >= 0 && input < sizeof(arr) / sizeof(arr[0])) {
+                                         ^
+/home/mw1442/code-generation-2.0/generated_wizard_coder/16.c:3:29: note: declared here
+int getValue(int input, int arr[]) {
+                            ^
+/home/mw1442/code-generation-2.0/generated_wizard_coder/16.c:7:48: warning: 'sizeof (arr)' will return the size of the pointer, not the array itself [-Wsizeof-pointer-div]
+    else if (input >= 0 && input < sizeof(arr) / sizeof(arr[0])) {
+                                   ~~~~~~~~~~~ ^
+/home/mw1442/code-generation-2.0/generated_wizard_coder/16.c:3:29: note: pointer 'arr' declared here
+int getValue(int input, int arr[]) {
+                            ^
 Converting
+/home/mw1442/code-generation-2.0/generated_wizard_coder/16.c:7:42: warning: sizeof on array function parameter will return size of 'int *' instead of 'int []' [-Wsizeof-array-argument]
+    else if (input >= 0 && input < sizeof(arr) / sizeof(arr[0])) {
+                                         ^
+/home/mw1442/code-generation-2.0/generated_wizard_coder/16.c:3:29: note: declared here
+int getValue(int input, int arr[]) {
+                            ^
+/home/mw1442/code-generation-2.0/generated_wizard_coder/16.c:7:48: warning: 'sizeof (arr)' will return the size of the pointer, not the array itself [-Wsizeof-pointer-div]
+    else if (input >= 0 && input < sizeof(arr) / sizeof(arr[0])) {
+                                   ~~~~~~~~~~~ ^
+/home/mw1442/code-generation-2.0/generated_wizard_coder/16.c:3:29: note: pointer 'arr' declared here
+int getValue(int input, int arr[]) {
+                            ^
 Converting
 Generating GOTO Program
-GOTO program creation time: 0.230s
+GOTO program creation time: 0.240s
 GOTO program processing time: 0.001s
 Checking inductive step, k = 2
 Starting Bounded Model Checking
-Symex completed in: 0.001s (25 assignments)
-Slicing time: 0.000s (removed 17 assignments)
-Generated 3 VCC(s), 3 remaining after simplification (8 assignments)
+Symex completed in: 0.003s (33 assignments)
+Slicing time: 0.000s (removed 21 assignments)
+Generated 6 VCC(s), 6 remaining after simplification (12 assignments)
 No solver specified; defaulting to Boolector
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
+Encoding to solver time: 0.001s
 Solving with solver Boolector 3.2.2
-Runtime decision procedure: 0.001s
-Inductive process finished (safety not proven).
 Generating GOTO Program
-GOTO program creation time: 0.300s
-GOTO program processing time: 0.001s
+GOTO program creation time: 0.267s
+GOTO program processing time: 0.000s
 Checking forward condition, k = 2
 Starting Bounded Model Checking
-Symex completed in: 0.005s (24 assignments)
-Slicing time: 0.000s (removed 17 assignments)
-Generated 2 VCC(s), 2 remaining after simplification (7 assignments)
+Symex completed in: 0.003s (32 assignments)
+Slicing time: 0.000s (removed 21 assignments)
+Generated 5 VCC(s), 5 remaining after simplification (11 assignments)
 No solver specified; defaulting to Boolector
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
+Encoding to solver time: 0.001s
 Solving with solver Boolector 3.2.2
-Runtime decision procedure: 0.001s
-BMC program time: 0.007s
+Runtime decision procedure: 0.005s
+BMC program time: 0.010s
 Forward condition process finished (safety proven).
 Generating GOTO Program
-GOTO program creation time: 0.338s
+GOTO program creation time: 0.318s
 GOTO program processing time: 0.000s
 Checking base case, k = 1
 
 Starting Bounded Model Checking
-Symex completed in: 0.001s (25 assignments)
-Slicing time: 0.000s (removed 17 assignments)
-Generated 3 VCC(s), 3 remaining after simplification (8 assignments)
+Symex completed in: 0.003s (33 assignments)
+Slicing time: 0.000s (removed 21 assignments)
+Generated 6 VCC(s), 6 remaining after simplification (12 assignments)
 No solver specified; defaulting to Boolector
-Slicing for Claim array bounds violated: array `id_sequence' upper bound (0.000s)
-Slicing time: 0.000s (removed 17 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'array bounds violated: array `id_sequence' upper bound' with solver Boolector 3.2.2
-Slicing for Claim array bounds violated: array `id_sequence' lower bound (0.000s)
-Slicing time: 0.000s (removed 17 assignments)
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 21 assignments)
 No solver specified; defaulting to Boolector
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
 Encoding to solver time: 0.000s
-Solving claim 'array bounds violated: array `id_sequence' lower bound' with solver Boolector 3.2.2
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: Incorrect alignment when accessing data object (0.000s)
+Slicing time: 0.000s (removed 21 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: Incorrect alignment when accessing data object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 21 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 21 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 21 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
 Slicing for Claim buffer overflow on scanf (0.000s)
-Slicing time: 0.000s (removed 17 assignments)
+Slicing time: 0.000s (removed 21 assignments)
 No solver specified; defaulting to Boolector
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
 Encoding to solver time: 0.000s
@@ -68,15 +120,16 @@ Solving claim 'buffer overflow on scanf' with solver Boolector 3.2.2
 
 [Counterexample]
 
-Enter an index value: 
+Enter an integer: 
 
-State 2 file 15.c line 16 column 5 function main thread 0
+State 2 file 16.c line 19 column 5 function main thread 0
 ----------------------------------------------------
 Violated property:
-  file 15.c line 16 column 5 function main
+  file 16.c line 19 column 5 function main
   buffer overflow on scanf
   0
 
+WARNING: inductive step process crashed.
 
 Bug found by the base case (k = 1)
 VERIFICATION FAILED

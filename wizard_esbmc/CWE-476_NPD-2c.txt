@@ -1,0 +1,203 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/78.c
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/78.c
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/78.cConverting
+Converting
+
+Converting
+Generating GOTO Program
+Generating GOTO Program
+GOTO program creation time: 0.256s
+GOTO program processing time: 0.002s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Symex completed in: 0.002s (33 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 20 VCC(s), 11 remaining after simplification (18 assignments)
+No solver specified; defaulting to Boolector
+GOTO program creation time: 0.277s
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+GOTO program processing time: 0.002s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Symex completed in: 0.002s (33 assignments)
+Slicing time: 0.001s (removed 15 assignments)
+Generated 20 VCC(s), 11 remaining after simplification (18 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: forgotten memory: dynamic_1_value (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: forgotten memory: dynamic_1_value' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file 78.c line 11 column 5 function main thread 0
+----------------------------------------------------
+  newPerson = ( struct Person *)0
+Age: 0
+
+
+State 3 file 78.c line 19 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file 78.c line 19 column 5 function main
+  dereference failure: NULL pointer
+
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+Generating GOTO Program
+Runtime decision procedure: 0.067s
+Checking forward condition, k = 3
+Starting Bounded Model Checking
+Symex completed in: 0.002s (33 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 20 VCC(s), 11 remaining after simplification (18 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+GOTO program creation time: 0.361s
+GOTO program processing time: 0.002s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+Symex completed in: 0.002s (33 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 20 VCC(s), 11 remaining after simplification (18 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file 78.c line 11 column 5 function main thread 0
+----------------------------------------------------
+  newPerson = ( struct Person *)0
+
+State 2 file 78.c line 18 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file 78.c line 18 column 5 function main
+  dereference failure: NULL pointer
+
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Runtime decision procedure: 0.035s
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Inductive process finished (safety not proven).
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+Runtime decision procedure: 0.069s
+Checking forward condition, k = 4
+Starting Bounded Model Checking
+Symex completed in: 0.002s (33 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 20 VCC(s), 11 remaining after simplification (18 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file 78.c line 11 column 5 function main thread 0
+----------------------------------------------------
+  newPerson = ( struct Person *)0
+
+State 2 file 78.c line 15 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file 78.c line 15 column 5 function main
+  dereference failure: NULL pointer
+
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+Runtime decision procedure: 0.035s
+Checking forward condition, k = 5
+Starting Bounded Model Checking
+Symex completed in: 0.002s (33 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 20 VCC(s), 11 remaining after simplification (18 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file 78.c line 11 column 5 function main thread 0
+----------------------------------------------------
+  newPerson = ( struct Person *)0
+
+State 2 file 78.c line 14 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file 78.c line 14 column 5 function main
+  dereference failure: NULL pointer
+
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

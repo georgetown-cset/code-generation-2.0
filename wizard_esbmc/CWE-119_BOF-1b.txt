@@ -2,1353 +2,873 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/1.c
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/2.c
 Converting
-Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/1.c
-Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/1.c
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/2.c
+Parsing /home/mw1442/code-generation-2.0/generated_wizard_coder/2.c
 Converting
 Converting
 Generating GOTO Program
-GOTO program creation time: 0.241s
-GOTO program processing time: 0.000s
+Generating GOTO Program
+GOTO program creation time: 0.273s
+GOTO program creation time: 0.274s
+GOTO program processing time: 0.002s
 Checking inductive step, k = 2
 Starting Bounded Model Checking
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Not unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.003s (35 assignments)
-Slicing time: 0.001s (removed 20 assignments)
-Generated 3 VCC(s), 3 remaining after simplification (15 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.002s
-Solving with solver Boolector 3.2.2
-Generating GOTO Program
-GOTO program creation time: 0.268s
-GOTO program processing time: 0.000s
+GOTO program processing time: 0.003sUnwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+
 Checking base case, k = 1
 
 Starting Bounded Model Checking
-Not unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.002s (20 assignments)
-Slicing time: 0.000s (removed 18 assignments)
-Generated 3 VCC(s), 1 remaining after simplification (2 assignments)
-No solver specified; defaulting to Boolector
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 18 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-BMC program time: 0.004s
+Not unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlenNot unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+
+Symex completed in: 0.001s (15 assignments)
+Slicing time: 0.000s (removed 14 assignments)
+Generated 1 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.001s
 Checking base case, k = 2
 
 Starting Bounded Model Checking
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Not unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.002s (24 assignments)
-Slicing time: 0.000s (removed 21 assignments)
-Generated 6 VCC(s), 2 remaining after simplification (3 assignments)
+Unwinding loop 26 iteration 1   file 2.c line 8 column 5 function copy_memory
+Not unwinding loop 26 iteration 2   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Symex completed in: 0.010s (82 assignments)
+Not unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Slicing time: 0.001s (removed 42 assignments)
+Symex completed in: 0.002s (16 assignments)Generated 7 VCC(s), 7 remaining after simplification (40 assignments)
 No solver specified; defaulting to Boolector
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 21 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 21 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-BMC program time: 0.004s
+
+Slicing time: 0.000s (removed 15 assignments)
+Generated 2 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.002s
 Checking base case, k = 3
 
 Starting Bounded Model Checking
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Not unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.003s (28 assignments)
-Slicing time: 0.000s (removed 24 assignments)
-Generated 9 VCC(s), 3 remaining after simplification (4 assignments)
-No solver specified; defaulting to Boolector
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 24 assignments)
-No solver specified; defaulting to Boolector
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.001s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 24 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 24 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-BMC program time: 0.007s
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Symex completed in: 0.002s (17 assignments)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 3 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.002s
 Checking base case, k = 4
 
 Starting Bounded Model Checking
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Not unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.004s (32 assignments)
-Slicing time: 0.000s (removed 27 assignments)
-Generated 12 VCC(s), 4 remaining after simplification (5 assignments)
-No solver specified; defaulting to Boolector
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 27 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 27 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 27 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 27 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-BMC program time: 0.009s
+Encoding to solver time: 0.002sUnwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+
+Solving with solver Boolector 3.2.2
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Symex completed in: 0.011s (18 assignments)
+Slicing time: 0.000s (removed 17 assignments)
+Generated 4 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.012s
 Checking base case, k = 5
 
 Starting Bounded Model Checking
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
-Not unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.005s (36 assignments)
-Slicing time: 0.000s (removed 30 assignments)
-Generated 15 VCC(s), 5 remaining after simplification (6 assignments)
-No solver specified; defaulting to Boolector
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 30 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 30 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 30 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 30 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 30 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-BMC program time: 0.011s
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Symex completed in: 0.003s (19 assignments)
+Slicing time: 0.000s (removed 18 assignments)
+Generated 5 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.003s
 Checking base case, k = 6
 
 Starting Bounded Model Checking
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-Not unwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.005s (40 assignments)
-Slicing time: 0.001s (removed 33 assignments)
-Generated 18 VCC(s), 6 remaining after simplification (7 assignments)
-No solver specified; defaulting to Boolector
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 33 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 33 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 33 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 33 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 33 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 33 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-BMC program time: 0.011s
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Symex completed in: 0.004s (20 assignments)
+Slicing time: 0.000s (removed 19 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.004s
 Checking base case, k = 7
 
 Starting Bounded Model Checking
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
-Not unwinding loop 4 iteration 7   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.006s (44 assignments)
-Slicing time: 0.000s (removed 36 assignments)
-Generated 21 VCC(s), 7 remaining after simplification (8 assignments)
-No solver specified; defaulting to Boolector
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 36 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 36 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 36 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 36 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 36 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 36 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 36 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-BMC program time: 0.013s
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Symex completed in: 0.005s (21 assignments)
+Slicing time: 0.000s (removed 20 assignments)
+Generated 7 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.005s
 Checking base case, k = 8
 
 Starting Bounded Model Checking
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 7   file 1.c line 4 column 5 function copy_memory
-Not unwinding loop 4 iteration 8   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.008s (48 assignments)
-Slicing time: 0.000s (removed 39 assignments)
-Generated 24 VCC(s), 8 remaining after simplification (9 assignments)
-No solver specified; defaulting to Boolector
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 39 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 39 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 39 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 39 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 39 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 39 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 39 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 39 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-BMC program time: 0.015s
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Symex completed in: 0.005s (22 assignments)
+Slicing time: 0.000s (removed 21 assignments)
+Generated 8 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.005s
 Checking base case, k = 9
 
 Starting Bounded Model Checking
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 7   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 8   file 1.c line 4 column 5 function copy_memory
-Not unwinding loop 4 iteration 9   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.008s (52 assignments)
-Slicing time: 0.000s (removed 42 assignments)
-Generated 27 VCC(s), 9 remaining after simplification (10 assignments)
-No solver specified; defaulting to Boolector
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 42 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 42 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 42 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 42 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 42 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 42 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 42 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 42 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 42 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-BMC program time: 0.016s
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Symex completed in: 0.005s (23 assignments)
+Slicing time: 0.000s (removed 22 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.005s
 Checking base case, k = 10
 
 Starting Bounded Model Checking
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Generating GOTO Program
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 7   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 8   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 9   file 1.c line 4 column 5 function copy_memory
-Not unwinding loop 4 iteration 10   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.010s (56 assignments)
-Slicing time: 0.000s (removed 45 assignments)
-Generated 30 VCC(s), 10 remaining after simplification (11 assignments)
-No solver specified; defaulting to Boolector
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 45 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 45 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 45 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 45 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 45 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 45 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.001s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 45 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 45 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 45 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 45 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-BMC program time: 0.020sGOTO program creation time: 0.379s
-
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Symex completed in: 0.007s (24 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.007s
 Checking base case, k = 11
 
 Starting Bounded Model Checking
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memoryGOTO program processing time: 0.005s
-
-Checking forward condition, k = 2
-Starting Bounded Model Checking
-Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
-Not unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.003s (24 assignments)
-Slicing time: 0.000s (removed 21 assignments)
-Generated 7 VCC(s), 3 remaining after simplification (3 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 7   file 1.c line 4 column 5 function copy_memory
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving with solver Boolector 3.2.2
-Runtime decision procedure: 0.000s
-Unwinding loop 4 iteration 8   file 1.c line 4 column 5 function copy_memory
-Checking forward condition, k = 3
-Starting Bounded Model Checking
-Unwinding loop 4 iteration 9   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 10   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Not unwinding loop 4 iteration 11   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.012s (60 assignments)
-Slicing time: 0.000s (removed 48 assignments)
-Generated 33 VCC(s), 11 remaining after simplification (12 assignments)
-No solver specified; defaulting to Boolector
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 48 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.001s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 48 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 48 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 48 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 48 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 48 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 48 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 48 assignments)
-No solver specified; defaulting to Boolector
-Not unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.011s (28 assignments)
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Symex completed in: 0.006s (25 assignments)
 Slicing time: 0.000s (removed 24 assignments)
-Generated 10 VCC(s), 4 remaining after simplification (4 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Slicing for Claim arithmetic overflow on add (0.000s)Encoding to solver time: 0.000s
-Solving with solver Boolector 3.2.2
-
-Slicing time: 0.000s (removed 48 assignments)
-No solver specified; defaulting to Boolector
-Runtime decision procedure: 0.001s
-Checking forward condition, k = 4
-Starting Bounded Model Checking
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 48 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-
-Slicing time: 0.001s (removed 48 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-BMC program time: 0.024s
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
+Generated 11 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.006s
 Checking base case, k = 12
 
 Starting Bounded Model Checking
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Not unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.004s (32 assignments)
-Slicing time: 0.000s (removed 27 assignments)
-Generated 13 VCC(s), 5 remaining after simplification (5 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving with solver Boolector 3.2.2
-Runtime decision procedure: 0.000s
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Checking forward condition, k = 5
-Starting Bounded Model Checking
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 7   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 8   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 9   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 10   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 11   file 1.c line 4 column 5 function copy_memory
-Not unwinding loop 4 iteration 12   file 1.c line 4 column 5 function copy_memoryUnwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-
-Symex completed in: 0.012s (64 assignments)
-Slicing time: 0.000s (removed 51 assignments)
-Generated 36 VCC(s), 12 remaining after simplification (13 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 51 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
-Slicing time: 0.001s (removed 51 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)Not unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-
-Symex completed in: 0.012s (36 assignments)
-Slicing time: 0.001s (removed 30 assignments)
-Generated 16 VCC(s), 6 remaining after simplification (6 assignments)
-No solver specified; defaulting to Boolector
-Slicing time: 0.001s (removed 51 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmeticEncoding remaining VCC(s) using bit-vector/floating-point arithmetic
-
-Encoding to solver time: 0.000sEncoding to solver time: 0.000s
-Solving with solver Boolector 3.2.2
-
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 51 assignments)
-No solver specified; defaulting to BoolectorRuntime decision procedure: 0.001s
-
-Checking forward condition, k = 6
-Starting Bounded Model Checking
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 51 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmeticUnwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 51 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 51 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 51 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 51 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 51 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 51 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Runtime decision procedure: 0.184s
-Slicing time: 0.000s (removed 51 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-BMC program time: 0.025s
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Symex completed in: 0.007s (26 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 12 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.007s
 Checking base case, k = 13
 
 Starting Bounded Model Checking
-Inductive process finished (safety not proven).
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-Not unwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.019s (40 assignments)
-Slicing time: 0.001s (removed 33 assignments)
-Generated 19 VCC(s), 7 remaining after simplification (7 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving with solver Boolector 3.2.2
-Runtime decision procedure: 0.000s
-Checking forward condition, k = 7
-Starting Bounded Model Checking
-Unwinding loop 4 iteration 7   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 8   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 9   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 10   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 11   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 12   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
-Not unwinding loop 4 iteration 13   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.023s (68 assignments)Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-
-Slicing time: 0.001s (removed 54 assignments)
-Generated 39 VCC(s), 13 remaining after simplification (14 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 54 assignments)
-No solver specified; defaulting to Boolector
-Not unwinding loop 4 iteration 7   file 1.c line 4 column 5 function copy_memory
-Encoding remaining VCC(s) using bit-vector/floating-point arithmeticSymex completed in: 0.011s (44 assignments)
-
-Encoding to solver time: 0.000s
-Slicing time: 0.000s (removed 36 assignments)
-Generated 22 VCC(s), 8 remaining after simplification (8 assignments)
-No solver specified; defaulting to Boolector
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 54 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving with solver Boolector 3.2.2
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Runtime decision procedure: 0.001sSlicing for Claim arithmetic overflow on add (0.000s)
-
-Slicing time: 0.000s (removed 54 assignments)
-No solver specified; defaulting to Boolector
-Checking forward condition, k = 8
-Starting Bounded Model Checking
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 54 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memoryEncoding remaining VCC(s) using bit-vector/floating-point arithmetic
-
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 54 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 54 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.001s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 54 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 54 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 54 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 54 assignments)Unwinding loop 4 iteration 7   file 1.c line 4 column 5 function copy_memory
-
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Not unwinding loop 4 iteration 8   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.008s (48 assignments)
-Slicing time: 0.000s (removed 54 assignments)
-No solver specified; defaulting to Boolector
-Slicing time: 0.000s (removed 39 assignments)
-Generated 25 VCC(s), 9 remaining after simplification (9 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Slicing for Claim arithmetic overflow on add (0.000s)
-Encoding to solver time: 0.000s
-Solving with solver Boolector 3.2.2Slicing time: 0.000s (removed 54 assignments)
-No solver specified; defaulting to Boolector
-
-Encoding remaining VCC(s) using bit-vector/floating-point arithmeticRuntime decision procedure: 0.001s
-
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Checking forward condition, k = 9Slicing for Claim arithmetic overflow on add (0.000s)
-
-Starting Bounded Model Checking
-Slicing time: 0.000s (removed 54 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-BMC program time: 0.038s
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Symex completed in: 0.007s (27 assignments)
+Slicing time: 0.000s (removed 26 assignments)
+Generated 13 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.007s
 Checking base case, k = 14
 
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
 Starting Bounded Model Checking
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memoryUnwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 26 iteration 1   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 2   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 3   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 4   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 5   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 6   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 7   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 8   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 9   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 10   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 11   file 2.c line 8 column 5 function copy_memory
+Generating GOTO ProgramUnwinding loop 26 iteration 12   file 2.c line 8 column 5 function copy_memory
 
-Unwinding loop 4 iteration 7   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 8   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
-Not unwinding loop 4 iteration 9   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.008s (52 assignments)
-Unwinding loop 4 iteration 7   file 1.c line 4 column 5 function copy_memory
-Slicing time: 0.001s (removed 42 assignments)
-Generated 28 VCC(s), 10 remaining after simplification (10 assignments)
+Unwinding loop 26 iteration 13   file 2.c line 8 column 5 function copy_memory
+Symex completed in: 0.023s (171 assignments)
+Slicing time: 0.001s (removed 154 assignments)
+Generated 55 VCC(s), 14 remaining after simplification (17 assignments)
 No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmeticUnwinding loop 4 iteration 8   file 1.c line 4 column 5 function copy_memory
-
-Encoding to solver time: 0.000s
-Solving with solver Boolector 3.2.2
-Runtime decision procedure: 0.000s
-Unwinding loop 4 iteration 9   file 1.c line 4 column 5 function copy_memory
-Checking forward condition, k = 10
-Starting Bounded Model Checking
-Unwinding loop 4 iteration 10   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 11   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 12   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 13   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
-Not unwinding loop 4 iteration 14   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.014s (72 assignments)
-Slicing time: 0.000s (removed 57 assignments)
-Generated 42 VCC(s), 14 remaining after simplification (15 assignments)
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 154 assignments)
 No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 57 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 57 assignments)Unwinding loop 4 iteration 7   file 1.c line 4 column 5 function copy_memory
-
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim VLA array size in bytes overflows address space size (0.000s)
+Slicing time: 0.000s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'VLA array size in bytes overflows address space size' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.001s)
+Slicing time: 0.000s (removed 154 assignments)
 No solver specified; defaulting to Boolector
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
 Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Unwinding loop 4 iteration 8   file 1.c line 4 column 5 function copy_memory
-Slicing time: 0.000s (removed 57 assignments)
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 154 assignments)
 No solver specified; defaulting to Boolector
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Unwinding loop 4 iteration 9   file 1.c line 4 column 5 function copy_memory
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 57 assignments)
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 154 assignments)
 No solver specified; defaulting to Boolector
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Not unwinding loop 4 iteration 10   file 1.c line 4 column 5 function copy_memoryEncoding to solver time: 0.000s
-
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Symex completed in: 0.010s (56 assignments)
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 45 assignments)Slicing time: 0.000s (removed 57 assignments)
-No solver specified; defaulting to Boolector
-
-Generated 31 VCC(s), 11 remaining after simplification (11 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000sEncoding remaining VCC(s) using bit-vector/floating-point arithmetic
-
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)Encoding to solver time: 0.000s
-Solving with solver Boolector 3.2.2
-
-Slicing time: 0.000s (removed 57 assignments)
-No solver specified; defaulting to Boolector
-Runtime decision procedure: 0.000s
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Checking forward condition, k = 11
-Starting Bounded Model Checking
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 57 assignments)
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 154 assignments)
 No solver specified; defaulting to Boolector
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
 Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Slicing time: 0.000s (removed 57 assignments)
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 154 assignments)
 No solver specified; defaulting to Boolector
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
 Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memorySlicing for Claim arithmetic overflow on add (0.000s)
-
-Slicing time: 0.000s (removed 57 assignments)
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 154 assignments)
 No solver specified; defaulting to Boolector
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
 Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memorySlicing for Claim arithmetic overflow on add (0.000s)
-
-Slicing time: 0.000s (removed 57 assignments)
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 154 assignments)
 No solver specified; defaulting to Boolector
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
 Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 57 assignments)
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 154 assignments)
 No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 57 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 57 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 7   file 1.c line 4 column 5 function copy_memory
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 57 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 8   file 1.c line 4 column 5 function copy_memory
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-BMC program time: 0.030s
-Unwinding loop 4 iteration 9   file 1.c line 4 column 5 function copy_memory
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+BMC program time: 0.058s
 Checking base case, k = 15
 
 Starting Bounded Model Checking
-Unwinding loop 4 iteration 10   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Not unwinding loop 4 iteration 11   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.010s (60 assignments)
-Slicing time: 0.001s (removed 48 assignments)
-Generated 34 VCC(s), 12 remaining after simplification (12 assignments)
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlenGOTO program creation time: 0.422s
+
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 26 iteration 1   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 2   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 3   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 4   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 5   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 6   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 7   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 8   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 9   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 10   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 11   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 12   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 13   file 2.c line 8 column 5 function copy_memory
+Symex completed in: 0.022s (171 assignments)
+Slicing time: 0.001s (removed 154 assignments)
+Generated 55 VCC(s), 14 remaining after simplification (17 assignments)
 No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
+GOTO program processing time: 0.011s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Slicing time: 0.001s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Not unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Symex completed in: 0.002s (16 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to BoolectorEncoding remaining VCC(s) using bit-vector/floating-point arithmetic
+
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Runtime decision procedure: 0.001s
+Checking forward condition, k = 3
+Starting Bounded Model Checking
+Slicing for Claim VLA array size in bytes overflows address space size (0.000s)
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Slicing time: 0.001s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Not unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Symex completed in: 0.002s (17 assignments)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 4 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding to solver time: 0.000sEncoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+
+Solving with solver Boolector 3.2.2
+Solving claim 'VLA array size in bytes overflows address space size' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Runtime decision procedure: 0.001s
+Checking forward condition, k = 4
+Starting Bounded Model Checking
+Slicing time: 0.000s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Slicing time: 0.000s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Not unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Symex completed in: 0.010s (18 assignments)
+Slicing time: 0.001s (removed 17 assignments)
+Generated 5 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Runtime decision procedure: 0.000s
+Checking forward condition, k = 5
+Starting Bounded Model Checking
+Slicing time: 0.001s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmeticUnwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Slicing time: 0.000s (removed 154 assignments)Not unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+
+No solver specified; defaulting to Boolector
+Symex completed in: 0.003s (19 assignments)
+Slicing time: 0.000s (removed 18 assignments)
+Generated 6 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
 Encoding to solver time: 0.000s
 Solving with solver Boolector 3.2.2
 Runtime decision procedure: 0.000s
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Checking forward condition, k = 12
+Checking forward condition, k = 6
 Starting Bounded Model Checking
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 7   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 8   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 9   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 10   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 7   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 11   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 8   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 12   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 9   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 13   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 10   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 14   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.013s (74 assignments)
-Slicing time: 0.000s (removed 59 assignments)Unwinding loop 4 iteration 11   file 1.c line 4 column 5 function copy_memory
-Generated 42 VCC(s), 14 remaining after simplification (15 assignments)
-No solver specified; defaulting to Boolector
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
 
-Slicing for Claim arithmetic overflow on add (0.000s)
-Not unwinding loop 4 iteration 12   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.011s (64 assignments)
-Slicing time: 0.000s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Slicing time: 0.000s (removed 51 assignments)
-Generated 37 VCC(s), 13 remaining after simplification (13 assignments)
+Slicing time: 0.001s (removed 154 assignments)
 No solver specified; defaulting to Boolector
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 154 assignments)
+No solver specified; defaulting to Boolector
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
 Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Encoding to solver time: 0.000s
-Solving with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 59 assignments)
-Runtime decision procedure: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 154 assignments)
 No solver specified; defaulting to Boolector
-Checking forward condition, k = 13
-Starting Bounded Model Checking
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
 Encoding to solver time: 0.001s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 59 assignments)
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 154 assignments)
 No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Slicing time: 0.001s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
 Encoding to solver time: 0.001s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlenSolving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
 
-Slicing time: 0.000s (removed 59 assignments)
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Slicing time: 0.000s (removed 154 assignments)
 No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Unwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
-Encoding to solver time: 0.001s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Unwinding loop 4 iteration 7   file 1.c line 4 column 5 function copy_memory
-Slicing time: 0.001s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Unwinding loop 4 iteration 8   file 1.c line 4 column 5 function copy_memory
-Encoding to solver time: 0.001s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 9   file 1.c line 4 column 5 function copy_memory
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
 Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Unwinding loop 4 iteration 10   file 1.c line 4 column 5 function copy_memory
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 59 assignments)
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Not unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Symex completed in: 0.011s (20 assignments)
+BMC program time: 0.057s
+Slicing time: 0.001s (removed 19 assignments)
+Generated 7 VCC(s), 1 remaining after simplification (1 assignments)
 No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmeticUnwinding loop 4 iteration 11   file 1.c line 4 column 5 function copy_memory
-
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Unwinding loop 4 iteration 12   file 1.c line 4 column 5 function copy_memory
-Slicing time: 0.001s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Not unwinding loop 4 iteration 13   file 1.c line 4 column 5 function copy_memory
-Symex completed in: 0.014s (68 assignments)
-Encoding to solver time: 0.001s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing time: 0.000s (removed 54 assignments)
-Generated 40 VCC(s), 14 remaining after simplification (14 assignments)Slicing for Claim arithmetic overflow on add (0.000s)
-
-No solver specified; defaulting to Boolector
-Slicing time: 0.000s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.001s
-Solving with solver Boolector 3.2.2
-Encoding to solver time: 0.001s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)Runtime decision procedure: 0.000s
-
-Slicing time: 0.000s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Checking forward condition, k = 14
-Starting Bounded Model Checking
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.001s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-BMC program time: 0.037s
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
 Checking base case, k = 16
 
 Starting Bounded Model Checking
-Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memoryUnwinding loop 4 iteration 7   file 1.c line 4 column 5 function copy_memory
-
-Unwinding loop 4 iteration 8   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memoryUnwinding loop 4 iteration 9   file 1.c line 4 column 5 function copy_memory
-
-Unwinding loop 4 iteration 10   file 1.c line 4 column 5 function copy_memoryUnwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-
-Unwinding loop 4 iteration 11   file 1.c line 4 column 5 function copy_memoryUnwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
-
-Unwinding loop 4 iteration 12   file 1.c line 4 column 5 function copy_memoryUnwinding loop 4 iteration 7   file 1.c line 4 column 5 function copy_memory
-
-Unwinding loop 4 iteration 13   file 1.c line 4 column 5 function copy_memoryUnwinding loop 4 iteration 8   file 1.c line 4 column 5 function copy_memory
-
-Not unwinding loop 4 iteration 14   file 1.c line 4 column 5 function copy_memoryUnwinding loop 4 iteration 9   file 1.c line 4 column 5 function copy_memory
-
-Symex completed in: 0.013s (72 assignments)
-Slicing time: 0.000s (removed 57 assignments)
-Generated 43 VCC(s), 15 remaining after simplification (15 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 10   file 1.c line 4 column 5 function copy_memory
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
 Encoding to solver time: 0.000s
 Solving with solver Boolector 3.2.2
-Runtime decision procedure: 0.001sUnwinding loop 4 iteration 11   file 1.c line 4 column 5 function copy_memory
-
-Checking forward condition, k = 15
+Runtime decision procedure: 0.001s
+Checking forward condition, k = 7
 Starting Bounded Model Checking
-Unwinding loop 4 iteration 12   file 1.c line 4 column 5 function copy_memory
-Unwinding loop 4 iteration 1   file 1.c line 4 column 5 function copy_memoryUnwinding loop 4 iteration 13   file 1.c line 4 column 5 function copy_memory
-
-Unwinding loop 4 iteration 14   file 1.c line 4 column 5 function copy_memoryUnwinding loop 4 iteration 2   file 1.c line 4 column 5 function copy_memory
-
-Symex completed in: 0.014s (74 assignments)
-Slicing time: 0.000s (removed 59 assignments)
-Generated 42 VCC(s), 14 remaining after simplification (15 assignments)
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Symex completed in: 0.004s (21 assignments)
+Slicing time: 0.000s (removed 20 assignments)
+Generated 8 VCC(s), 1 remaining after simplification (1 assignments)
 No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 3   file 1.c line 4 column 5 function copy_memory
-Slicing for Claim arithmetic overflow on add (0.000s)
-Unwinding loop 4 iteration 4   file 1.c line 4 column 5 function copy_memory
-Slicing time: 0.000s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Unwinding loop 4 iteration 5   file 1.c line 4 column 5 function copy_memory
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 6   file 1.c line 4 column 5 function copy_memory
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.001s
-Unwinding loop 4 iteration 7   file 1.c line 4 column 5 function copy_memory
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 8   file 1.c line 4 column 5 function copy_memory
 Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
 Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Unwinding loop 4 iteration 9   file 1.c line 4 column 5 function copy_memory
-Slicing time: 0.000s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Unwinding loop 4 iteration 10   file 1.c line 4 column 5 function copy_memory
-Encoding to solver time: 0.001s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 11   file 1.c line 4 column 5 function copy_memory
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Unwinding loop 4 iteration 12   file 1.c line 4 column 5 function copy_memory
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Unwinding loop 4 iteration 13   file 1.c line 4 column 5 function copy_memory
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Unwinding loop 4 iteration 14   file 1.c line 4 column 5 function copy_memory
-Slicing time: 0.000s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Symex completed in: 0.014s (74 assignments)
-Slicing time: 0.000s (removed 59 assignments)Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-
-Generated 42 VCC(s), 14 remaining after simplification (15 assignments)
-No solver specified; defaulting to Boolector
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Encoding to solver time: 0.000sEncoding remaining VCC(s) using bit-vector/floating-point arithmetic
-
 Solving with solver Boolector 3.2.2
 Runtime decision procedure: 0.000s
-BMC program time: 0.015s
-Encoding to solver time: 0.001s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2Forward condition process finished (safety proven).
+Checking forward condition, k = 8
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Symex completed in: 0.004s (22 assignments)
+Slicing time: 0.000s (removed 21 assignments)
+Generated 9 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+Checking forward condition, k = 9
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
 
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.001s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.000s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.000s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.001s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-Slicing for Claim arithmetic overflow on add (0.000s)
-Slicing time: 0.001s (removed 59 assignments)
-No solver specified; defaulting to Boolector
-Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
-Encoding to solver time: 0.001s
-Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
-BMC program time: 0.036s
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
 
-Solution found by the forward condition; all states are reachable (k = 15)
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlenUnwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Symex completed in: 0.005s (23 assignments)
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Slicing time: 0.000s (removed 22 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Runtime decision procedure: 0.000s
+Checking forward condition, k = 10
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Symex completed in: 0.006s (24 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 11 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+Checking forward condition, k = 11
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 26 iteration 1   file 2.c line 8 column 5 function copy_memory
+Not unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Symex completed in: 0.007s (25 assignments)
+Unwinding loop 26 iteration 2   file 2.c line 8 column 5 function copy_memory
+Slicing time: 0.000s (removed 24 assignments)
+Generated 12 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 26 iteration 3   file 2.c line 8 column 5 function copy_memory
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Unwinding loop 26 iteration 4   file 2.c line 8 column 5 function copy_memory
+Runtime decision procedure: 0.000s
+Unwinding loop 26 iteration 5   file 2.c line 8 column 5 function copy_memory
+Checking forward condition, k = 12
+Starting Bounded Model Checking
+Unwinding loop 26 iteration 6   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlenUnwinding loop 26 iteration 7   file 2.c line 8 column 5 function copy_memory
+
+Unwinding loop 26 iteration 8   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 26 iteration 9   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Symex completed in: 0.006s (26 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 13 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.001s
+Checking forward condition, k = 13
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 26 iteration 10   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 26 iteration 11   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 26 iteration 12   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 13   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Symex completed in: 0.047s (171 assignments)
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Slicing time: 0.000s (removed 154 assignments)
+Generated 55 VCC(s), 14 remaining after simplification (17 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Slicing time: 0.001s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Not unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Symex completed in: 0.007s (27 assignments)
+Slicing for Claim VLA array size in bytes overflows address space size (0.000s)
+Slicing time: 0.001s (removed 26 assignments)
+Generated 14 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmeticSlicing time: 0.000s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Runtime decision procedure: 0.001s
+Checking forward condition, k = 14
+Starting Bounded Model Checking
+Encoding to solver time: 0.000s
+Solving claim 'VLA array size in bytes overflows address space size' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Slicing time: 0.009s (removed 154 assignments)Unwinding loop 9 iteration 3   file string.c line 78 column 3 function strlen
+No solver specified; defaulting to Boolector
+
+Unwinding loop 9 iteration 4   file string.c line 78 column 3 function strlen
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Unwinding loop 9 iteration 5   file string.c line 78 column 3 function strlen
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Unwinding loop 9 iteration 6   file string.c line 78 column 3 function strlen
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Unwinding loop 9 iteration 7   file string.c line 78 column 3 function strlen
+Slicing time: 0.001s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 8   file string.c line 78 column 3 function strlen
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Unwinding loop 9 iteration 9   file string.c line 78 column 3 function strlen
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Unwinding loop 9 iteration 10   file string.c line 78 column 3 function strlen
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Unwinding loop 9 iteration 11   file string.c line 78 column 3 function strlen
+Slicing time: 0.001s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 9 iteration 12   file string.c line 78 column 3 function strlen
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Unwinding loop 9 iteration 13   file string.c line 78 column 3 function strlen
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Unwinding loop 26 iteration 1   file 2.c line 8 column 5 function copy_memory
+Slicing time: 0.000s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 26 iteration 2   file 2.c line 8 column 5 function copy_memory
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Unwinding loop 26 iteration 3   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 4   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 5   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 6   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 7   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 8   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 9   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 10   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 11   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 12   file 2.c line 8 column 5 function copy_memory
+Unwinding loop 26 iteration 13   file 2.c line 8 column 5 function copy_memory
+Symex completed in: 0.022s (171 assignments)
+Slicing time: 0.000s (removed 154 assignments)
+Generated 55 VCC(s), 14 remaining after simplification (17 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.008s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.001s
+BMC program time: 0.026s
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Forward condition process finished (safety proven).
+Slicing time: 0.001s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 154 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+BMC program time: 0.099s
+WARNING: inductive step process crashed.
+
+Solution found by the forward condition; all states are reachable (k = 14)
 VERIFICATION SUCCESSFUL
