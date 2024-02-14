@@ -3,7 +3,7 @@ import os
 import re
 
 CURRENT_DIRECTORY = os.getcwd()
-ESBMC_OUTPUT_PATH = os.path.join(CURRENT_DIRECTORY, "esbmc_output")
+ESBMC_OUTPUT_PATH = os.path.join(CURRENT_DIRECTORY, "wizard_esbmc")
 TARGET_FILE_NAME = "data/wizard_coder_statuses.csv"
 
 #Four Cases:
