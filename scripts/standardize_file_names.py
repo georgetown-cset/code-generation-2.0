@@ -3,7 +3,7 @@ import os
 
 CURRENT_DIRECTORY = os.getcwd()
 PROMPTS =  pd.read_csv("scripts/LLMSecEval-prompts.csv")
-TARGET_DIRECTORY = "wizard_esbmc"
+TARGET_DIRECTORY = "generated_wizard_code"
 
 def standardize_file_names(target_directory):
     for file_name in os.listdir(target_directory):
@@ -11,13 +11,22 @@ def standardize_file_names(target_directory):
         
 
 def process_file(file):
-    id = int(file.split('.')[0])-1 #change this for future iterations
-    print(id)
-    if int(id) in PROMPTS.index:
-        prompt_id = PROMPTS.loc[id, 'Prompt ID']
+    idx = file.split('.')[0] #change this for future iterations
+    
+    try:
+        index = int(idx) - 1  # Convert to integer
+    except ValueError:
+        print(f"Skipping file {file}: Index '{idx_str}' is not a valid integer")
+        return
+    
+    print(index)
+    
+    if 0 <= index < len(PROMPTS):
+        prompt_id = PROMPTS.loc[index, 'Prompt ID']
         # Rename the file with the variable name
-        os.rename(os.path.join(CURRENT_DIRECTORY, TARGET_DIRECTORY, file), os.path.join(CURRENT_DIRECTORY, TARGET_DIRECTORY, prompt_id + '.txt'))
-        
+        os.rename(os.path.join(CURRENT_DIRECTORY, TARGET_DIRECTORY, file), os.path.join(CURRENT_DIRECTORY, TARGET_DIRECTORY, prompt_id + '.c'))
+    
+    
     
         
 def main():
