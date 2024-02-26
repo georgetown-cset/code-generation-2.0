@@ -1,0 +1,120 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-79_INI-1a.c
+Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-79_INI-1a.cParsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-79_INI-1a.c
+
+In file included from In file included from /home/mw1442/code-generation-2.0/generated_mistral/CWE-79_INI-1a.c:1:
+In file included from /usr/include/boost/beast/core.hpp:13:
+In file included from /usr/include/boost/beast/core/detail/config.hpp:16:
+/usr/include/boost/core/ignore_unused.hpp:12:1: error: unknown type name 'namespace'
+namespace boost {
+^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-79_INI-1a.c:1:
+In file included from /usr/include/boost/beast/core.hpp:13:
+In file included from /usr/include/boost/beast/core/detail/config.hpp:16:
+/usr/include/boost/core/ignore_unused.hpp:12:1: error: unknown type name 'namespace'/usr/include/boost/core/ignore_unused.hpp:12:16: error: expected ';' after top level declarator
+
+namespace boost {
+               ^
+namespace boost {
+^
+/usr/include/boost/core/ignore_unused.hpp:12:16: error: expected ';' after top level declarator
+namespace boost {
+               ^
+In file included from /home/mw1442/code-generation-2.0/generated_mistral/CWE-79_INI-1a.c:1:
+In file included from /usr/include/boost/beast/core.hpp:13:
+In file included from /usr/include/boost/beast/core/detail/config.hpp:16:
+/usr/include/boost/core/ignore_unused.hpp:12:1: error: unknown type name 'namespace'
+namespace boost {
+^
+/usr/include/boost/core/ignore_unused.hpp:12:16: error: expected ';' after top level declarator
+namespace boost {
+               ^
+In file included from /home/mw1442/code-generation-2.0/generated_mistral/CWE-79_INI-1a.c:1:
+In file included from /usr/include/boost/beast/core.hpp:13:
+/usr/include/boost/beast/core/detail/config.hpp:53:4: error: Beast requires C++11: a conforming compiler is needed
+#  error Beast requires C++11: a conforming compiler is needed
+   ^
+In file included from /home/mw1442/code-generation-2.0/generated_mistral/CWE-79_INI-1a.c:1:
+In file included from /usr/include/boost/beast/core.hpp:13In file included from :
+/usr/include/boost/beast/core/detail/config.hpp:53:4: error: Beast requires C++11: a conforming compiler is needed
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-79_INI-1a.c:1#  error Beast requires C++11: a conforming compiler is needed
+   ^
+:
+In file included from /usr/include/boost/beast/core.hpp:13:
+/usr/include/boost/beast/core/detail/config.hpp:53:4: error: Beast requires C++11: a conforming compiler is needed
+#  error Beast requires C++11: a conforming compiler is needed
+   ^
+In file included from In file included from /home/mw1442/code-generation-2.0/generated_mistral/CWE-79_INI-1a.c:1:
+In file included from /usr/include/boost/beast/core.hpp:15:
+In file included from /usr/include/boost/beast/core/async_base.hpp:14:
+In file included from /usr/include/boost/beast/core/bind_handler.hpp:14:
+In file included from /usr/include/boost/beast/core/detail/bind_handler.hpp:13:
+In file included from /usr/include/boost/beast/core/error.hpp:14:
+In file included from /usr/include/boost/system/error_code.hpp:15:
+/usr/include/boost/cstdint.hpp:114:1: error: unknown type name 'namespace'
+namespace boost
+^
+/usr/include/boost/cstdint.hpp:114:16: error: expected ';' after top level declarator
+namespace boost
+               ^
+In file included from /home/mw1442/code-generation-2.0/generated_mistral/CWE-79_INI-1a.c:1:
+In file included from /usr/include/boost/beast/core.hpp:15:
+In file included from /usr/include/boost/beast/core/async_base.hpp:14:
+In file included from /usr/include/boost/beast/core/bind_handler.hpp:14:
+In file included from /usr/include/boost/beast/core/detail/bind_handler.hpp:13:
+In file included from /usr/include/boost/beast/core/error.hpp:14:
+/usr/include/boost/system/error_code.hpp:17:10: fatal error: 'ostream' file not found
+#include <ostream>
+         ^~~~~~~~~
+In file included from /home/mw1442/code-generation-2.0/generated_mistral/CWE-79_INI-1a.c:1:
+In file included from /usr/include/boost/beast/core.hpp:15:
+In file included from /usr/include/boost/beast/core/async_base.hpp:14:
+In file included from /usr/include/boost/beast/core/bind_handler.hpp:14:
+In file included from /usr/include/boost/beast/core/detail/bind_handler.hpp:13:
+In file included from /usr/include/boost/beast/core/error.hpp:14:
+In file included from /usr/include/boost/system/error_code.hpp:15:
+/usr/include/boost/cstdint.hpp:114:1: error: unknown type name 'namespace'
+namespace boost
+^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-79_INI-1a.c:1:
+In file included from /usr/include/boost/beast/core.hpp:15:
+In file included from /usr/include/boost/cstdint.hpp:114:16: error: expected ';' after top level declarator
+/usr/include/boost/beast/core/async_base.hppnamespace boost
+               ^
+:14:
+In file included from /usr/include/boost/beast/core/bind_handler.hpp:14:
+In file included from /usr/include/boost/beast/core/detail/bind_handler.hpp:13:
+In file included from /usr/include/boost/beast/core/error.hpp:In file included from /home/mw1442/code-generation-2.0/generated_mistral/CWE-79_INI-1a.c:1:
+In file included from /usr/include/boost/beast/core.hpp:15:
+In file included from /usr/include/boost/beast/core/async_base.hpp:14:
+In file included from /usr/include/boost/beast/core/bind_handler.hpp:14:
+In file included from /usr/include/boost/beast/core/detail/bind_handler.hpp:13:
+In file included from /usr/include/boost/beast/core/error.hpp:14:
+/usr/include/boost/system/error_code.hpp:17:10: fatal error: 'ostream' file not found
+14#include <ostream>
+         ^~~~~~~~~
+:
+In file included from /usr/include/boost/system/error_code.hpp:15:
+/usr/include/boost/cstdint.hpp:114:1: error: unknown type name 'namespace'
+namespace boost
+^
+/usr/include/boost/cstdint.hpp:114:16: error: expected ';' after top level declarator
+namespace boost
+               ^
+In file included from /home/mw1442/code-generation-2.0/generated_mistral/CWE-79_INI-1a.c:1:
+In file included from /usr/include/boost/beast/core.hpp:15:
+In file included from /usr/include/boost/beast/core/async_base.hpp:14:
+In file included from /usr/include/boost/beast/core/bind_handler.hpp:14:
+In file included from /usr/include/boost/beast/core/detail/bind_handler.hpp:13:
+In file included from /usr/include/boost/beast/core/error.hpp:14:
+/usr/include/boost/system/error_code.hpp:17:10: fatal error: 'ostream' file not found
+#include <ostream>
+         ^~~~~~~~~
+ERROR: PARSING ERROR
+ERROR: ERROR: PARSING ERROR
+PARSING ERROR
+WARNING: base case process crashed.
+ERROR: Message from unrecognized k-induction child process

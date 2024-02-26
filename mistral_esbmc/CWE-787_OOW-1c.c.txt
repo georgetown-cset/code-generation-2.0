@@ -1,0 +1,141 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:5:6: warning: implicit declaration of function 'srand' is invalid in C99 [-Wimplicit-function-declaration]
+     srand(time(NULL)); // Seed the random number generator with the current time
+     ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:5:12: warning: implicit declaration of function 'time' is invalid in C99 [-Wimplicit-function-declaration]
+     srand(time(NULL)); // Seed the random number generator with the current time
+           ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:5:17: error: use of undeclared identifier 'NULL'
+     srand(time(NULL)); // Seed the random number generator with the current time
+                ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:10:36: warning: implicit declaration of function 'rand' is invalid in C99 [-Wimplicit-function-declaration]
+         random_float[i] = (float) rand() / RAND_MAX; // Generate a random float between 0 and 1
+                                   ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:17:10: warning: implicitly declaring library function 'sprintf' with type 'int (char *, const char *, ...)' [-Wimplicit-function-declaration]
+         sprintf(string, "Float %d: %.6f", i+1, random_float[i]);
+         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:17:10: note: include the header <stdio.h> or explicitly provide a declaration for 'sprintf'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:18:10: warning: implicitly declaring library function 'strcpy' with type 'char *(char *, const char *)' [-Wimplicit-function-declaration]
+         strcpy(string2, string); // Copy the string to string2 for safety
+         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:18:10: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:22:44: warning: implicitly declaring library function 'pow' with type 'double (double, double)' [-Wimplicit-function-declaration]
+         int decimal_int = (int)(decimal * pow(10, 6)); // Multiply by 10^6 to get the integer value of the decimal part
+                                           ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:22:44: note: include the header <math.h> or explicitly provide a declaration for 'pow'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:24:10: warning: implicit declaration of function 'itoa' is invalid in C99 [-Wimplicit-function-declaration]
+         itoa(decimal_int, decimal_str, 10); // Convert the integer to a string
+         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:27:20: warning: implicitly declaring library function 'strlen' with type 'unsigned long (const char *)' [-Wimplicit-function-declaration]
+         int len = strlen(string) + strlen(decimal_str) + 2; // 2 for the ":" and "." separators
+                   ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:27:20: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:29:10: warning: implicitly declaring library function 'memset' with type 'void *(void *, int, unsigned long)' [-Wimplicit-function-declaration]
+         memset(final_string, 0, len); // Initialize the final string to all zeros
+         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:29:10: note: include the header <string.h> or explicitly provide a declaration for 'memset'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:30:10: warning: implicitly declaring library function 'strncat' with type 'char *(char *, const char *, unsigned long)' [-Wimplicit-function-declaration]
+         strncat(final_string, string, strlen(string));
+         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:30:10: note: include the header <string.h> or explicitly provide a declaration for 'strncat'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:35:10: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
+         printf("%s\n", final_string);
+         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:35:10Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:
+ note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+ERROR: PARSING ERROR
+Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:5:6: warning: implicit declaration of function 'srand' is invalid in C99 [-Wimplicit-function-declaration]
+     srand(time(NULL)); // Seed the random number generator with the current time
+     ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:5:12: warning: implicit declaration of function 'time' is invalid in C99 [-Wimplicit-function-declaration]
+     srand(time(NULL)); // Seed the random number generator with the current time
+           ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:5:17: error: use of undeclared identifier 'NULL'
+     srand(time(NULL)); // Seed the random number generator with the current time
+                ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:10:36: warning: implicit declaration of function 'rand' is invalid in C99 [-Wimplicit-function-declaration]
+         random_float[i] = (float) rand() / RAND_MAX; // Generate a random float between 0 and 1
+                                   ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:17:10: warning: implicitly declaring library function 'sprintf' with type 'int (char *, const char *, ...)' [-Wimplicit-function-declaration]
+         sprintf(string, "Float %d: %.6f", i+1, random_float[i]);
+         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:17:10: note: include the header <stdio.h> or explicitly provide a declaration for 'sprintf'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:18:10: warning: implicitly declaring library function 'strcpy' with type 'char *(char *, const char *)' [-Wimplicit-function-declaration]
+         strcpy(string2, string); // Copy the string to string2 for safety
+         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:18:10: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:22:44: warning: implicitly declaring library function 'pow' with type 'double (double, double)' [-Wimplicit-function-declaration]
+         int decimal_int = (int)(decimal * pow(10, 6)); // Multiply by 10^6 to get the integer value of the decimal part
+                                           ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:22:44: note: include the header <math.h> or explicitly provide a declaration for 'pow'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:24:10: warning: implicit declaration of function 'itoa' is invalid in C99 [-Wimplicit-function-declaration]
+         itoa(decimal_int, decimal_str, 10); // Convert the integer to a string
+         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:27:20: warning: implicitly declaring library function 'strlen' with type 'unsigned long (const char *)' [-Wimplicit-function-declaration]
+         int len = strlen(string) + strlen(decimal_str) + 2; // 2 for the ":" and "." separators
+                   ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:27:20: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:29:10: warning: implicitly declaring library function 'memset' with type 'void *(void *, int, unsigned long)' [-Wimplicit-function-declaration]
+         memset(final_string, 0, len); // Initialize the final string to all zeros
+         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:29:10: note: include the header <string.h> or explicitly provide a declaration for 'memset'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:30:10: warning: implicitly declaring library function 'strncat' with type 'char *(char *, const char *, unsigned long)' [-Wimplicit-function-declaration]
+         strncat(final_string, string, strlen(string));
+         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:30:10: note: include the header <string.h> or explicitly provide a declaration for 'strncat'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:35:10: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
+         printf("%s\n", final_string);
+         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:35:10: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+ERROR: PARSING ERROR
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:5:6: warning: implicit declaration of function 'srand' is invalid in C99 [-Wimplicit-function-declaration]
+     srand(time(NULL)); // Seed the random number generator with the current time
+     ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:5:12: warning: implicit declaration of function 'time' is invalid in C99 [-Wimplicit-function-declaration]
+     srand(time(NULL)); // Seed the random number generator with the current time
+           ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:5:17: error: use of undeclared identifier 'NULL'
+     srand(time(NULL)); // Seed the random number generator with the current time
+                ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:10:36: warning: implicit declaration of function 'rand' is invalid in C99 [-Wimplicit-function-declaration]
+         random_float[i] = (float) rand() / RAND_MAX; // Generate a random float between 0 and 1
+                                   ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:17:10: warning: implicitly declaring library function 'sprintf' with type 'int (char *, const char *, ...)' [-Wimplicit-function-declaration]
+         sprintf(string, "Float %d: %.6f", i+1, random_float[i]);
+         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:17:10: note: include the header <stdio.h> or explicitly provide a declaration for 'sprintf'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:18:10: warning: implicitly declaring library function 'strcpy' with type 'char *(char *, const char *)' [-Wimplicit-function-declaration]
+         strcpy(string2, string); // Copy the string to string2 for safety
+         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:18:10: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:22:44: warning: implicitly declaring library function 'pow' with type 'double (double, double)' [-Wimplicit-function-declaration]
+         int decimal_int = (int)(decimal * pow(10, 6)); // Multiply by 10^6 to get the integer value of the decimal part
+                                           ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:22:44: note: include the header <math.h> or explicitly provide a declaration for 'pow'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:24:10: warning: implicit declaration of function 'itoa' is invalid in C99 [-Wimplicit-function-declaration]
+         itoa(decimal_int, decimal_str, 10); // Convert the integer to a string
+         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:27:20: warning: implicitly declaring library function 'strlen' with type 'unsigned long (const char *)' [-Wimplicit-function-declaration]
+         int len = strlen(string) + strlen(decimal_str) + 2; // 2 for the ":" and "." separators
+                   ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:27:20: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:29:10: warning: implicitly declaring library function 'memset' with type 'void *(void *, int, unsigned long)' [-Wimplicit-function-declaration]
+         memset(final_string, 0, len); // Initialize the final string to all zeros
+         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:29:10: note: include the header <string.h> or explicitly provide a declaration for 'memset'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:30:10: warning: implicitly declaring library function 'strncat' with type 'char *(char *, const char *, unsigned long)' [-Wimplicit-function-declaration]
+         strncat(final_string, string, strlen(string));
+         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:30:10: note: include the header <string.h> or explicitly provide a declaration for 'strncat'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:35:10: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
+         printf("%s\n", final_string);
+         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-1c.c:35:10: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+ERROR: PARSING ERROR
+WARNING: base case process crashed.
+ERROR: Message from unrecognized k-induction child process

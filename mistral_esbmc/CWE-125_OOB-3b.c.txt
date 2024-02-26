@@ -1,0 +1,145 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-125_OOB-3b.c
+Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-125_OOB-3b.cConverting
+Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-125_OOB-3b.c
+
+ConvertingConverting
+
+Generating GOTO Program
+GOTO program creation time: 0.181s
+GOTO program processing time: 0.001s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+Symex completed in: 0.004s (43 assignments)
+Slicing time: 0.000s (removed 22 assignments)
+Generated 6 VCC(s), 6 remaining after simplification (21 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.055s
+Generating GOTO Program
+Inductive process finished (safety not proven).
+GOTO program creation time: 0.262s
+GOTO program processing time: 0.001s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Not unwinding loop 4 iteration 1   file CWE-125_OOB-3b.c line 25 column 5 function main
+Symex completed in: 0.004s (47 assignments)
+Slicing time: 0.000s (removed 26 assignments)
+Generated 8 VCC(s), 8 remaining after simplification (21 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 26 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: Incorrect alignment when accessing data object (0.000s)
+Slicing time: 0.000s (removed 26 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: Incorrect alignment when accessing data object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 26 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 26 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+Slicing for Claim buffer overflow on scanf (0.000s)
+Slicing time: 0.000s (removed 26 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'buffer overflow on scanf' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file CWE-125_OOB-3b.c line 19 column 5 function main thread 0
+----------------------------------------------------
+  index = 0 (00000000 00000000 00000000 00000000)
+Enter the size of the array: 
+
+State 3 file CWE-125_OOB-3b.c line 22 column 5 function main thread 0
+----------------------------------------------------
+  size = -2147483633 (10000000 00000000 00000000 00001111)
+Enter -2147483633 integers in the array: 
+Enter the index: 
+
+State 6 file CWE-125_OOB-3b.c line 30 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-125_OOB-3b.c line 30 column 5 function main
+  buffer overflow on scanf
+  0
+
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 26 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim buffer overflow on scanf (0.000s)
+Slicing time: 0.000s (removed 26 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'buffer overflow on scanf' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file CWE-125_OOB-3b.c line 19 column 5 function main thread 0
+----------------------------------------------------
+  index = 0 (00000000 00000000 00000000 00000000)
+Enter the size of the array: 
+
+State 3 file CWE-125_OOB-3b.c line 22 column 5 function main thread 0
+----------------------------------------------------
+  size = 1 (00000000 00000000 00000000 00000001)
+Enter 1 integers in the array: 
+
+State 5 file CWE-125_OOB-3b.c line 26 column 9 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-125_OOB-3b.c line 26 column 9 function main
+  buffer overflow on scanf
+  0
+
+Slicing for Claim buffer overflow on scanf (0.000s)
+Slicing time: 0.000s (removed 26 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'buffer overflow on scanf' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file CWE-125_OOB-3b.c line 19 column 5 function main thread 0
+----------------------------------------------------
+  index = 0 (00000000 00000000 00000000 00000000)
+Enter the size of the array: 
+
+State 3 file CWE-125_OOB-3b.c line 22 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-125_OOB-3b.c line 22 column 5 function main
+  buffer overflow on scanf
+  0
+
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

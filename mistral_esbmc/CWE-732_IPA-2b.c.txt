@@ -1,0 +1,39 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c
+Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c
+Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c:8:52: error: use of undeclared identifier 'S_RDGRP'
+    const mode_t permissions = S_IRUSR | S_IWUSR | S_RDGRP | S_WRGRP | S_IXUSR | S_IXGRP | S_IXOTH;
+                                                   ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c:8:62: error: use of undeclared identifier 'S_WRGRP'
+    const mode_t permissions = S_IRUSR | S_IWUSR | S_RDGRP | S_WRGRP | S_IXUSR | S_IXGRP | S_IXOTH;
+                                                             ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c:19:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+    close(file_descriptor);
+    ^
+ERROR: PARSING ERROR
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c:8:52: error: use of undeclared identifier 'S_RDGRP'
+    const mode_t permissions = S_IRUSR | S_IWUSR | S_RDGRP | S_WRGRP | S_IXUSR | S_IXGRP | S_IXOTH;
+                                                   ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c:8:62: error: use of undeclared identifier 'S_WRGRP'
+    const mode_t permissions = S_IRUSR | S_IWUSR | S_RDGRP | S_WRGRP | S_IXUSR | S_IXGRP | S_IXOTH;
+                                                             ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c:19:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+    close(file_descriptor);
+    ^
+ERROR: PARSING ERROR
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c:8:52: error: use of undeclared identifier 'S_RDGRP'
+    const mode_t permissions = S_IRUSR | S_IWUSR | S_RDGRP | S_WRGRP | S_IXUSR | S_IXGRP | S_IXOTH;
+                                                   ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c:8:62: error: use of undeclared identifier 'S_WRGRP'
+    const mode_t permissions = S_IRUSR | S_IWUSR | S_RDGRP | S_WRGRP | S_IXUSR | S_IXGRP | S_IXOTH;
+                                                             ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c:19:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+    close(file_descriptor);
+    ^
+ERROR: PARSING ERROR
+WARNING: base case process crashed.
+ERROR: Message from unrecognized k-induction child process

@@ -1,0 +1,87 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c
+Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:8:17: error: use of undeclared identifier 'O_WRONLY'
+    int flags = O_WRONLY | O_CREAT | O_TRUNC; // O_TRUNC clears the file before writing
+                ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:8:28: error: use of undeclared identifier 'O_CREAT'
+    int flags = O_WRONLY | O_CREAT | O_TRUNC; // O_TRUNC clears the file before writing
+                           ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:8:38: error: use of undeclared identifier 'O_TRUNC'
+    int flags = O_WRONLY | O_CREAT | O_TRUNC; // O_TRUNC clears the file before writing
+                                     ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:12:16: warning: implicit declaration of function 'open' is invalid in C99 [-Wimplicit-function-declaration]
+    int file = open(filename, flags, mode);
+               ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:21:9: warning: implicit declaration of function 'write' is invalid in C99 [-Wimplicit-function-declaration]
+    if (write(file, "important_config\n", strlen("important_config\n")) < 0) {
+        ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:21:43: warning: implicitly declaring library function 'strlen' with type 'unsigned long (const char *)' [-Wimplicit-function-declaration]
+    if (write(file, "important_config\n", strlen("important_config\n")) < 0) {
+                                          ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:21:43: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:23:9: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+        close(file); // Close the file
+        ^
+Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:28:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+    close(file);
+    ^
+ERROR: PARSING ERROR
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:8:17: error: use of undeclared identifier 'O_WRONLY'
+    int flags = O_WRONLY | O_CREAT | O_TRUNC; // O_TRUNC clears the file before writing
+                ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:8:28: error: use of undeclared identifier 'O_CREAT'
+    int flags = O_WRONLY | O_CREAT | O_TRUNC; // O_TRUNC clears the file before writing
+                           ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:8:38: error: use of undeclared identifier 'O_TRUNC'
+    int flags = O_WRONLY | O_CREAT | O_TRUNC; // O_TRUNC clears the file before writing
+                                     ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:12:16: warning: implicit declaration of function 'open' is invalid in C99 [-Wimplicit-function-declaration]
+    int file = open(filename, flags, mode);
+               ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:21:9: warning: implicit declaration of function 'write' is invalid in C99 [-Wimplicit-function-declaration]
+    if (write(file, "important_config\n", strlen("important_config\n")) < 0) {
+        ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:21:43: warning: implicitly declaring library function 'strlen' with type 'unsigned long (const char *)' [-Wimplicit-function-declaration]
+    if (write(file, "important_config\n", strlen("important_config\n")) < 0) {
+                                          ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:21:43: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:23:9: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+        close(file); // Close the file
+        ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:28:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+    close(file);
+    ^
+ERROR: PARSING ERROR
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:8:17: error: use of undeclared identifier 'O_WRONLY'
+    int flags = O_WRONLY | O_CREAT | O_TRUNC; // O_TRUNC clears the file before writing
+                ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:8:28: error: use of undeclared identifier 'O_CREAT'
+    int flags = O_WRONLY | O_CREAT | O_TRUNC; // O_TRUNC clears the file before writing
+                           ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:8:38: error: use of undeclared identifier 'O_TRUNC'
+    int flags = O_WRONLY | O_CREAT | O_TRUNC; // O_TRUNC clears the file before writing
+                                     ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:12:16: warning: implicit declaration of function 'open' is invalid in C99 [-Wimplicit-function-declaration]
+    int file = open(filename, flags, mode);
+               ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:21:9: warning: implicit declaration of function 'write' is invalid in C99 [-Wimplicit-function-declaration]
+    if (write(file, "important_config\n", strlen("important_config\n")) < 0) {
+        ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:21:43: warning: implicitly declaring library function 'strlen' with type 'unsigned long (const char *)' [-Wimplicit-function-declaration]
+    if (write(file, "important_config\n", strlen("important_config\n")) < 0) {
+                                          ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:21:43: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:23:9: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+        close(file); // Close the file
+        ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-1b.c:28:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+    close(file);
+    ^
+ERROR: PARSING ERROR
+WARNING: base case process crashed.
+ERROR: Message from unrecognized k-induction child process

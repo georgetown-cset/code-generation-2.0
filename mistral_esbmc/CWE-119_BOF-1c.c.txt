@@ -1,0 +1,63 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:16:15: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+    if (sizeof(buffer) < string_length + 1) {
+              ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:11:33: note: declared here
+void copy_string_to_buffer(char buffer[]) {
+                                ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:18:9: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
+        printf("Buffer is too small.\n");
+        ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:18:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:19:9: warning: implicitly declaring library function 'exit' with type 'void (int) __attribute__((noreturn))' [-Wimplicit-function-declaration]
+        exit(EXIT_FAILURE);
+        ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:19:9: note: include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:19:14: error: use of undeclared identifier 'EXIT_FAILURE'
+        exit(EXIT_FAILURE);
+             ^
+ERROR: PARSING ERROR
+Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:16:15: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+    if (sizeof(buffer) < string_length + 1) {
+              ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:11:33: note: declared here
+void copy_string_to_buffer(char buffer[]) {
+                                ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:18:9: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
+        printf("Buffer is too small.\n");
+        ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:18:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:19:9: warning: implicitly declaring library function 'exit' with type 'void (int) __attribute__((noreturn))' [-Wimplicit-function-declaration]
+        exit(EXIT_FAILURE);
+        ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:19:9: note: include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:19:14: error: use of undeclared identifier 'EXIT_FAILURE'
+        exit(EXIT_FAILURE);
+             ^
+ERROR: PARSING ERROR
+Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:16:15: warning: sizeof on array function parameter will return size of 'char *' instead of 'char []' [-Wsizeof-array-argument]
+    if (sizeof(buffer) < string_length + 1) {
+              ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:11:33: note: declared here
+void copy_string_to_buffer(char buffer[]) {
+                                ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:18:9: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
+        printf("Buffer is too small.\n");
+        ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:18:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:19:9: warning: implicitly declaring library function 'exit' with type 'void (int) __attribute__((noreturn))' [-Wimplicit-function-declaration]
+        exit(EXIT_FAILURE);
+        ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:19:9: note: include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-119_BOF-1c.c:19:14: error: use of undeclared identifier 'EXIT_FAILURE'
+        exit(EXIT_FAILURE);
+             ^
+ERROR: PARSING ERROR
+WARNING: forward condition process crashed.
+ERROR: Message from unrecognized k-induction child process

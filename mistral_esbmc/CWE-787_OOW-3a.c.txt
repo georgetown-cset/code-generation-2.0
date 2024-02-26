@@ -1,0 +1,60 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c
+Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:22:37: warning: implicitly declaring library function 'isspace' with type 'int (int)' [-Wimplicit-function-declaration]
+    for (int i = len - 1; i >= 0 && isspace(trimmed_str[i]); --i) {
+                                    ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:22:37: note: include the header <ctype.h> or explicitly provide a declaration for 'isspace'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:39:26: error: use of undeclared identifier 'i'
+    if (newline_free_ptr[i] == '\n') {
+                         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:40:54: error: use of undeclared identifier 'i'
+        memmove(newline_free_ptr, newline_free_ptr + i + 1, len - i);
+                                                     ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:40:67: error: use of undeclared identifier 'i'
+        memmove(newline_free_ptr, newline_free_ptr + i + 1, len - i);
+                                                                  ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:41:16: error: use of undeclared identifier 'i'
+        len -= i + 1;
+               ^
+ERROR: PARSING ERROR
+Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:22:37: warning: implicitly declaring library function 'isspace' with type 'int (int)' [-Wimplicit-function-declaration]
+    for (int i = len - 1; i >= 0 && isspace(trimmed_str[i]); --i) {
+                                    ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:22:37: note: include the header <ctype.h> or explicitly provide a declaration for 'isspace'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:39:26: error: use of undeclared identifier 'i'
+    if (newline_free_ptr[i] == '\n') {
+                         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:40:54: error: use of undeclared identifier 'i'
+        memmove(newline_free_ptr, newline_free_ptr + i + 1, len - i);
+                                                     ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:40:67: error: use of undeclared identifier 'i'
+        memmove(newline_free_ptr, newline_free_ptr + i + 1, len - i);
+                                                                  ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:41:16: error: use of undeclared identifier 'i'
+        len -= i + 1;
+               ^
+ERROR: PARSING ERROR
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:22:37: warning: implicitly declaring library function 'isspace' with type 'int (int)' [-Wimplicit-function-declaration]
+    for (int i = len - 1; i >= 0 && isspace(trimmed_str[i]); --i) {
+                                    ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:22:37: note: include the header <ctype.h> or explicitly provide a declaration for 'isspace'
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:39:26: error: use of undeclared identifier 'i'
+    if (newline_free_ptr[i] == '\n') {
+                         ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:40:54: error: use of undeclared identifier 'i'
+        memmove(newline_free_ptr, newline_free_ptr + i + 1, len - i);
+                                                     ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:40:67: error: use of undeclared identifier 'i'
+        memmove(newline_free_ptr, newline_free_ptr + i + 1, len - i);
+                                                                  ^
+/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:41:16: error: use of undeclared identifier 'i'
+        len -= i + 1;
+               ^
+ERROR: PARSING ERROR
+WARNING: base case process crashed.
+ERROR: Message from unrecognized k-induction child process
