@@ -4,7 +4,9 @@ import gpt
 import os
 import pandas as pd
 
-DEST_PATH = "/Users/maggiewu/Desktop/projects/code-generation-2.0/generated_llama"
+
+#move this to individual model files later
+DEST_PATH = "/Users/maggiewu/Desktop/projects/code-generation-2.0/generated_mistral"
 
 PROMPTS = pd.read_csv("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/LLMSecEval-prompts.csv")
 
@@ -63,13 +65,35 @@ def extract_wizardcoder(jsonl_string):
         else:
             next
             
+def extract_mistral(jsonl_string):
+    for line in jsonl_string.split("\n"):
+        if line.strip():
+            data = json.loads(line)
+            output = data.get("generated", "")
+            code = gpt.parse_code(output)
+            id = data.get("idx", "")
+            #if code exists, write to file
+            if code:
+                filename = str(id) + ".c"
+                print(filename)
+                file_path = os.path.join(DEST_PATH, filename)
+                with open(file_path, "w") as c_file:
+                    c_file.write(code)
+        else:
+            next
+            
 
 if __name__ == "__main__":
     
-    with open("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/llama_result.jsonl", "r") as file:
-        results = file.read()
+    # with open("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/llama_result.jsonl", "r") as file:
+    #     results = file.read()
         
-    extract_llama(results)
+    # extract_llama(results)
+    
+    with open("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/mistral_results.jsonl", "r") as file:
+        results = file.read()
+    
+    extract_mistral(results)
     
     
 
