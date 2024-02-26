@@ -5,6 +5,7 @@ import re
 CURRENT_DIRECTORY = os.getcwd()
 ESBMC_OUTPUT_DIRECTORY = os.path.join(CURRENT_DIRECTORY, "wizard_esbmc")
 TARGET_FILE = os.path.join(CURRENT_DIRECTORY, "data/wizard_bugs.csv")
+
 # # Define the regex pattern
 # pattern = re.compile(r'Violated property:\s+file ([^\n]+)\n\s+([^\n]+)', re.DOTALL)
 # matches = pattern.findall(text)
@@ -19,7 +20,7 @@ TARGET_FILE = os.path.join(CURRENT_DIRECTORY, "data/wizard_bugs.csv")
 def extract_violations():
     violations = []
 
-    for file in os.listdir(ESBMC_OUTPUT_DIRECTORY):
+    for file in os.listdir(esbmc_output_directory):
         file_path = os.path.join(ESBMC_OUTPUT_DIRECTORY, file)
         with open(file_path, "r") as esbmc_text_file:
             esbmc_text = esbmc_text_file.read()
