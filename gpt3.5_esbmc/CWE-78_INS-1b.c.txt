@@ -1,0 +1,216 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-78_INS-1b.c
+Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-78_INS-1b.c
+Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-78_INS-1b.c
+Converting
+Converting
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.243s
+GOTO program processing time: 0.002s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+WARNING: no body for function system
+Symex completed in: 0.010s (25 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 2 VCC(s), 2 remaining after simplification (10 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Generating GOTO Program
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+BMC program time: 0.019s
+Checking base case, k = 2
+
+Starting Bounded Model Checking
+WARNING: no body for function system
+Symex completed in: 0.003s (25 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 2 VCC(s), 2 remaining after simplification (10 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmeticGOTO program creation time: 0.277s
+GOTO program processing time: 0.002s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+WARNING: no body for function system
+Symex completed in: 0.002s (25 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 2 VCC(s), 2 remaining after simplification (10 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Runtime decision procedure: 0.008s
+BMC program time: 0.012s
+Inductive process finished (safety not proven).
+BMC program time: 0.021s
+Checking base case, k = 3
+
+Starting Bounded Model Checking
+WARNING: no body for function system
+Symex completed in: 0.002s (25 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 2 VCC(s), 2 remaining after simplification (10 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+BMC program time: 0.020s
+Checking base case, k = 4
+
+Starting Bounded Model Checking
+WARNING: no body for function system
+Symex completed in: 0.002s (25 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 2 VCC(s), 2 remaining after simplification (10 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+BMC program time: 0.011s
+Checking base case, k = 5
+
+Starting Bounded Model Checking
+Generating GOTO Program
+WARNING: no body for function system
+Symex completed in: 0.002s (25 assignments)
+Slicing time: 0.001s (removed 15 assignments)
+Generated 2 VCC(s), 2 remaining after simplification (10 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+BMC program time: 0.010s
+Checking base case, k = 6
+
+Starting Bounded Model Checking
+WARNING: no body for function system
+Symex completed in: 0.002s (25 assignments)
+Slicing time: 0.001s (removed 15 assignments)
+Generated 2 VCC(s), 2 remaining after simplification (10 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+BMC program time: 0.010s
+Checking base case, k = 7
+
+Starting Bounded Model Checking
+GOTO program creation time: 0.344s
+WARNING: no body for function system
+Symex completed in: 0.002s (25 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 2 VCC(s), 2 remaining after simplification (10 assignments)
+No solver specified; defaulting to Boolector
+GOTO program processing time: 0.002sSlicing for Claim dereference failure: array bounds violated (0.000s)
+
+Checking forward condition, k = 2Slicing time: 0.000s (removed 15 assignments)
+
+No solver specified; defaulting to Boolector
+Starting Bounded Model Checking
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+WARNING: Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+no body for function system
+Symex completed in: 0.002s (25 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 2 VCC(s), 2 remaining after simplification (10 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+BMC program time: 0.010s
+Checking base case, k = 8
+
+Starting Bounded Model Checking
+WARNING: no body for function system
+Symex completed in: 0.002s (25 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 2 VCC(s), 2 remaining after simplification (10 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Runtime decision procedure: 0.008s
+BMC program time: 0.012s
+Slicing for Claim dereference failure: array bounds violated (0.000s)Forward condition process finished (safety proven).
+
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+BMC program time: 0.009s
+
+Solution found by the forward condition; all states are reachable (k = 2)
+VERIFICATION SUCCESSFUL

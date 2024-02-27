@@ -1,0 +1,133 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-787_OOW-3c.c
+Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-787_OOW-3c.c
+Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-787_OOW-3c.c
+Converting
+Converting
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.247s
+GOTO program processing time: 0.002s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlenGenerating GOTO Program
+
+Not unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 26 iteration 1   file CWE-787_OOW-3c.c line 9 column 5 function trimWhiteSpace
+Not unwinding loop 26 iteration 2   file CWE-787_OOW-3c.c line 9 column 5 function trimWhiteSpace
+Unwinding loop 27 iteration 1   file CWE-787_OOW-3c.c line 28 column 5 function main
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 26 iteration 1   file CWE-787_OOW-3c.c line 9 column 5 function trimWhiteSpace
+Not unwinding loop 26 iteration 2   file CWE-787_OOW-3c.c line 9 column 5 function trimWhiteSpace
+GOTO program creation time: 0.281s
+Not unwinding loop 27 iteration 2   file CWE-787_OOW-3c.c line 28 column 5 function mainGOTO program processing time: 0.002s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 26 iteration 1   file CWE-787_OOW-3c.c line 9 column 5 function trimWhiteSpace
+Not unwinding loop 26 iteration 2   file CWE-787_OOW-3c.c line 9 column 5 function trimWhiteSpace
+
+Symex completed in: 0.040s (142 assignments)
+Unwinding loop 27 iteration 1   file CWE-787_OOW-3c.c line 28 column 5 function main
+Slicing time: 0.002s (removed 50 assignments)
+Generated 22 VCC(s), 22 remaining after simplification (92 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 9 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 26 iteration 1   file CWE-787_OOW-3c.c line 9 column 5 function trimWhiteSpace
+Not unwinding loop 26 iteration 2   file CWE-787_OOW-3c.c line 9 column 5 function trimWhiteSpace
+Not unwinding loop 27 iteration 2   file CWE-787_OOW-3c.c line 28 column 5 function main
+Symex completed in: 0.011s (123 assignments)
+Slicing time: 0.001s (removed 41 assignments)
+Generated 48 VCC(s), 44 remaining after simplification (82 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving with solver Boolector 3.2.2
+Encoding to solver time: 0.019s
+Solving with solver Boolector 3.2.2
+Generating GOTO Program
+GOTO program creation time: 0.362s
+GOTO program processing time: 0.003s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Not unwinding loop 9 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 27 iteration 1   file CWE-787_OOW-3c.c line 28 column 5 function main
+Symex completed in: 0.005s (43 assignments)
+Slicing time: 0.000s (removed 20 assignments)
+Generated 8 VCC(s), 6 remaining after simplification (23 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 20 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 20 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalid pointer (0.000s)
+Slicing time: 0.000s (removed 20 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalid pointer' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[7] = 0
+
+State 4 file string.c line 78 column 3 function strlen thread 0
+----------------------------------------------------
+Violated property:
+  file string.c line 78 column 3 function strlen
+  dereference failure: invalid pointer
+
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 20 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[134217729] = 0
+
+State 4 file string.c line 78 column 3 function strlen thread 0
+----------------------------------------------------
+Violated property:
+  file string.c line 78 column 3 function strlen
+  dereference failure: NULL pointer
+
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 20 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 20 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

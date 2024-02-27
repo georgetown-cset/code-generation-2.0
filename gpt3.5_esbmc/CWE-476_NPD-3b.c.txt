@@ -1,0 +1,196 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-3b.c
+Converting
+Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-3b.c
+Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-3b.c
+Converting
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.212s
+ERROR: the format specifiers do not match with the arguments
+GOTO program processing time: 0.001s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Symex completed in: 0.000s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.001s
+Checking base case, k = 2
+
+Starting Bounded Model Checking
+Symex completed in: 0.000s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.000s
+Checking base case, k = 3
+
+Starting Bounded Model Checking
+Symex completed in: 0.000s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.000s
+Checking base case, k = 4
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.009s
+Checking base case, k = 5
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.001s
+Checking base case, k = 6
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.001s
+Checking base case, k = 7
+
+Starting Bounded Model Checking
+Symex completed in: 0.000s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.000s
+Checking base case, k = 8
+
+Starting Bounded Model Checking
+Symex completed in: 0.000s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.000s
+Checking base case, k = 9
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.001s
+Checking base case, k = 10
+
+Starting Bounded Model Checking
+Symex completed in: 0.000s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.001s
+Checking base case, k = 11
+
+Starting Bounded Model Checking
+Symex completed in: 0.000s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.000s
+Checking base case, k = 12
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.001s
+Checking base case, k = 13
+
+Starting Bounded Model Checking
+Symex completed in: 0.000s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.001s
+Checking base case, k = 14
+
+Starting Bounded Model Checking
+Symex completed in: 0.000s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.000s
+Checking base case, k = 15
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.001s
+Checking base case, k = 16
+
+Starting Bounded Model Checking
+Symex completed in: 0.000s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.001s
+Checking base case, k = 17
+
+Starting Bounded Model Checking
+Symex completed in: 0.000s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.000s
+Checking base case, k = 18
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.001s
+Checking base case, k = 19
+
+Starting Bounded Model Checking
+Symex completed in: 0.000s (18 assignments)Generating GOTO Program
+
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.010s
+Checking base case, k = 20
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (18 assignments)GOTO program creation time: 0.245s
+
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.001s
+Checking base case, k = 21
+
+Starting Bounded Model Checking
+Symex completed in: 0.000s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.000s
+Checking base case, k = 22
+
+Starting Bounded Model Checking
+ERROR: the format specifiers do not match with the arguments
+GOTO program processing time: 0.001s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Symex completed in: 0.000s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.000s
+Checking base case, k = 23
+
+Starting Bounded Model Checking
+Symex completed in: 0.000s (18 assignments)Symex completed in: 0.000s (18 assignments)
+
+Slicing time: 0.001s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.001s
+Slicing time: 0.001s (removed 15 assignments)Checking base case, k = 24
+
+Starting Bounded Model Checking
+
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.001s
+Forward condition process finished (safety proven).
+Symex completed in: 0.000s (18 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.000s
+
+Solution found by the forward condition; all states are reachable (k = 2)
+VERIFICATION SUCCESSFUL

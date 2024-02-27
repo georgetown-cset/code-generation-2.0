@@ -1,0 +1,893 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-190_IOW-3b.c
+Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-190_IOW-3b.c
+ConvertingParsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-190_IOW-3b.c
+
+Converting
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.199s
+GOTO program processing time: 0.000s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Not unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (35 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 2 VCC(s), 2 remaining after simplification (12 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving with solver Boolector 3.2.2
+Generating GOTO Program
+GOTO program creation time: 0.270s
+GOTO program processing time: 0.001s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Not unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.000s (17 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 2 VCC(s), 1 remaining after simplification (2 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.002s
+Checking base case, k = 2
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Not unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (22 assignments)
+Slicing time: 0.000s (removed 19 assignments)
+Generated 4 VCC(s), 2 remaining after simplification (3 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 19 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 19 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.003s
+Checking base case, k = 3
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Not unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (27 assignments)
+Slicing time: 0.000s (removed 23 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 4
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.001s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 5
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.001s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 6
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 7
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 8
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.001s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 9
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 10
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.005s
+Checking base case, k = 11
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.001s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 12
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 13
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.001s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 14
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.005s
+Checking base case, k = 15
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 16
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 17
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.001s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 18
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.001s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 19
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 20
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.001s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 21
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Generating GOTO Program
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 22
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 23
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 24
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.001s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 25
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2GOTO program creation time: 0.368s
+
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmeticGOTO program processing time: 0.000s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.005s
+Checking base case, k = 26
+
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function mainStarting Bounded Model Checking
+
+Not unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (22 assignments)
+Slicing time: 0.000s (removed 19 assignments)
+Generated 5 VCC(s), 3 remaining after simplification (3 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function mainEncoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Runtime decision procedure: 0.000s
+Checking forward condition, k = 3
+Starting Bounded Model Checking
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Not unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (27 assignments)
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Slicing time: 0.000s (removed 23 assignments)
+Generated 7 VCC(s), 4 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 27
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.000s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Checking base case, k = 28
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmeticEncoding remaining VCC(s) using bit-vector/floating-point arithmetic
+
+Encoding to solver time: 0.000sEncoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Runtime decision procedure: 0.001s
+Checking forward condition, k = 4
+Starting Bounded Model Checking
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.004s
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function mainChecking base case, k = 29
+
+Starting Bounded Model Checking
+
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Unwinding loop 4 iteration 1   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Unwinding loop 4 iteration 2   file CWE-190_IOW-3b.c line 8 column 5 function main
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 4 iteration 3   file CWE-190_IOW-3b.c line 8 column 5 function main
+Symex completed in: 0.001s (29 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 3 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Slicing for Claim arithmetic overflow on add (0.000s)
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+BMC program time: 0.002sSlicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+
+Forward condition process finished (safety proven).
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+BMC program time: 0.003s
+
+Solution found by the forward condition; all states are reachable (k = 4)
+VERIFICATION SUCCESSFUL
