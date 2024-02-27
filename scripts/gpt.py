@@ -7,12 +7,12 @@ import time
 
 load_dotenv()
 
-#client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
 
 
 def generate_code(prompt):
-    time.sleep(4)
+    time.sleep(8)
     """
     Generate code by completing the prompt.
     """
@@ -27,9 +27,23 @@ def generate_code(prompt):
     ]
 
 
+# def generate_code(prompt):
+#     """
+#     Generate code by completing the prompt.
+#     """
+#     completion = client.chat.completions.create(model="gpt-3.5-turbo",
+#     messages=[
+#         {"role": "user", "content": prompt.strip()}
+#     ])
+    
+#     return [
+#         c['message']['content']
+#         for c in completion['choices']
+#     ]
+
+
 PARSE_REGEX = re.compile(r'```[^\n]+\n(.*?)\n```', re.DOTALL)
 def parse_code(c_string):
-    time.sleep(4)
     """
     Parse code from a multi-line markdown code block.
 
@@ -45,4 +59,4 @@ def parse_code(c_string):
     if m:
         return m.group(1)
     else:
-        return None
+        return c_string
