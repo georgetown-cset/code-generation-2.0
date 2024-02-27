@@ -63,8 +63,11 @@ if __name__ == "__main__":
     # for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "generated_wizard_code")):
     #     esbmc_run(code_snippet, "generated_wizard_coder", "wizard_esbmc")
     
-    for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "generated_mistral")):
-        esbmc_run(code_snippet, "generated_mistral", "mistral_esbmc")
+    # for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "generated_mistral")):
+    #     esbmc_run(code_snippet, "generated_mistral", "mistral_esbmc")
+    
+    for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "generated_gpt_3.5")):
+        esbmc_run(code_snippet, "generated_gpt_3.5", "gpt3.5_esbmc")
 
 
 
