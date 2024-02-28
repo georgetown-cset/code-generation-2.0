@@ -6,7 +6,7 @@ import pandas as pd
 
 
 #move this to individual model files later
-DEST_PATH = "/Users/maggiewu/Desktop/projects/code-generation-2.0/generated_mistral"
+DEST_PATH = "/Users/maggiewu/Desktop/projects/code-generation-2.0/generated_llama"
 
 PROMPTS = pd.read_csv("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/LLMSecEval-prompts.csv")
 
@@ -18,20 +18,6 @@ def extract_llama(jsonl_string):
             output = data.get("generated", "")
             id = data.get("idx", "")
             
-            try:
-                #extract prompt and find label
-                matches = re.search(r'^(.*?)\n\n\\begin{code}', output, re.DOTALL)
-                if matches:
-                    prompt = matches.group(1)
-                    print(prompt)
-                    row = PROMPTS[PROMPTS['NL Prompt'].replace({"<language>": "C", "<lanuage>": "C"}, regex=True) == prompt]
-                    if not row.empty:
-                        id = row['Prompt ID'].iloc[0]
-                        print(id)
-                
-            except AttributeError as e:
-                print("AttributeError occurred:", e)
-
             #extract code and format
             matches = re.search(r'\\begin{code}(.*?)\\end{code}', output, re.DOTALL)
             if matches:
@@ -85,15 +71,15 @@ def extract_mistral(jsonl_string):
 
 if __name__ == "__main__":
     
-    # with open("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/llama_result.jsonl", "r") as file:
-    #     results = file.read()
-        
-    # extract_llama(results)
-    
-    with open("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/mistral_results.jsonl", "r") as file:
+    with open("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/llama_result.jsonl", "r") as file:
         results = file.read()
+        
+    extract_llama(results)
     
-    extract_mistral(results)
+    # with open("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/mistral_results.jsonl", "r") as file:
+    #     results = file.read()
+    
+    # extract_mistral(results)
     
     
 
