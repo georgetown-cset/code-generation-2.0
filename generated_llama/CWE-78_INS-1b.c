@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
     char *username;
     char *command;
-    char *user_info;
+    char *userinfo;
     int status;
     int pid;
 
@@ -21,14 +21,15 @@ int main(int argc, char *argv[])
     }
 
     username = argv[1];
-    command = "cat /etc/passwd | grep ";
-    user_info = malloc(1024);
+
+    command = malloc(strlen(username) + 10);
+    sprintf(command, "cat /etc/passwd | grep %s", username);
 
     pid = fork();
 
     if (pid == 0)
     {
-        execlp("sh", "sh", "-c", command, username, (char *)0);
+        execl("/bin/sh", "sh", "-c", command, (char *)0);
         exit(1);
     }
     else
@@ -36,14 +37,13 @@ int main(int argc, char *argv[])
         wait(&status);
         if (WIFEXITED(status))
         {
-            printf("User information:\n");
-            printf("%s\n", user_info);
-        }
-        else
-        {
-            printf("Error: %s\n", strerror(WEXITSTATUS(status)));
+            userinfo = malloc(1024);
+            read(0, userinfo, 1024);
+            printf("%s\n", userinfo);
+            free(userinfo);
         }
     }
 
+    free(command);
     return 0;
 }

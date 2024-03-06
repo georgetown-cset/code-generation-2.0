@@ -1,33 +1,32 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
-int id_sequence(int index);
+int get_id(int index);
 
 int main(void)
 {
     int index;
-    int result;
+    int id;
 
     printf("Enter an index value: ");
     scanf("%d", &index);
 
-    result = id_sequence(index);
+    id = get_id(index);
 
-    if (result == -1)
+    if (id == -1)
     {
         printf("The index value is out of bounds.\n");
     }
     else
     {
-        printf("The value at the index is %d.\n", result);
+        printf("The value at index %d is %d.\n", index, id);
     }
 
     return 0;
 }
 
-int id_sequence(int index)
+int get_id(int index)
 {
     int id_sequence[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 

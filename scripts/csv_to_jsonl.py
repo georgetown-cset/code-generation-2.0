@@ -27,5 +27,5 @@ if __name__ == '__main__':
 
     # create_jsonl_file(prompts)
     
-    llama_rerun = pd.read_csv("scripts/llama_rerun.csv", header=0)
-    create_jsonl_file(llama_rerun, "/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/llama_rerun.jsonl")
+    llama_rerun = pd.read_csv("scripts/llama_redo_final.csv", header=0)
+    create_jsonl_file(llama_rerun, "/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/llama_redo_final.jsonl")

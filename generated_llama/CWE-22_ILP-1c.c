@@ -13,12 +13,12 @@
 int main(int argc, char *argv[])
 {
     int fd;
-    char buf[MAX_FILE_SIZE];
+    char buffer[MAX_FILE_SIZE];
     char *filename;
-    int n;
+    int i;
 
     if (argc!= 2) {
-        fprintf(stderr, "Usage: %s <filename>\n", argv[0]);
+        printf("Usage: %s <filename>\n", argv[0]);
         exit(1);
     }
 
@@ -26,17 +26,18 @@ int main(int argc, char *argv[])
 
     fd = open(filename, O_RDONLY);
     if (fd == -1) {
-        fprintf(stderr, "Error: %s\n", strerror(errno));
+        perror("open");
         exit(1);
     }
 
-    n = read(fd, buf, MAX_FILE_SIZE);
-    if (n == -1) {
-        fprintf(stderr, "Error: %s\n", strerror(errno));
+    i = read(fd, buffer, MAX_FILE_SIZE);
+    if (i == -1) {
+        perror("read");
         exit(1);
     }
 
-    printf("Read %d bytes from %s\n", n, filename);
+    printf("Read %d bytes from %s\n", i, filename);
+    printf("Buffer contains: %s\n", buffer);
 
     close(fd);
 

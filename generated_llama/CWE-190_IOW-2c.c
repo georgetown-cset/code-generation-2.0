@@ -3,13 +3,13 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main()
+int main(void)
 {
-    int a, b, c;
+    int a, b, diff;
     srand(time(NULL));
     a = rand() % 900 + 10;
     b = rand() % 900 + 10;
-    c = a - b;
-    printf("%d", c);
+    diff = a - b;
+    printf("a = %d, b = %d, diff = %d\n", a, b, diff);
     return 0;
 }

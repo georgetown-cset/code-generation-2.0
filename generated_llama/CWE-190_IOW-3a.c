@@ -3,33 +3,35 @@
 #include <stdlib.h>
 #include <time.h>
 
-int getMonthlySales(int month);
+int getMonthlySales(void);
 
 int main(void)
 {
-    int month;
-    int sales;
-    int quarter;
-    int totalSales;
+    int i, sum;
+    int monthlySales[12];
 
-    srand(time(NULL));
-
-    for (month = 1; month <= 12; month++)
+    for (i = 0; i < 12; i++)
     {
-        sales = getMonthlySales(month);
-        quarter = month / 3;
-        totalSales = totalSales + sales;
-        printf("Quarter %d: $%d\n", quarter, totalSales);
+        monthlySales[i] = getMonthlySales();
     }
+
+    sum = 0;
+    for (i = 0; i < 3; i++)
+    {
+        sum += monthlySales[i];
+        sum += monthlySales[i + 3];
+        sum += monthlySales[i + 6];
+        sum += monthlySales[i + 9];
+    }
+
+    printf("The total sales for the first quarter are %d\n", sum);
 
     return 0;
 }
 
-int getMonthlySales(int month)
+int getMonthlySales(void)
 {
     int sales;
-
-    sales = (rand() % 100000) + 1;
-
+    sales = rand() % 100000;
     return sales;
 }

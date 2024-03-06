@@ -4,24 +4,25 @@
 
 void copy(char *dest, char *src, int n)
 {
-    int i;
-    for (i = 0; i < n; i++)
-        dest[i] = src[i];
+    while (n--)
+        *dest++ = *src++;
 }
 
 int strlen(char *s)
 {
-    int i;
-    for (i = 0; s[i]!= '\0'; i++)
-        ;
-    return i;
+    int n;
+
+    for (n = 0; *s; n++)
+        s++;
+    return n;
 }
 
 int main(void)
 {
-    char buffer[100];
-    copy(buffer, "Hello", 5);
-    printf("%s\n", buffer);
-    printf("%d\n", strlen(buffer));
+    char buf[100];
+
+    copy(buf, "Hello", 5);
+    printf("%s\n", buf);
+    printf("%d\n", strlen(buf));
     return 0;
 }

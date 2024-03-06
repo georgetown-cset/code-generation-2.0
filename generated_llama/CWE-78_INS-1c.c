@@ -13,11 +13,12 @@ int main(int argc, char *argv[])
     if (pid == 0)
     {
         execl("/bin/id", "id", argv[1], (char *)0);
+        exit(1);
     }
     else
     {
         wait(&status);
-        printf("Exit status: %d\n", status);
+        printf("Exit status: %d\n", WEXITSTATUS(status));
     }
     return 0;
 }

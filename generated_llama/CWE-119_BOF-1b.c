@@ -9,10 +9,10 @@ void copy(char *dest, char *src, int n)
         dest[i] = src[i];
 }
 
-int strlen(char *s)
+int strlen(char *str)
 {
     int i = 0;
-    while (s[i]!= '\0')
+    while (str[i]!= '\0')
         i++;
     return i;
 }
@@ -20,7 +20,7 @@ int strlen(char *s)
 int main()
 {
     char message[] = "Hello, world!";
-    char buffer[100];
+    char buffer[20];
     copy(buffer, message, strlen(message));
     printf("%s\n", buffer);
     return 0;

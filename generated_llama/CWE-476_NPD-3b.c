@@ -2,14 +2,34 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(void)
+int scan(char *buffer, char *format)
+{
+    int i;
+    int count = 0;
+    char c;
+
+    for (i = 0; i < 1023; i++)
+    {
+        c = getchar();
+        if (c == '\n')
+        {
+            break;
+        }
+        buffer[i] = c;
+        count++;
+    }
+    buffer[i] = '\0';
+    return count;
+}
+
+int main()
 {
     char buffer[1024];
+    char format[] = "%[^\n]";
     int count;
 
-    count = scanf("%1023[^\n]", buffer);
-    printf("count = %d\n", count);
-    printf("buffer = %s\n", buffer);
-
+    count = scan(buffer, format);
+    printf("The string is: %s\n", buffer);
+    printf("The number of characters read in is: %d\n", count);
     return 0;
 }

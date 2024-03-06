@@ -81,6 +81,11 @@ if __name__ == "__main__":
         
     extract_llama(results)   
     
+    with open("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/llama_redo_results.jsonl", "r") as file:
+        results = file.read()
+        
+    extract_llama(results)  
+    
     
     # with open("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/mistral_results.jsonl", "r") as file:
     #     results = file.read()

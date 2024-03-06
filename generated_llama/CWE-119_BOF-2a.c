@@ -6,7 +6,7 @@ struct vehicle
 {
     char name[20];
     int year;
-    int make;
+    float price;
 };
 
 int main()
@@ -17,12 +17,8 @@ int main()
 
     for (i = 0; i < 5; i++)
     {
-        printf("Enter the name of the vehicle: ");
-        scanf("%s", vehicles[i].name);
-        printf("Enter the year of the vehicle: ");
-        scanf("%d", &vehicles[i].year);
-        printf("Enter the make of the vehicle: ");
-        scanf("%d", &vehicles[i].make);
+        printf("Enter name, year, and price for vehicle %d: ", i + 1);
+        scanf("%s %d %f", vehicles[i].name, &vehicles[i].year, &vehicles[i].price);
     }
 
     printf("Enter the index of the vehicle you want to print: ");
@@ -31,7 +27,7 @@ int main()
     printf("The vehicle at index %d is: \n", index);
     printf("Name: %s\n", vehicles[index].name);
     printf("Year: %d\n", vehicles[index].year);
-    printf("Make: %d\n", vehicles[index].make);
+    printf("Price: %f\n", vehicles[index].price);
 
     return 0;
 }

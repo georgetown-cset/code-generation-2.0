@@ -18,20 +18,18 @@ int main(int argc, char *argv[])
     {
         if (str[i]!='')
         {
+            str[i + 1] = '\0';
             break;
         }
-        str[i] = '\0';
     }
 
     for (size_t i = 0; i < len; i++)
     {
         if (str[i] == '\n')
         {
-            str[i] = '\0';
+            str[i] ='';
         }
     }
-
-    str[len] = '\0';
 
     printf("%s\n", str);
 

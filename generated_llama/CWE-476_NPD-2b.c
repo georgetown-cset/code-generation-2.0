@@ -4,19 +4,18 @@
 
 struct person {
     int status;
-    char name[20];
+    char *name;
 };
 
-int main() {
-    struct person *p;
-    p = (struct person *) malloc(sizeof(struct person));
+int main(void) {
+    struct person *p = malloc(sizeof(struct person));
     p->status = 0;
-    strcpy(p->name, "John");
-    printf("Status: %d\n", p->status);
-    printf("Name: %s\n", p->name);
+    p->name = "John";
+    printf("%d\n", p->status);
+    printf("%s\n", p->name);
     p->status = 1;
-    strcpy(p->name, "Jane");
-    printf("Status: %d\n", p->status);
-    printf("Name: %s\n", p->name);
+    p->name = "Jane";
+    printf("%d\n", p->status);
+    printf("%s\n", p->name);
     return 0;
 }

@@ -8,9 +8,9 @@ int main()
     char *buf, *buf1;
     buf = (char *)malloc(1024);
     buf1 = (char *)malloc(1024);
-    fgets(buf, 100, stdin);
-    fgets(buf1, 100, stdin);
-    printf("%s\n", buf);
-    printf("%s\n", buf1);
+    fgets(buf, 1024, stdin);
+    fgets(buf1, 1024, stdin);
+    printf("%s", buf);
+    printf("%s", buf1);
     return 0;
 }

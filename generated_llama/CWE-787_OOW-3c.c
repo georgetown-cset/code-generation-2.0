@@ -4,23 +4,33 @@
 
 int main(int argc, char *argv[])
 {
-    char *arg = argv[1];
-    int len = strlen(arg);
-    int i;
-
-    for (i = len - 1; i >= 0; i--)
+    if (argc!= 2)
     {
-        if (arg[i] =='')
-        {
-            arg[i] = '\0';
-        }
-        else
-        {
-            break;
-        }
+        printf("Usage: %s <string>\n", argv[0]);
+        return 1;
     }
 
-    printf("%s\n", arg);
+    char *trimmed = trim(argv[1]);
+    printf("%s\n", trimmed);
 
     return 0;
+}
+
+char *trim(char *str)
+{
+    char *end;
+
+    while (isspace((unsigned char)*str))
+        str++;
+
+    if (*str == 0)
+        return str;
+
+    end = str + strlen(str) - 1;
+    while (end > str && isspace((unsigned char)*end))
+        end--;
+
+    *(end + 1) = '\0';
+
+    return str;
 }

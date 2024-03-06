@@ -2,20 +2,20 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MAX_VEHICLES 5
+#define MAX_VEHICLES 10
 
 int main(void)
 {
-    char vehicles[MAX_VEHICLES][20] = { "car", "truck", "bus", "motorcycle", "bicycle" };
+    char vehicles[MAX_VEHICLES][20] = { "car", "truck", "bus", "motorcycle", "bicycle", "train", "boat", "airplane", "helicopter", "jet" };
     int index;
     char vehicle[20];
 
-    printf("Enter the index of the vehicle you want to know: ");
+    printf("Enter the index of the vehicle you want to know about: ");
     scanf("%d", &index);
 
     if (index < 0 || index >= MAX_VEHICLES)
     {
-        printf("Invalid index\n");
+        printf("Invalid index.\n");
         return 1;
     }
 

@@ -4,27 +4,18 @@
 
 int main(int argc, char *argv[])
 {
-    int i, n, a[10];
-    if (argc!= 2)
+    int i;
+    int num = atoi(argv[1]);
+    int arr[5] = {1, 2, 3, 4, 5};
+
+    if (num >= 0 && num <= 4)
     {
-        printf("invalid input");
-        return 0;
+        printf("%d", arr[num]);
     }
     else
     {
-        n = atoi(argv[1]);
-        for (i = 0; i < 10; i++)
-        {
-            a[i] = i;
-        }
-        if (n >= 0 && n <= 9)
-        {
-            printf("%d", a[n]);
-        }
-        else
-        {
-            printf("invalid input");
-        }
+        printf("invalid input");
     }
+
     return 0;
 }

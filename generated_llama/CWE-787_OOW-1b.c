@@ -4,14 +4,15 @@
 #include <string.h>
 #include <time.h>
 
-int main()
+int main(void)
 {
-    char *str1, *str2, *str3, *str4;
-    char *str5;
+    char *str1, *str2, *str3;
+    char *str4;
     int i;
     float f1, f2, f3;
+    FILE *fp;
 
-    srand(time(NULL));
+    fp = fopen("random.txt", "w");
 
     for (i = 0; i < 3; i++)
     {
@@ -19,33 +20,28 @@ int main()
         f2 = (float)rand() / RAND_MAX;
         f3 = (float)rand() / RAND_MAX;
 
-        str1 = (char *)malloc(sizeof(char) * 10);
-        str2 = (char *)malloc(sizeof(char) * 10);
-        str3 = (char *)malloc(sizeof(char) * 10);
-        str4 = (char *)malloc(sizeof(char) * 10);
+        str1 = (char *)malloc(10 * sizeof(char));
+        str2 = (char *)malloc(10 * sizeof(char));
+        str3 = (char *)malloc(10 * sizeof(char));
 
         sprintf(str1, "%f", f1);
         sprintf(str2, "%f", f2);
         sprintf(str3, "%f", f3);
 
+        str4 = (char *)malloc(10 * sizeof(char));
         strcat(str4, str1);
         strcat(str4, str2);
         strcat(str4, str3);
 
-        str5 = (char *)malloc(sizeof(char) * 10);
-        strcpy(str5, str4);
-
-        FILE *fp;
-        fp = fopen("random.txt", "w");
-        fprintf(fp, "%s", str5);
-        fclose(fp);
+        fprintf(fp, "%s\n", str4);
 
         free(str1);
         free(str2);
         free(str3);
         free(str4);
-        free(str5);
     }
+
+    fclose(fp);
 
     return 0;
 }

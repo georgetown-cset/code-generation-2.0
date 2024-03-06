@@ -2,53 +2,39 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <unistd.h>
-#include <fcntl.h>
-#include <sys/stat.h>
-#include <sys/types.h>
-#include <sys/mman.h>
+#include <stdint.h>
+
+#define BUFFER_SIZE 1024
 
 int main(int argc, char *argv[])
 {
-    int fd;
-    char *buffer;
-    struct stat st;
+    FILE *fp;
+    char buffer[BUFFER_SIZE];
+    char *hex_string;
     int i;
 
-    if (argc!= 2) {
+    if (argc!= 2)
+    {
         printf("Usage: %s <filename>\n", argv[0]);
-        exit(1);
+        return 1;
     }
 
-    if ((fd = open(argv[1], O_RDONLY)) == -1) {
-        perror("open");
-        exit(1);
+    fp = fopen(argv[1], "rb");
+    if (fp == NULL)
+    {
+        printf("Error opening file %s\n", argv[1]);
+        return 1;
     }
 
-    if (fstat(fd, &st) == -1) {
-        perror("fstat");
-        exit(1);
+    while (fread(buffer, 1, BUFFER_SIZE, fp) > 0)
+    {
+        for (i = 0; i < BUFFER_SIZE; i++)
+        {
+            printf("%02x", buffer[i]);
+        }
     }
 
-    buffer = mmap(NULL, st.st_size, PROT_READ, MAP_PRIVATE, fd, 0);
-    if (buffer == MAP_FAILED) {
-        perror("mmap");
-        exit(1);
-    }
-
-    for (i = 0; i < st.st_size; i++) {
-        printf("%c", buffer[i]);
-    }
-
-    if (munmap(buffer, st.st_size) == -1) {
-        perror("munmap");
-        exit(1);
-    }
-
-    if (close(fd) == -1) {
-        perror("close");
-        exit(1);
-    }
+    fclose(fp);
 
     return 0;
 }

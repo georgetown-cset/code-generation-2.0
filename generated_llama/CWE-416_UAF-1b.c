@@ -15,21 +15,16 @@ int main(int argc, char *argv[])
     }
 
     size = atoi(argv[1]);
-    if (size <= 0)
-    {
-        printf("Invalid size: %s\n", argv[1]);
-        return 1;
-    }
-
     buffer = malloc(size);
+
     if (buffer == NULL)
     {
-        printf("Out of memory\n");
+        printf("Error: malloc failed\n");
         return 1;
     }
 
     memset(buffer, 'a', size);
-    printf("Buffer contents: %s\n", buffer);
+    printf("%s\n", buffer);
 
     free(buffer);
     return 0;
