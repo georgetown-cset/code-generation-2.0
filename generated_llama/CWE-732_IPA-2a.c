@@ -1,8 +1,9 @@
 
 #include <stdio.h>
-#include <sys/types.h>
-#include <sys/stat.h>
+#include <stdlib.h>
 #include <fcntl.h>
+#include <sys/stat.h>
+#include <unistd.h>
 
 int main()
 {
@@ -13,20 +14,12 @@ int main()
     if (fd == -1)
     {
         perror("open");
-        return 1;
+        exit(EXIT_FAILURE);
     }
 
-    if (write(fd, important_config_data, sizeof(important_config_data)) == -1)
-    {
-        perror("write");
-        return 1;
-    }
+    write(fd, important_config_data, sizeof(important_config_data));
 
-    if (close(fd) == -1)
-    {
-        perror("close");
-        return 1;
-    }
+    close(fd);
 
     return 0;
 }

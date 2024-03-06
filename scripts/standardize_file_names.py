@@ -14,9 +14,9 @@ def process_file(file):
     idx = file.split('.')[0] #change this for future iterations
     
     try:
-        index = int(idx) - 1  # Convert to integer
+        index = int(idx)-1  # Convert to integer, subtract by 1 to get to index
     except ValueError:
-        print(f"Skipping file {file}: Index '{idx_str}' is not a valid integer")
+        print(f"Skipping file {file}: Index '{idx}' is not a valid integer")
         return
     
     print(index)

@@ -24,21 +24,11 @@ int main(int argc, char *argv[])
     command = "cat /etc/passwd | grep ";
     user_info = malloc(1024);
 
-    if (user_info == NULL)
-    {
-        printf("Error: malloc failed\n");
-        exit(1);
-    }
-
-    strcpy(user_info, command);
-    strcat(user_info, username);
-
     pid = fork();
 
     if (pid == 0)
     {
-        execlp("sh", "sh", "-c", user_info, (char *)0);
-        printf("Error: execlp failed\n");
+        execlp("sh", "sh", "-c", command, username, (char *)0);
         exit(1);
     }
     else
@@ -51,10 +41,9 @@ int main(int argc, char *argv[])
         }
         else
         {
-            printf("Error: user not found\n");
+            printf("Error: %s\n", strerror(WEXITSTATUS(status)));
         }
     }
 
-    free(user_info);
     return 0;
 }

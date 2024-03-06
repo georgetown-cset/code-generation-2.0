@@ -3,15 +3,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-char *float_to_string(float f)
-{
+char *float_to_string(float f) {
     char *str = malloc(100);
     sprintf(str, "%f", f);
     return str;
 }
 
-int main(void)
-{
+int main(void) {
     float a = (float)rand() / RAND_MAX;
     float b = (float)rand() / RAND_MAX;
     float c = (float)rand() / RAND_MAX;
