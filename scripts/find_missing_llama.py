@@ -1,6 +1,7 @@
 import os
 import re
 import pandas as pd
+import csv_to_jsonl
 
 CURRENT_DIRECTORY = os.getcwd()
 
@@ -33,5 +34,9 @@ print(difference)
 
 prompts_to_rerun = prompts.loc[all_prompts.index[list(difference)]]
 
-prompts_to_rerun.to_csv("llama_rerun.csv")
+prompts_to_rerun.loc[:, "NL Prompt"] = prompts_to_rerun["NL Prompt"].replace({"<language>": "C", "<lanuage>": "C"}, regex=True)
+
+print(prompts_to_rerun['NL Prompt'])
+
+prompts_to_rerun.to_csv("scripts/llama_rerun.csv")
     
