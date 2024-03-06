@@ -3,7 +3,7 @@ import os
 
 CURRENT_DIRECTORY = os.getcwd()
 PROMPTS =  pd.read_csv("scripts/LLMSecEval-prompts.csv")
-TARGET_DIRECTORY = "generated_wizard_code"
+TARGET_DIRECTORY = "generated_llama"
 
 def standardize_file_names(target_directory):
     for file_name in os.listdir(target_directory):

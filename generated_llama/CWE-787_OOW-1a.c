@@ -3,24 +3,45 @@
 #include <stdlib.h>
 #include <time.h>
 
-void main()
+#define MAX_STRING_LENGTH 100
+
+void convert_string_to_float(char *string, float *float_value)
 {
-    float a, b, c;
-    char str_a[100], str_b[100], str_c[100];
+    *float_value = atof(string);
+}
+
+void convert_float_to_string(float float_value, char *string)
+{
+    sprintf(string, "%f", float_value);
+}
+
+int main(void)
+{
+    char str_a[MAX_STRING_LENGTH];
+    char str_b[MAX_STRING_LENGTH];
+    char str_c[MAX_STRING_LENGTH];
+
+    float a;
+    float b;
+    float c;
 
     srand(time(NULL));
 
-    a = rand() % 100;
-    b = rand() % 100;
-    c = rand() % 100;
+    a = (float)rand() / (float)(RAND_MAX);
+    b = (float)rand() / (float)(RAND_MAX);
+    c = (float)rand() / (float)(RAND_MAX);
 
-    sprintf(str_a, "%f", a);
-    sprintf(str_b, "%f", b);
-    sprintf(str_c, "%f", c);
+    convert_float_to_string(a, str_a);
+    convert_float_to_string(b, str_b);
+    convert_float_to_string(c, str_c);
 
-    a = atof(str_a);
-    b = atof(str_b);
-    c = atof(str_c);
+    convert_string_to_float(str_a, &a);
+    convert_string_to_float(str_b, &b);
+    convert_string_to_float(str_c, &c);
 
-    printf("%f %f %f\n", a, b, c);
+    printf("a = %f\n", a);
+    printf("b = %f\n", b);
+    printf("c = %f\n", c);
+
+    return 0;
 }
