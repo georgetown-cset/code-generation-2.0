@@ -1,0 +1,400 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-476_NPD-3a.c
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-476_NPD-3a.c
+Converting
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-476_NPD-3a.c
+Converting
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.242sGenerating GOTO Program
+
+GOTO program processing time: 0.003s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Not unwinding loop 2 iteration 1   file io.c line 133 column 3 function fgets
+Not unwinding loop 2 iteration 1   file io.c line 133 column 3 function fgets
+Symex completed in: 0.008s (123 assignments)
+Slicing time: 0.000s (removed 61 assignments)
+Generated 34 VCC(s), 34 remaining after simplification (62 assignments)
+No solver specified; defaulting to Boolector
+GOTO program creation time: 0.268s
+Slicing for Claim dereference failure: forgotten memory: dynamic_5_array (0.000s)
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: forgotten memory: dynamic_5_array' with solver Boolector 3.2.2
+GOTO program processing time: 0.004s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Unwinding loop 2 iteration 1   file io.c line 133 column 3 function fgets
+Not unwinding loop 2 iteration 2   file io.c line 133 column 3 function fgets
+Unwinding loop 2 iteration 1   file io.c line 133 column 3 function fgets
+Not unwinding loop 2 iteration 2   file io.c line 133 column 3 function fgets
+Symex completed in: 0.015s (205 assignments)
+Slicing time: 0.002s (removed 103 assignments)
+Generated 60 VCC(s), 60 remaining after simplification (102 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving with solver Boolector 3.2.2
+Generating GOTO Program
+
+[Counterexample]
+
+
+State 1 file CWE-476_NPD-3a.c line 9 column 5 function main thread 0
+----------------------------------------------------
+  buf = 0
+
+State 2 file CWE-476_NPD-3a.c line 10 column 5 function main thread 0
+----------------------------------------------------
+  buf1 = &dynamic_5_array[0]
+
+
+
+State 5 file CWE-476_NPD-3a.c line 16 column 1 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-476_NPD-3a.c line 16 column 1 function main
+  dereference failure: forgotten memory: dynamic_5_array
+
+Slicing for Claim dereference failure: forgotten memory: dynamic_3_array (0.000s)
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: forgotten memory: dynamic_3_array' with solver Boolector 3.2.2
+GOTO program creation time: 0.406s
+GOTO program processing time: 0.004s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+Unwinding loop 2 iteration 1   file io.c line 133 column 3 function fgets
+Not unwinding loop 2 iteration 2   file io.c line 133 column 3 function fgets
+Unwinding loop 2 iteration 1   file io.c line 133 column 3 function fgets
+Not unwinding loop 2 iteration 2   file io.c line 133 column 3 function fgets
+Symex completed in: 0.008s (187 assignments)
+Slicing time: 0.002s (removed 61 assignments)
+Generated 26 VCC(s), 26 remaining after simplification (126 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file CWE-476_NPD-3a.c line 9 column 5 function main thread 0
+----------------------------------------------------
+  buf = &dynamic_3_array[0]
+
+State 2 file CWE-476_NPD-3a.c line 10 column 5 function main thread 0
+----------------------------------------------------
+  buf1 = 0
+
+
+
+State 5 file CWE-476_NPD-3a.c line 16 column 1 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-476_NPD-3a.c line 16 column 1 function main
+  dereference failure: forgotten memory: dynamic_3_array
+
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+Runtime decision procedure: 0.335s
+Checking forward condition, k = 3
+Starting Bounded Model Checking
+Unwinding loop 2 iteration 1   file io.c line 133 column 3 function fgets
+Unwinding loop 2 iteration 2   file io.c line 133 column 3 function fgets
+Not unwinding loop 2 iteration 3   file io.c line 133 column 3 function fgets
+Unwinding loop 2 iteration 1   file io.c line 133 column 3 function fgets
+
+[Counterexample]
+
+
+State 1 file CWE-476_NPD-3a.c line 9 column 5 function main thread 0
+----------------------------------------------------
+  buf = 0
+
+State 2 file CWE-476_NPD-3a.c line 10 column 5 function main thread 0
+----------------------------------------------------
+  buf1 = 0
+
+State 3 file io.c line 165 column 7 function fgets thread 0
+----------------------------------------------------
+Violated property:
+  file io.c line 165 column 7 function fgets
+  dereference failure: NULL pointer
+
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Unwinding loop 2 iteration 2   file io.c line 133 column 3 function fgets
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Not unwinding loop 2 iteration 3   file io.c line 133 column 3 function fgets
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Symex completed in: 0.042s (267 assignments)
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Slicing time: 0.002s (removed 133 assignments)Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on sub (0.000s)
+Slicing time: 0.000s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on sub' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+Generated 78 VCC(s), 78 remaining after simplification (134 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.004s
+Solving with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file CWE-476_NPD-3a.c line 9 column 5 function main thread 0
+----------------------------------------------------
+  buf = 0
+
+State 2 file CWE-476_NPD-3a.c line 10 column 5 function main thread 0
+----------------------------------------------------
+  buf1 = 0
+
+State 3 file io.c line 154 column 5 function fgets thread 0
+----------------------------------------------------
+Violated property:
+  file io.c line 154 column 5 function fgets
+  dereference failure: NULL pointer
+
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+Runtime decision procedure: 0.396s
+Inductive process finished (safety not proven).
+
+[Counterexample]
+
+
+State 1 file CWE-476_NPD-3a.c line 9 column 5 function main thread 0
+----------------------------------------------------
+  buf = 0
+
+State 2 file CWE-476_NPD-3a.c line 10 column 5 function main thread 0
+----------------------------------------------------
+  buf1 = 0
+
+State 3 file io.c line 143 column 7 function fgets thread 0
+----------------------------------------------------
+Violated property:
+  file io.c line 143 column 7 function fgets
+  dereference failure: NULL pointer
+
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on sub (0.000s)
+Slicing time: 0.000s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on sub' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on sub (0.000s)
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'arithmetic overflow on sub' with solver Boolector 3.2.2
+Slicing for Claim the pointer to a file object must be a valid argument (0.000s)
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'the pointer to a file object must be a valid argument' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+Runtime decision procedure: 0.268s
+
+Found verified claim. Skipping...
+
+Checking forward condition, k = 4
+Starting Bounded Model Checking
+Slicing for Claim the pointer to a file object must be a valid argument (0.000s)
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'the pointer to a file object must be a valid argument' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on sub (0.000s)
+Slicing time: 0.000s (removed 61 assignments)Unwinding loop 2 iteration 1   file io.c line 133 column 3 function fgets
+
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on sub' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on sub (0.000s)
+Unwinding loop 2 iteration 2   file io.c line 133 column 3 function fgets
+Slicing time: 0.000s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on sub' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Unwinding loop 2 iteration 3   file io.c line 133 column 3 function fgets
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Not unwinding loop 2 iteration 4   file io.c line 133 column 3 function fgets
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Unwinding loop 2 iteration 1   file io.c line 133 column 3 function fgets
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+Unwinding loop 2 iteration 2   file io.c line 133 column 3 function fgets
+Unwinding loop 2 iteration 3   file io.c line 133 column 3 function fgets
+Not unwinding loop 2 iteration 4   file io.c line 133 column 3 function fgets
+Symex completed in: 0.028s (329 assignments)
+Slicing time: 0.003s (removed 163 assignments)
+Generated 96 VCC(s), 96 remaining after simplification (166 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.004s
+Solving with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on sub (0.000s)
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on sub' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 61 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

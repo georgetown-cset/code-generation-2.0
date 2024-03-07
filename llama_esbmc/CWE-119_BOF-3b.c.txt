@@ -1,0 +1,410 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-119_BOF-3b.c
+Converting
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-119_BOF-3b.c
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-119_BOF-3b.c
+Converting
+Converting
+Generating GOTO Program
+Generating GOTO ProgramGOTO program creation time: 0.241s
+
+GOTO program processing time: 0.002s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 4 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 1   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 5 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 12 iteration 1   file CWE-119_BOF-3b.c line 10 column 5 function main
+Unwinding loop 4 iteration 1   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 4 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 1   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 5 iteration 2   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 12 iteration 2   file CWE-119_BOF-3b.c line 10 column 5 function main
+Symex completed in: 0.017s (229 assignments)
+Slicing time: 0.001s (removed 74 assignments)
+Generated 30 VCC(s), 30 remaining after simplification (155 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.005sGOTO program creation time: 0.271s
+GOTO program processing time: 0.002s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+
+Solving with solver Boolector 3.2.2
+Not unwinding loop 4 iteration 1   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 5 iteration 1   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 12 iteration 1   file CWE-119_BOF-3b.c line 10 column 5 function main
+Symex completed in: 0.005s (88 assignments)
+Slicing time: 0.001s (removed 33 assignments)
+Generated 24 VCC(s), 23 remaining after simplification (55 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.001s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on sub (0.000s)
+Slicing time: 0.000s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'arithmetic overflow on sub' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.000s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on div (0.000s)
+Slicing time: 0.001s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'arithmetic overflow on div' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on sub (0.000s)
+Slicing time: 0.000s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'arithmetic overflow on sub' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on div (0.000s)
+Slicing time: 0.000s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'arithmetic overflow on div' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on sub (0.000s)
+Slicing time: 0.000s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'arithmetic overflow on sub' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalid pointer (0.000s)
+Slicing time: 0.001s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: invalid pointer' with solver Boolector 3.2.2
+Generating GOTO Program
+GOTO program creation time: 0.393s
+GOTO program processing time: 0.002s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 4 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 1   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 5 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 12 iteration 1   file CWE-119_BOF-3b.c line 10 column 5 function main
+Unwinding loop 4 iteration 1   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 4 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 1   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 5 iteration 2   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 12 iteration 2   file CWE-119_BOF-3b.c line 10 column 5 function main
+Symex completed in: 0.034s (229 assignments)
+Slicing time: 0.002s (removed 64 assignments)
+Generated 85 VCC(s), 83 remaining after simplification (165 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.005s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.639s
+Inductive process finished (safety not proven).
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[7] = 0
+
+State 4 file stdlib.c line 197 column 1 function atoi thread 0
+----------------------------------------------------
+Violated property:
+  file stdlib.c line 197 column 1 function atoi
+  dereference failure: invalid pointer
+
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+Runtime decision procedure: 0.904s
+Checking forward condition, k = 3
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 2   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 4 iteration 3   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 2   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 5 iteration 3   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 12 iteration 1   file CWE-119_BOF-3b.c line 10 column 5 function main
+Unwinding loop 4 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 2   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 4 iteration 3   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 2   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 5 iteration 3   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 12 iteration 2   file CWE-119_BOF-3b.c line 10 column 5 function main
+Unwinding loop 4 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 2   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 4 iteration 3   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 2   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 5 iteration 3   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 12 iteration 3   file CWE-119_BOF-3b.c line 10 column 5 function main
+Symex completed in: 0.023s (446 assignments)
+Slicing time: 0.006s (removed 110 assignments)
+Generated 175 VCC(s), 172 remaining after simplification (336 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.009s
+Solving with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[134217729] = 0
+
+State 4 file stdlib.c line 197 column 1 function atoi thread 0
+----------------------------------------------------
+Violated property:
+  file stdlib.c line 197 column 1 function atoi
+  dereference failure: NULL pointer
+
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: invalid pointer (0.000s)
+Slicing time: 0.001s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: invalid pointer' with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: invalid pointer (0.000s)
+Slicing time: 0.000s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: invalid pointer' with solver Boolector 3.2.2
+Runtime decision procedure: 1.145s
+Checking forward condition, k = 4
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 3   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 4 iteration 4   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 3   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 5 iteration 4   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 12 iteration 1   file CWE-119_BOF-3b.c line 10 column 5 function main
+Unwinding loop 4 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 3   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 4 iteration 4   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 3   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 5 iteration 4   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 12 iteration 2   file CWE-119_BOF-3b.c line 10 column 5 function main
+Unwinding loop 4 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 3   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 4 iteration 4   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 3   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 5 iteration 4   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 12 iteration 3   file CWE-119_BOF-3b.c line 10 column 5 function main
+Unwinding loop 4 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 3   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 4 iteration 4   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 3   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 5 iteration 4   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 12 iteration 4   file CWE-119_BOF-3b.c line 10 column 5 function main
+Symex completed in: 0.034s (739 assignments)
+Slicing time: 0.014s (removed 170 assignments)
+Generated 297 VCC(s), 293 remaining after simplification (569 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.014s
+Solving with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: invalid pointer (0.000s)
+Slicing time: 0.000s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: invalid pointer' with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+Runtime decision procedure: 2.162s
+Checking forward condition, k = 5
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 3   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 4   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 4 iteration 5   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 3   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 4   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 5 iteration 5   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 12 iteration 1   file CWE-119_BOF-3b.c line 10 column 5 function main
+Unwinding loop 4 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 3   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 4   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 4 iteration 5   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 3   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 4   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 5 iteration 5   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 12 iteration 2   file CWE-119_BOF-3b.c line 10 column 5 function main
+Unwinding loop 4 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 3   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 4   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 4 iteration 5   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 3   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 4   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 5 iteration 5   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 12 iteration 3   file CWE-119_BOF-3b.c line 10 column 5 function main
+Unwinding loop 4 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 3   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 4   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 4 iteration 5   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 3   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 4   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 5 iteration 5   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 12 iteration 4   file CWE-119_BOF-3b.c line 10 column 5 function main
+Unwinding loop 4 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 3   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 4 iteration 4   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 4 iteration 5   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 1   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 2   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 3   file stdlib.c line 197 column 1 function atoi
+Unwinding loop 5 iteration 4   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 5 iteration 5   file stdlib.c line 197 column 1 function atoi
+Not unwinding loop 12 iteration 5   file CWE-119_BOF-3b.c line 10 column 5 function main
+Symex completed in: 0.053s (1108 assignments)
+Slicing time: 0.024s (removed 244 assignments)
+Generated 451 VCC(s), 446 remaining after simplification (864 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.021s
+Solving with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: invalid pointer (0.000s)
+Slicing time: 0.000s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: invalid pointer' with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim array bounds violated: array `ATOI_MAP' lower bound (0.000s)
+Slicing time: 0.000s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'array bounds violated: array `ATOI_MAP' lower bound' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: invalid pointer (0.000s)
+Slicing time: 0.000s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: invalid pointer' with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim array bounds violated: array `ATOI_MAP' upper bound (0.000s)
+Slicing time: 0.001s (removed 33 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'array bounds violated: array `ATOI_MAP' upper bound' with solver Boolector 3.2.2
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

@@ -1,0 +1,69 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c:2:22: error: unknown type name 'FILE'
+void http_hello_page(FILE *request, FILE *response)
+                     ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c:2:37: error: unknown type name 'FILE'
+void http_hello_page(FILE *request, FILE *response)
+                                    ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c:5:5: warning: implicit declaration of function '__ESBMC_fscanf' is invalid in C99 [-Wimplicit-function-declaration]
+    fscanf(request, "%s", username);
+    ^
+esbmc_intrinsics.h:127:18: note: expanded from here
+  #define fscanf __ESBMC_fscanf
+                 ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c:6:5: warning: implicit declaration of function 'fprintf' is invalid in C99 [-Wimplicit-function-declaration]
+    fprintf(response, "HTTP/1.1 200 OK\r\n");
+    ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c:6:5: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c:10:24: warning: unknown escape sequence '\s' [-Wunknown-escape-sequence]
+    fprintf(response, "\section{Hello %s}", username);
+                       ^~
+ERROR: PARSING ERROR
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c:2:22: error: unknown type name 'FILE'
+void http_hello_page(FILE *request, FILE *response)
+                     ^
+:2:22: error: unknown type name 'FILE'
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c:2:37: error: unknown type name 'FILE'
+void http_hello_page(FILE *request, FILE *response)void http_hello_page(FILE *request, FILE *response)
+                     ^
+
+                                    ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c:5/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c:5: warning: implicit declaration of function '__ESBMC_fscanf' is invalid in C99 [-Wimplicit-function-declaration]
+:    fscanf(request, "%s", username);
+    ^
+esbmc_intrinsics.h:127:18: note: expanded from here
+2  #define fscanf __ESBMC_fscanf
+                 ^
+:37: error/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c:6:5: warning: implicit declaration of function 'fprintf' is invalid in C99 [-Wimplicit-function-declaration]
+: unknown type name 'FILE'    fprintf(response, "HTTP/1.1 200 OK\r\n");
+    ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c:6:5: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.cvoid http_hello_page(FILE *request, FILE *response)
+                                    ^
+:10:24:/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c:5:5: warning: implicit declaration of function '__ESBMC_fscanf' is invalid in C99 [-Wimplicit-function-declaration]
+ warning    fscanf(request, "%s", username);
+    ^
+esbmc_intrinsics.h:127:18: note: expanded from here
+:   #define fscanf __ESBMC_fscanfunknown escape sequence '\s' [-Wunknown-escape-sequence]
+
+                 ^
+    fprintf(response, "\section{Hello %s}", username);
+                       ^~
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c:6:5ERROR: PARSING ERROR
+: warning: implicit declaration of function 'fprintf' is invalid in C99 [-Wimplicit-function-declaration]
+    fprintf(response, "HTTP/1.1 200 OK\r\n");
+    ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c:6:5: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1b.c:10:24: warning: unknown escape sequence '\s' [-Wunknown-escape-sequence]
+    fprintf(response, "\section{Hello %s}", username);
+                       ^~
+ERROR: PARSING ERROR
+WARNING: base case process crashed.
+ERROR: Message from unrecognized k-induction child process

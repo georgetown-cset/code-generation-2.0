@@ -1,0 +1,71 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-125_OOB-2c.c
+Converting
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-125_OOB-2c.c
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-125_OOB-2c.c
+Converting
+Converting
+Generating GOTO Program
+Generating GOTO Program
+GOTO program creation time: 0.240s
+GOTO program processing time: 0.002s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Symex completed in: 0.002s (24 assignments)
+Slicing time: 0.000s (removed 17 assignments)
+Generated 2 VCC(s), 2 remaining after simplification (7 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+BMC program time: 0.003s
+Forward condition process finished (safety proven).
+GOTO program creation time: 0.267s
+GOTO program processing time: 0.002s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (25 assignments)
+Slicing time: 0.000s (removed 17 assignments)
+Generated 3 VCC(s), 3 remaining after simplification (8 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim array bounds violated: array `id_sequence' upper bound (0.000s)
+Slicing time: 0.000s (removed 17 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'array bounds violated: array `id_sequence' upper bound' with solver Boolector 3.2.2
+Slicing for Claim array bounds violated: array `id_sequence' lower bound (0.000s)
+Slicing time: 0.000s (removed 17 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'array bounds violated: array `id_sequence' lower bound' with solver Boolector 3.2.2
+Slicing for Claim buffer overflow on scanf (0.000s)
+Slicing time: 0.000s (removed 17 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'buffer overflow on scanf' with solver Boolector 3.2.2
+
+[Counterexample]
+
+Enter an index value: 
+
+State 2 file CWE-125_OOB-2c.c line 11 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-125_OOB-2c.c line 11 column 5 function main
+  buffer overflow on scanf
+  0
+
+WARNING: inductive step process crashed.
+Base case process finished (bug found).
+
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

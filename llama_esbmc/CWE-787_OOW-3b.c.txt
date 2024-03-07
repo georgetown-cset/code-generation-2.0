@@ -1,0 +1,63 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c:16:29: warning: implicit declaration of function 'strtrim' is invalid in C99 [-Wimplicit-function-declaration]
+    printf("Trimmed: %s\n", strtrim(input));
+                            ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c:16:29: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+    printf("Trimmed: %s\n", strtrim(input));
+                     ~~     ^~~~~~~~~~~~~~
+                     %d
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c:20:7: error: conflicting types for 'strtrim'
+char *strtrim(char *str)
+      ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c:16:29: note: previous implicit declaration is here
+    printf("Trimmed: %s\n", strtrim(input));
+                            ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c:24:12: warning: implicitly declaring library function 'isspace' with type 'int (int)' [-Wimplicit-function-declaration]
+    while (isspace((unsigned char)*str))
+           ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c:24:12: note: include the header <ctype.h> or explicitly provide a declaration for 'isspace'
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c
+ERROR: PARSING ERROR
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c:16:29: warning: implicit declaration of function 'strtrim' is invalid in C99 [-Wimplicit-function-declaration]
+    printf("Trimmed: %s\n", strtrim(input));
+                            ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c:16:29: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+    printf("Trimmed: %s\n", strtrim(input));
+                     ~~     ^~~~~~~~~~~~~~
+                     %d
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c:20:7: error: conflicting types for 'strtrim'
+char *strtrim(char *str)
+      ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c:16:29: note: previous implicit declaration is here
+    printf("Trimmed: %s\n", strtrim(input));
+                            ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c:24:12: warning: implicitly declaring library function 'isspace' with type 'int (int)' [-Wimplicit-function-declaration]
+    while (isspace((unsigned char)*str))
+           ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c:24:12: note: include the header <ctype.h> or explicitly provide a declaration for 'isspace'
+ERROR: PARSING ERROR
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c:16:29: warning: implicit declaration of function 'strtrim' is invalid in C99 [-Wimplicit-function-declaration]
+    printf("Trimmed: %s\n", strtrim(input));
+                            ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c:16:29: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+    printf("Trimmed: %s\n", strtrim(input));
+                     ~~     ^~~~~~~~~~~~~~
+                     %d
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c:20:7: error: conflicting types for 'strtrim'
+char *strtrim(char *str)
+      ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c:16:29: note: previous implicit declaration is here
+    printf("Trimmed: %s\n", strtrim(input));
+                            ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c:24:12: warning: implicitly declaring library function 'isspace' with type 'int (int)' [-Wimplicit-function-declaration]
+    while (isspace((unsigned char)*str))
+           ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-3b.c:24:12: note: include the header <ctype.h> or explicitly provide a declaration for 'isspace'
+ERROR: PARSING ERROR
+WARNING: base case process crashed.
+ERROR: Message from unrecognized k-induction child process

@@ -1,0 +1,211 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-416_UAF-2a.c
+Converting
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-416_UAF-2a.c
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-416_UAF-2a.c
+Converting
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.283s
+GOTO program processing time: 0.004s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Not unwinding loop 3 iteration 1   file io.c line 184 column 3 function fread
+Not unwinding loop 34 iteration 1   file CWE-416_UAF-2a.c line 41 column 5 function main
+Symex completed in: 0.006s (114 assignments)
+Slicing time: 0.001s (removed 56 assignments)
+Generated 19 VCC(s), 17 remaining after simplification (58 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: forgotten memory: dynamic_8_array (0.000s)
+Slicing time: 0.000s (removed 56 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Generating GOTO Program
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: forgotten memory: dynamic_8_array' with solver Boolector 3.2.2
+GOTO program creation time: 0.367s
+GOTO program processing time: 0.004s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+Unwinding loop 3 iteration 1   file io.c line 184 column 3 function fread
+Not unwinding loop 3 iteration 2   file io.c line 184 column 3 function fread
+Unwinding loop 34 iteration 1   file CWE-416_UAF-2a.c line 41 column 5 function main
+Not unwinding loop 34 iteration 2   file CWE-416_UAF-2a.c line 41 column 5 function main
+Symex completed in: 0.014s (131 assignments)
+Slicing time: 0.001s (removed 60 assignments)
+Generated 17 VCC(s), 15 remaining after simplification (71 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving with solver Boolector 3.2.2
+Generating GOTO Program
+
+[Counterexample]
+
+
+State 3 file CWE-416_UAF-2a.c line 28 column 5 function main thread 0
+----------------------------------------------------
+  buffer = &dynamic_8_array[0]
+
+State 5 file CWE-416_UAF-2a.c line 34 column 5 function main thread 0
+----------------------------------------------------
+  bytes_read = 0 (00000000 00000000 00000000 00000000)
+Error reading file 
+
+
+State 7 file CWE-416_UAF-2a.c line 55 column 1 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-416_UAF-2a.c line 55 column 1 function main
+  dereference failure: forgotten memory: dynamic_8_array
+
+Slicing for Claim dereference failure: forgotten memory: dynamic_6_value (0.000s)
+Slicing time: 0.000s (removed 56 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.010s
+Solving claim 'dereference failure: forgotten memory: dynamic_6_value' with solver Boolector 3.2.2
+GOTO program creation time: 0.484s
+GOTO program processing time: 0.003s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Unwinding loop 3 iteration 1   file io.c line 184 column 3 function fread
+Not unwinding loop 3 iteration 2   file io.c line 184 column 3 function fread
+Unwinding loop 34 iteration 1   file CWE-416_UAF-2a.c line 41 column 5 function main
+Not unwinding loop 34 iteration 2   file CWE-416_UAF-2a.c line 41 column 5 function main
+Symex completed in: 0.009s (134 assignments)
+Slicing time: 0.001s (removed 66 assignments)
+Generated 28 VCC(s), 26 remaining after simplification (68 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3 file CWE-416_UAF-2a.c line 28 column 5 function main thread 0
+----------------------------------------------------
+  buffer = 0
+Error allocating memory
+
+
+State 5 file CWE-416_UAF-2a.c line 55 column 1 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-416_UAF-2a.c line 55 column 1 function main
+  dereference failure: forgotten memory: dynamic_6_value
+
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 56 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.000s (removed 56 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 56 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 56 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 56 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002sRuntime decision procedure: 0.304s
+
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 56 assignments)
+No solver specified; defaulting to Boolector
+Checking forward condition, k = 3Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+
+Starting Bounded Model Checking
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 56 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 56 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Unwinding loop 3 iteration 1   file io.c line 184 column 3 function freadEncoding to solver time: 0.002s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+
+Slicing time: 0.000s (removed 56 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Unwinding loop 3 iteration 2   file io.c line 184 column 3 function fread
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Not unwinding loop 3 iteration 3   file io.c line 184 column 3 function fread
+Slicing time: 0.001s (removed 56 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Unwinding loop 34 iteration 1   file CWE-416_UAF-2a.c line 41 column 5 function mainEncoding to solver time: 0.002s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+
+Slicing time: 0.001s (removed 56 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Unwinding loop 34 iteration 2   file CWE-416_UAF-2a.c line 41 column 5 function main
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Not unwinding loop 34 iteration 3   file CWE-416_UAF-2a.c line 41 column 5 function main
+Slicing time: 0.001s (removed 56 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Symex completed in: 0.024s (152 assignments)Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+
+Slicing time: 0.000s (removed 56 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Slicing time: 0.001s (removed 75 assignments)Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+
+Generated 35 VCC(s), 33 remaining after simplification (77 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Slicing time: 0.000s (removed 56 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 56 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Encoding to solver time: 0.008s
+Solving with solver Boolector 3.2.2
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

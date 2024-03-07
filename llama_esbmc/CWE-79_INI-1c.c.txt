@@ -1,0 +1,120 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:2:22: error: unknown type name 'FILE'
+void http_hello_page(FILE *request, FILE *response)
+                     ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:2:37: error: unknown type name 'FILE'
+void http_hello_page(FILE *request, FILE *response)
+                                    ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:5:5: warning: implicit declaration of function '__ESBMC_fscanf' is invalid in C99 [-Wimplicit-function-declaration]
+    fscanf(request, "%s", username);
+    ^
+esbmc_intrinsics.h:127:18: note: expanded from here
+  #define fscanf __ESBMC_fscanf
+                 ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:6:30: warning: implicit declaration of function 'escape_html' is invalid in C99 [-Wimplicit-function-declaration]
+    char *escaped_username = escape_html(username);
+                             ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:6:11: warning: incompatible integer to pointer conversion initializing 'char *' with an expression of type 'int' [-Wint-conversion]
+    char *escaped_username = escape_html(username);
+          ^                  ~~~~~~~~~~~~~~~~~~~~~
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:7:5: warning: implicit declaration of function 'fprintf' is invalid in C99 [-Wimplicit-function-declaration]
+    fprintf(response, "hello %s", escaped_username);
+    ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:7:5: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:10:7: error: conflicting types for 'escape_html'
+char *escape_html(char *str)
+      ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:6:30: note: previous implicit declaration is here
+    char *escaped_username = escape_html(username);
+                             ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:12:25: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
+    char *escaped_str = malloc(strlen(str) * 2 + 1);
+                        ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:12:25: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:12:32: warning: implicitly declaring library function 'strlen' with type 'unsigned long (const char *)' [-Wimplicit-function-declaration]
+    char *escaped_str = malloc(strlen(str) * 2 + 1);
+                               ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:12:32: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+ERROR: PARSING ERROR
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:2:22: error: unknown type name 'FILE'
+void http_hello_page(FILE *request, FILE *response)
+                     ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:2:37: error: unknown type name 'FILE'
+void http_hello_page(FILE *request, FILE *response)
+                                    ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:5:5: warning: implicit declaration of function '__ESBMC_fscanf' is invalid in C99 [-Wimplicit-function-declaration]
+    fscanf(request, "%s", username);
+    ^
+esbmc_intrinsics.h:127:18: note: expanded from here
+  #define fscanf __ESBMC_fscanf
+                 ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:6:30: warning: implicit declaration of function 'escape_html' is invalid in C99 [-Wimplicit-function-declaration]
+    char *escaped_username = escape_html(username);
+                             ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:6:11: warning: incompatible integer to pointer conversion initializing 'char *' with an expression of type 'int' [-Wint-conversion]
+    char *escaped_username = escape_html(username);
+          ^                  ~~~~~~~~~~~~~~~~~~~~~
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:7:5: warning: implicit declaration of function 'fprintf' is invalid in C99 [-Wimplicit-function-declaration]
+    fprintf(response, "hello %s", escaped_username);
+    ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:7:5: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:10:7: error: conflicting types for 'escape_html'
+char *escape_html(char *str)
+      ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:6:30: note: previous implicit declaration is here
+    char *escaped_username = escape_html(username);
+                             ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:12:25: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
+    char *escaped_str = malloc(strlen(str) * 2 + 1);
+                        ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:12:25: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:12:32: warning: implicitly declaring library function 'strlen' with type 'unsigned long (const char *)' [-Wimplicit-function-declaration]
+    char *escaped_str = malloc(strlen(str) * 2 + 1);
+                               ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:12:32: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+ERROR: PARSING ERROR
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:2:22: error: unknown type name 'FILE'
+void http_hello_page(FILE *request, FILE *response)
+                     ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:2:37: error: unknown type name 'FILE'
+void http_hello_page(FILE *request, FILE *response)
+                                    ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:5:5: warning: implicit declaration of function '__ESBMC_fscanf' is invalid in C99 [-Wimplicit-function-declaration]
+    fscanf(request, "%s", username);
+    ^
+esbmc_intrinsics.h:127:18: note: expanded from here
+  #define fscanf __ESBMC_fscanf
+                 ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:6:30: warning: implicit declaration of function 'escape_html' is invalid in C99 [-Wimplicit-function-declaration]
+    char *escaped_username = escape_html(username);
+                             ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:6:11: warning: incompatible integer to pointer conversion initializing 'char *' with an expression of type 'int' [-Wint-conversion]
+    char *escaped_username = escape_html(username);
+          ^                  ~~~~~~~~~~~~~~~~~~~~~
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:7:5: warning: implicit declaration of function 'fprintf' is invalid in C99 [-Wimplicit-function-declaration]
+    fprintf(response, "hello %s", escaped_username);
+    ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:7:5: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:10:7: error: conflicting types for 'escape_html'
+char *escape_html(char *str)
+      ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:6:30: note: previous implicit declaration is here
+    char *escaped_username = escape_html(username);
+                             ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:12:25: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
+    char *escaped_str = malloc(strlen(str) * 2 + 1);
+                        ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:12:25: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:12:32: warning: implicitly declaring library function 'strlen' with type 'unsigned long (const char *)' [-Wimplicit-function-declaration]
+    char *escaped_str = malloc(strlen(str) * 2 + 1);
+                               ^
+/home/mw1442/code-generation-2.0/generated_llama/CWE-79_INI-1c.c:12:32: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+ERROR: PARSING ERROR
+WARNING: base case process crashed.
+ERROR: Message from unrecognized k-induction child process

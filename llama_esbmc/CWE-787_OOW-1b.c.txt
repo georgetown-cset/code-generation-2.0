@@ -1,0 +1,716 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-1b.c
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-1b.c
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-1b.c
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-1b.c:19:30: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+        f1 = (float)rand() / RAND_MAX;
+                           ~ ^~~~~~~~
+/tmp/esbmc.718e-8e18-b0c2/headers/stdlib.h:96:25: note: expanded from macro 'RAND_MAX'
+#define RAND_MAX        2147483647
+                        ^~~~~~~~~~
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-1b.c:20:30: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+        f2 = (float)rand() / RAND_MAX;
+                           ~ ^~~~~~~~
+/tmp/esbmc.718e-8e18-b0c2/headers/stdlib.h:96:25: note: expanded from macro 'RAND_MAX'
+#define RAND_MAX        2147483647
+                        ^~~~~~~~~~
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-1b.c:21:30: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+        f3 = (float)rand() / RAND_MAX;
+                           ~ ^~~~~~~~
+/tmp/esbmc.718e-8e18-b0c2/headers/stdlib.h:96:25: note: expanded from macro 'RAND_MAX'
+#define RAND_MAX        2147483647
+                        ^~~~~~~~~~
+Converting
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-1b.c:19:30: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+        f1 = (float)rand() / RAND_MAX;
+                           ~ ^~~~~~~~
+/tmp/esbmc.b4aa-49e2-8e1e/headers/stdlib.h:96:25: note: expanded from macro 'RAND_MAX'
+#define RAND_MAX        2147483647
+                        ^~~~~~~~~~
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-1b.c:20:30: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+        f2 = (float)rand() / RAND_MAX;
+                           ~ ^~~~~~~~
+/tmp/esbmc.b4aa-49e2-8e1e/headers/stdlib.h:96:25: note: expanded from macro 'RAND_MAX'
+#define RAND_MAX        2147483647
+                        ^~~~~~~~~~
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-1b.c:21:30: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+        f3 = (float)rand() / RAND_MAX;
+                           ~ ^~~~~~~~
+/tmp/esbmc.b4aa-49e2-8e1e/headers/stdlib.h:96:25: note: expanded from macro 'RAND_MAX'
+#define RAND_MAX        2147483647
+                        ^~~~~~~~~~
+Converting
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-1b.c:19:30: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+        f1 = (float)rand() / RAND_MAX;
+                           ~ ^~~~~~~~
+/tmp/esbmc.c495-db65-22c0/headers/stdlib.h:96:25: note: expanded from macro 'RAND_MAX'
+#define RAND_MAX        2147483647
+                        ^~~~~~~~~~
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-1b.c:20:30: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+        f2 = (float)rand() / RAND_MAX;
+                           ~ ^~~~~~~~
+/tmp/esbmc.c495-db65-22c0/headers/stdlib.h:96:25: note: expanded from macro 'RAND_MAX'
+#define RAND_MAX        2147483647
+                        ^~~~~~~~~~
+/home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-1b.c:21:30: warning: implicit conversion from 'int' to 'float' changes value from 2147483647 to 2147483648 [-Wimplicit-const-int-float-conversion]
+        f3 = (float)rand() / RAND_MAX;
+                           ~ ^~~~~~~~
+/tmp/esbmc.c495-db65-22c0/headers/stdlib.h:96:25: note: expanded from macro 'RAND_MAX'
+#define RAND_MAX        2147483647
+                        ^~~~~~~~~~
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.311s
+GOTO program processing time: 0.004s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Generating GOTO Program
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 34 iteration 1   file CWE-787_OOW-1b.c line 17 column 5 function main
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 34 iteration 2   file CWE-787_OOW-1b.c line 17 column 5 function main
+Symex completed in: 0.049s (487 assignments)
+GOTO program creation time: 0.368s
+Slicing time: 0.011s (removed 186 assignments)
+Generated 73 VCC(s), 68 remaining after simplification (301 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+GOTO program processing time: 0.004s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 34 iteration 1   file CWE-787_OOW-1b.c line 17 column 5 function main
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 34 iteration 2   file CWE-787_OOW-1b.c line 17 column 5 function main
+Symex completed in: 0.034s (496 assignments)
+Slicing time: 0.003s (removed 128 assignments)
+Generated 189 VCC(s), 181 remaining after simplification (368 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Generating GOTO Program
+Encoding to solver time: 0.096sGOTO program creation time: 0.463s
+
+Solving with solver Boolector 3.2.2
+GOTO program processing time: 0.004s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Not unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 34 iteration 1   file CWE-787_OOW-1b.c line 17 column 5 function main
+Symex completed in: 0.009s (179 assignments)
+Slicing time: 0.001s (removed 58 assignments)
+Generated 52 VCC(s), 48 remaining after simplification (121 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.077sEncoding to solver time: 0.008s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+
+Solving with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.000s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.006s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.006s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.006s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.000s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.018s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file CWE-787_OOW-1b.c line 23 column 9 function main thread 0
+----------------------------------------------------
+  str1 = 0
+
+State 2 file CWE-787_OOW-1b.c line 24 column 9 function main thread 0
+----------------------------------------------------
+  str2 = 0
+
+State 3 file CWE-787_OOW-1b.c line 25 column 9 function main thread 0
+----------------------------------------------------
+  str3 = 0
+0.000000
+3.047859
+7.889723
+
+State 7 file CWE-787_OOW-1b.c line 31 column 9 function main thread 0
+----------------------------------------------------
+  str4 = 0
+
+State 8 file string.c line 30 column 3 function strcpy thread 0
+----------------------------------------------------
+Violated property:
+  file string.c line 30 column 3 function strcpy
+  dereference failure: NULL pointer
+
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file CWE-787_OOW-1b.c line 23 column 9 function main thread 0
+----------------------------------------------------
+  str1 = 0
+
+State 2 file CWE-787_OOW-1b.c line 24 column 9 function main thread 0
+----------------------------------------------------
+  str2 = 0
+
+State 3 file CWE-787_OOW-1b.c line 25 column 9 function main thread 0
+----------------------------------------------------
+  str3 = 0
+0.000000
+7.015687
+0.000000
+
+State 7 file CWE-787_OOW-1b.c line 31 column 9 function main thread 0
+----------------------------------------------------
+  str4 = 0
+
+State 8 file string.c line 30 column 9 function strcpy thread 0
+----------------------------------------------------
+Violated property:
+  file string.c line 30 column 9 function strcpy
+  dereference failure: NULL pointer
+
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+Runtime decision procedure: 3.727s
+Checking forward condition, k = 3
+Starting Bounded Model Checking
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Unwinding loop 34 iteration 1   file CWE-787_OOW-1b.c line 17 column 5 function main
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Unwinding loop 34 iteration 2   file CWE-787_OOW-1b.c line 17 column 5 function main
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Not unwinding loop 34 iteration 3   file CWE-787_OOW-1b.c line 17 column 5 function main
+Symex completed in: 0.083s (972 assignments)
+Slicing time: 0.006s (removed 236 assignments)
+Generated 391 VCC(s), 379 remaining after simplification (736 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.006s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.140sEncoding to solver time: 0.007s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+
+Solving with solver Boolector 3.2.2
+Encoding to solver time: 0.006s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.016s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.016s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.016s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+Runtime decision procedure: 6.691s
+Inductive process finished (safety not proven).
+
+[Counterexample]
+
+
+State 1 file CWE-787_OOW-1b.c line 23 column 9 function main thread 0
+----------------------------------------------------
+  str1 = 0
+
+State 2 file CWE-787_OOW-1b.c line 24 column 9 function main thread 0
+----------------------------------------------------
+  str2 = 0
+
+State 3 file CWE-787_OOW-1b.c line 25 column 9 function main thread 0
+----------------------------------------------------
+  str3 = 0
+0.000000
+3.047859
+7.889723
+
+State 7 file CWE-787_OOW-1b.c line 31 column 9 function main thread 0
+----------------------------------------------------
+  str4 = 0
+
+State 8 file string.c line 78 column 3 function strlen thread 0
+----------------------------------------------------
+Violated property:
+  file string.c line 78 column 3 function strlen
+  dereference failure: NULL pointer
+
+Slicing for Claim arithmetic overflow on floating-point ieee_div (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.009s
+Solving claim 'arithmetic overflow on floating-point ieee_div' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on floating-point ieee_div (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.011s
+Solving claim 'arithmetic overflow on floating-point ieee_div' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on floating-point ieee_div (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.010s
+Solving claim 'arithmetic overflow on floating-point ieee_div' with solver Boolector 3.2.2
+Runtime decision procedure: 5.517s
+Checking forward condition, k = 4
+Starting Bounded Model Checking
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 4   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 4   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 4   file string.c line 30 column 3 function strcpy
+Unwinding loop 34 iteration 1   file CWE-787_OOW-1b.c line 17 column 5 function main
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 4   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 4   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 4   file string.c line 30 column 3 function strcpy
+Unwinding loop 34 iteration 2   file CWE-787_OOW-1b.c line 17 column 5 function main
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 4   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 4   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 4   file string.c line 30 column 3 function strcpy
+Unwinding loop 34 iteration 3   file CWE-787_OOW-1b.c line 17 column 5 function main
+Symex completed in: 0.124s (1234 assignments)
+Slicing time: 0.009s (removed 292 assignments)
+Generated 514 VCC(s), 501 remaining after simplification (942 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.077s
+Solving with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.008s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.006s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.006s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.008s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

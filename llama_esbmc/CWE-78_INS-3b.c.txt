@@ -1,0 +1,131 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-78_INS-3b.c
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-78_INS-3b.c
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-78_INS-3b.c
+Converting
+Converting
+Converting
+Generating GOTO Program
+Generating GOTO Program
+GOTO program creation time: 0.319s
+GOTO program processing time: 0.004s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+WARNING: no body for function pipe
+WARNING: no body for function fork
+WARNING: no body for function close
+WARNING: no body for function dup2
+WARNING: no body for function execl
+WARNING: no body for function close
+WARNING: no body for function wait
+Unwinding loop 34 iteration 1   file io.c line 233 column 3 function read
+Not unwinding loop 34 iteration 2   file io.c line 233 column 3 function read
+Symex completed in: 0.009s (61 assignments)
+Slicing time: 0.001s (removed 42 assignments)
+Generated 2 VCC(s), 2 remaining after simplification (19 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+Generating GOTO Program
+GOTO program creation time: 0.360s
+GOTO program processing time: 0.005s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+WARNING: no body for function pipe
+WARNING: no body for function fork
+WARNING: no body for function close
+WARNING: no body for function dup2
+WARNING: no body for function execl
+WARNING: no body for function close
+WARNING: no body for function wait
+Not unwinding loop 34 iteration 1   file io.c line 233 column 3 function read
+Symex completed in: 0.003s (50 assignments)
+Slicing time: 0.000s (removed 34 assignments)
+Generated 3 VCC(s), 3 remaining after simplification (16 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 34 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+GOTO program creation time: 0.388s
+GOTO program processing time: 0.005s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+WARNING: no body for function pipe
+WARNING: no body for function fork
+WARNING: no body for function close
+WARNING: no body for function dup2
+WARNING: no body for function execl
+WARNING: no body for function close
+WARNING: no body for function wait
+Unwinding loop 34 iteration 1   file io.c line 233 column 3 function read
+Not unwinding loop 34 iteration 2   file io.c line 233 column 3 function read
+Symex completed in: 0.004s (56 assignments)
+Slicing time: 0.000s (removed 37 assignments)
+Generated 7 VCC(s), 7 remaining after simplification (19 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.037s
+Checking forward condition, k = 3
+Starting Bounded Model Checking
+WARNING: no body for function pipe
+WARNING: no body for function fork
+WARNING: no body for function close
+WARNING: no body for function dup2
+WARNING: no body for function execl
+WARNING: no body for function close
+WARNING: no body for function wait
+Unwinding loop 34 iteration 1   file io.c line 233 column 3 function read
+Unwinding loop 34 iteration 2   file io.c line 233 column 3 function read
+Not unwinding loop 34 iteration 3   file io.c line 233 column 3 function read
+Symex completed in: 0.005s (62 assignments)
+Slicing time: 0.000s (removed 40 assignments)
+Generated 10 VCC(s), 10 remaining after simplification (22 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file CWE-78_INS-3b.c line 14 column 11 function execute thread 0
+----------------------------------------------------
+  pid = 3 (00000000 00000000 00000000 00000011)
+
+State 2 file CWE-78_INS-3b.c line 23 column 9 function execute thread 0
+----------------------------------------------------
+  output = 0
+
+State 4 file io.c line 234 column 24 function read thread 0
+----------------------------------------------------
+Violated property:
+  file io.c line 234 column 24 function read
+  dereference failure: NULL pointer
+
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 34 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001sRuntime decision procedure: 0.113s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+
+Slicing time: 0.000s (removed 34 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmeticInductive process finished (safety not proven).
+
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

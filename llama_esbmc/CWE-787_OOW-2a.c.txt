@@ -1,0 +1,80 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-2a.c
+Converting
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-2a.c
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-787_OOW-2a.c
+Converting
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.243s
+Generating GOTO Program
+GOTO program processing time: 0.002s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Not unwinding loop 12 iteration 1   file CWE-787_OOW-2a.c line 13 column 5 function main
+Symex completed in: 0.002s (34 assignments)
+Slicing time: 0.000s (removed 21 assignments)
+Generated 4 VCC(s), 4 remaining after simplification (13 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 21 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 21 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 21 assignments)
+No solver specified; defaulting to BoolectorGOTO program creation time: 0.265s
+GOTO program processing time: 0.002s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+Unwinding loop 12 iteration 1   file CWE-787_OOW-2a.c line 13 column 5 function main
+Not unwinding loop 12 iteration 2   file CWE-787_OOW-2a.c line 13 column 5 function main
+Unwinding loop 13 iteration 1   file CWE-787_OOW-2a.c line 18 column 5 function main
+Not unwinding loop 13 iteration 2   file CWE-787_OOW-2a.c line 18 column 5 function main
+Unwinding loop 14 iteration 1   file CWE-787_OOW-2a.c line 23 column 5 function main
+Not unwinding loop 14 iteration 2   file CWE-787_OOW-2a.c line 23 column 5 function main
+Symex completed in: 0.003s (76 assignments)
+Slicing time: 0.000s (removed 35 assignments)
+Generated 9 VCC(s), 9 remaining after simplification (41 assignments)
+No solver specified; defaulting to Boolector
+
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)Encoding to solver time: 0.002s
+Solving with solver Boolector 3.2.2
+
+Slicing time: 0.000s (removed 21 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file CWE-787_OOW-2a.c line 10 column 5 function main thread 0
+----------------------------------------------------
+  p1 = (signed int *)0
+
+State 2 file CWE-787_OOW-2a.c line 15 column 9 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-787_OOW-2a.c line 15 column 9 function main
+  dereference failure: NULL pointer
+
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

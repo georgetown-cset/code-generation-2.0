@@ -1,0 +1,70 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-78_INS-3a.c
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-78_INS-3a.c
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-78_INS-3a.c
+/home/mw1442/code-generation-2.0/generated_llama/CWE-78_INS-3a.c:14:12: warning: incompatible pointer types passing 'char *[2]' to parameter of type 'const char *' [-Wincompatible-pointer-types]
+    system(args);
+           ^~~~
+/tmp/esbmc.7ba6-7ff4-f1c9/headers/stdlib.h:34:25: note: passing argument to parameter 'command' here
+int system(const char * command);
+                        ^
+Converting
+/home/mw1442/code-generation-2.0/generated_llama/CWE-78_INS-3a.c:14:12: warning: incompatible pointer types passing 'char *[2]' to parameter of type 'const char *' [-Wincompatible-pointer-types]
+    system(args);
+           ^~~~
+/tmp/esbmc.ab96-837c-3121/headers/stdlib.h:34:25: note: passing argument to parameter 'command' here
+int system(const char * command);
+                        ^
+Converting
+/home/mw1442/code-generation-2.0/generated_llama/CWE-78_INS-3a.c:14:12: warning: incompatible pointer types passing 'char *[2]' to parameter of type 'const char *' [-Wincompatible-pointer-types]
+    system(args);
+           ^~~~
+/tmp/esbmc.f7cb-0e25-3ff4/headers/stdlib.h:34:25: note: passing argument to parameter 'command' here
+int system(const char * command);
+                        ^
+Converting
+Generating GOTO Program
+Generating GOTO Program
+GOTO program creation time: 0.283s
+GOTO program processing time: 0.004s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+WARNING: no body for function system
+Symex completed in: 0.001s (24 assignments)
+Slicing time: 0.001s (removed 21 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.002s
+Forward condition process finished (safety proven).
+GOTO program creation time: 0.294s
+GOTO program processing time: 0.003s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+WARNING: no body for function system
+Symex completed in: 0.002s (24 assignments)
+Slicing time: 0.000s (removed 21 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.002s
+Checking base case, k = 2
+
+Starting Bounded Model Checking
+WARNING: no body for function system
+Symex completed in: 0.001s (24 assignments)
+Slicing time: 0.001s (removed 21 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.002s
+Checking base case, k = 3
+
+Starting Bounded Model Checking
+WARNING: no body for function system
+Symex completed in: 0.001s (24 assignments)
+Slicing time: 0.000s (removed 21 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.001s
+WARNING: inductive step process crashed.
+
+Solution found by the forward condition; all states are reachable (k = 2)
+VERIFICATION SUCCESSFUL

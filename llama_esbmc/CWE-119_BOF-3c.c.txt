@@ -1,0 +1,112 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-119_BOF-3c.c
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-119_BOF-3c.c
+Converting
+Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-119_BOF-3c.c
+Converting
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.233s
+GOTO program processing time: 0.002s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Generating GOTO Program
+Symex completed in: 0.004s (24 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 3 remaining after simplification (9 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: Incorrect alignment when accessing data object (0.000s)
+Slicing time: 0.001s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: Incorrect alignment when accessing data object' with solver Boolector 3.2.2
+GOTO program creation time: 0.255s
+GOTO program processing time: 0.002s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Symex completed in: 0.005s (23 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 2 VCC(s), 2 remaining after simplification (8 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving with solver Boolector 3.2.2
+Generating GOTO Program
+GOTO program creation time: 0.377s
+GOTO program processing time: 0.002s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+Symex completed in: 0.005s (24 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 3 VCC(s), 3 remaining after simplification (9 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003sSlicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 1.406s
+Runtime decision procedure: 1.568s
+Inductive process finished (safety not proven).
+Checking forward condition, k = 3
+Starting Bounded Model Checking
+Symex completed in: 0.005s (23 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 2 VCC(s), 2 remaining after simplification (8 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3 file CWE-119_BOF-3c.c line 8 column 5 function main thread 0
+----------------------------------------------------
+  index = 1107331877 (01000010 00000000 10001011 00100101)
+
+State 4 file CWE-119_BOF-3c.c line 9 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-119_BOF-3c.c line 9 column 5 function main
+  dereference failure: array bounds violated
+
+Slicing for Claim buffer overflow on scanf (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'buffer overflow on scanf' with solver Boolector 3.2.2
+Runtime decision procedure: 1.037s
+Checking forward condition, k = 4
+Starting Bounded Model Checking
+Symex completed in: 0.005s (23 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 2 VCC(s), 2 remaining after simplification (8 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3 file CWE-119_BOF-3c.c line 8 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-119_BOF-3c.c line 8 column 5 function main
+  buffer overflow on scanf
+  0
+
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED
