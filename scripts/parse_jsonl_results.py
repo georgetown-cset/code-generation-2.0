@@ -76,12 +76,17 @@ if __name__ == "__main__":
         
     # extract_llama(results)
     
-    with open("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/llama_rerun_results4.jsonl", "r") as file:
-        results = file.read()
+    # with open("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/llama_rerun_results4.jsonl", "r") as file:
+    #     results = file.read()
         
-    extract_llama(results)   
+    # extract_llama(results)   
     
-    with open("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/llama_redo_results.jsonl", "r") as file:
+    # with open("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/llama_redo_results.jsonl", "r") as file:
+    #     results = file.read()
+        
+    # extract_llama(results)  
+    
+    with open("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/llama_final_results.jsonl", "r") as file:
         results = file.read()
         
     extract_llama(results)  

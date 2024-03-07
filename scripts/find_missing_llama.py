@@ -29,14 +29,14 @@ difference = set(prompts['Prompt ID'])-set(files_in)
 
 print(difference)
 
-prompts_to_rerun = prompts[prompts['Prompt ID'].isin(list(difference))]
+# prompts_to_rerun = prompts[prompts['Prompt ID'].isin(list(difference))]
 
 
-prompts_to_rerun.loc[:, "NL Prompt"] = prompts_to_rerun["NL Prompt"].replace({"<language>": "C", "<lanuage>": "C"}, regex=True)
+# prompts_to_rerun.loc[:, "NL Prompt"] = prompts_to_rerun["NL Prompt"].replace({"<language>": "C", "<lanuage>": "C"}, regex=True)
 
-print(prompts_to_rerun.head())
+# print(prompts_to_rerun.head())
 
-prompts_to_rerun.to_csv("scripts/llama_redo_final.csv")
+# prompts_to_rerun.to_csv("scripts/llama_redo_final.csv")
 
 
 #files_in = list(filter(lambda x: x != '', files_in))
