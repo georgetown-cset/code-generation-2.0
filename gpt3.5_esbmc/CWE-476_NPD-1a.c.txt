@@ -2,104 +2,217 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:11:36: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
-    person *new_person = (person*) malloc(sizeof(person));
-                                   ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:11:36: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:14:22: error: use of undeclared identifier 'NULL'
-    if(new_person == NULL) {
-                     ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:15:9: warning: implicit declaration of function 'fprintf' is invalid in C99 [-Wimplicit-function-declaration]
-        fprintf(stderr, "Failed to allocate memory for new person.");
-        ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:15:9: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:15:17: error: use of undeclared identifier 'stderr'
-        fprintf(stderr, "Failed to allocate memory for new person.");
-                ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:16:16: error: use of undeclared identifier 'NULL'
-        return NULL;
-               ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:25:5: warning: implicitly declaring library function 'strcpy' with type 'char *(char *, const char *)' [-Wimplicit-function-declaration]
-    strcpy(p->name, name);
-    ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:25:5: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:34:14: error: use of undeclared identifier 'NULL'
-    if (p != NULL) {
-             ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:39:9: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
-        printf("Name: %s\nAge: %d\nHeight: %d\n", p->name, p->age, p->height);
-        ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:39:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:42:9: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
-        free(p);
-        ^
-ERROR: PARSING ERROR
-Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c
-Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:11:36: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c    person *new_person = (person*) malloc(sizeof(person));
-                                   ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:11:36: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
-:11:36: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
-    person *new_person = (person*) malloc(sizeof(person));
-                                   ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:11:36: note: /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:14:22: error: use of undeclared identifier 'NULL'
-include the header <stdlib.h> or explicitly provide a declaration for 'malloc'    if(new_person == NULL) {
+Parsing /home/mw1442/code-generation-2.0/regenerate_gpt3.5/CWE-476_NPD-1a.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_gpt3.5/CWE-476_NPD-1a.c
+Converting
+Parsing /home/mw1442/code-generation-2.0/regenerate_gpt3.5/CWE-476_NPD-1a.c
+Converting
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.224s
+GOTO program processing time: 0.002s
+Checking base case, k = 1
 
-                     ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:15:9: warning: implicit declaration of function 'fprintf' is invalid in C99 [-Wimplicit-function-declaration]
-        fprintf(stderr, "Failed to allocate memory for new person.");
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c        ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:15:9: warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
-:14:22: error: use of undeclared identifier 'NULL'
-    if(new_person == NULL) {
-                     ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:15:/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:15:17: error: use of undeclared identifier 'stderr'
-9:         fprintf(stderr, "Failed to allocate memory for new person.");
-                ^
-warning: implicit declaration of function 'fprintf' is invalid in C99 [-Wimplicit-function-declaration]
-        fprintf(stderr, "Failed to allocate memory for new person.");
-        ^/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:16:16: error: use of undeclared identifier 'NULL'
+Starting Bounded Model Checking
+Symex completed in: 0.003s (40 assignments)Generating GOTO Program
 
-        return NULL;
-               ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:15:9:/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c warning: declaration of built-in function 'fprintf' requires inclusion of the header <stdio.h> [-Wbuiltin-requires-header]
-:25:5: warning: implicitly declaring library function 'strcpy' with type 'char *(char *, const char *)' [-Wimplicit-function-declaration]
-    strcpy(p->name, name);
-    ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:25:5: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:15:17: error: use of undeclared identifier 'stderr'
-        fprintf(stderr, "Failed to allocate memory for new person.");
-                ^/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:34:14: error: use of undeclared identifier 'NULL'
+Slicing time: 0.000s (removed 15 assignments)
+Generated 15 VCC(s), 11 remaining after simplification (25 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: forgotten memory: dynamic_1_value (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: forgotten memory: dynamic_1_value' with solver Boolector 3.2.2
+GOTO program creation time: 0.255s
+GOTO program processing time: 0.002s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Symex completed in: 0.003s (38 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 13 VCC(s), 9 remaining after simplification (23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Generating GOTO Program
+Runtime decision procedure: 0.044sSlicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
 
-    if (p != NULL) {
-             ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:39:9: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:16:16: error: use of undeclared identifier 'NULL'
+Checking forward condition, k = 3
+Starting Bounded Model Checking
+Symex completed in: 0.002s (38 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 13 VCC(s), 9 remaining after simplification (23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+GOTO program creation time: 0.337s
+GOTO program processing time: 0.002s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+Symex completed in: 0.003s (40 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 15 VCC(s), 11 remaining after simplification (25 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.039s
+Inductive process finished (safety not proven).
 
-        return NULL;
-               ^
-        printf("Name: %s\nAge: %d\nHeight: %d\n", p->name, p->age, p->height);
-        ^/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:25:5: warning: implicitly declaring library function 'strcpy' with type 'char *(char *, const char *)' [-Wimplicit-function-declaration]
-    strcpy(p->name, name);
-    ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:25:5: note: include the header <string.h> or explicitly provide a declaration for 'strcpy'
+[Counterexample]
 
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:39:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:34:14: error: use of undeclared identifier 'NULL'
-    if (p != NULL) {:42:9: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
-        free(p);
-             ^
 
-        ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:39:9: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
-        printf("Name: %s\nAge: %d\nHeight: %d\n", p->name, p->age, p->height);
-        ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:ERROR: PARSING ERROR
-39:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-476_NPD-1a.c:42:9: warning: implicit declaration of function 'free' is invalid in C99 [-Wimplicit-function-declaration]
-        free(p);
-        ^
-ERROR: PARSING ERROR
-WARNING: base case process crashed.
-ERROR: Message from unrecognized k-induction child process
+State 1 file CWE-476_NPD-1a.c line 14 column 5 function main thread 0
+----------------------------------------------------
+  p = 0
+Memory allocation failed.
+
+
+State 3  thread 0
+----------------------------------------------------
+Violated property:
+  dereference failure: invalidated dynamic object
+
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Runtime decision procedure: 0.075s
+Checking forward condition, k = 4
+Starting Bounded Model Checking
+Symex completed in: 0.003s (38 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 13 VCC(s), 9 remaining after simplification (23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file CWE-476_NPD-1a.c line 14 column 5 function main thread 0
+----------------------------------------------------
+  p = 0
+Memory allocation failed.
+
+
+State 3  thread 0
+----------------------------------------------------
+Violated property:
+  dereference failure: invalidated dynamic object freed
+
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim buffer overflow on scanf (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'buffer overflow on scanf' with solver Boolector 3.2.2
+Runtime decision procedure: 0.040s
+Checking forward condition, k = 5
+Starting Bounded Model Checking
+Symex completed in: 0.002s (38 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 13 VCC(s), 9 remaining after simplification (23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file CWE-476_NPD-1a.c line 14 column 5 function main thread 0
+----------------------------------------------------
+  p = &dynamic_1_value
+Enter name: 
+Enter age: 
+
+State 4 file CWE-476_NPD-1a.c line 26 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-476_NPD-1a.c line 26 column 5 function main
+  buffer overflow on scanf
+  0
+
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim buffer overflow on scanf (0.000s)
+Slicing time: 0.000s (removed 15 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'buffer overflow on scanf' with solver Boolector 3.2.2
+Runtime decision procedure: 0.039s
+Checking forward condition, k = 6
+Starting Bounded Model Checking
+Symex completed in: 0.003s (38 assignments)
+Slicing time: 0.000s (removed 15 assignments)
+Generated 13 VCC(s), 9 remaining after simplification (23 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file CWE-476_NPD-1a.c line 14 column 5 function main thread 0
+----------------------------------------------------
+  p = &dynamic_1_value
+Enter name: 
+
+State 3 file CWE-476_NPD-1a.c line 23 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-476_NPD-1a.c line 23 column 5 function main
+  buffer overflow on scanf
+  0
+
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

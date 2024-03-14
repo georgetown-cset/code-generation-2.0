@@ -2,29 +2,20 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/code-generation-2.0/generated_code/CWE-416_UAF-1a.c
-/home/mw1442/code-generation-2.0/generated_code/CWE-416_UAF-1a.c:10:9: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
-        printf("%c", buffer[i]);
-        ^
-/home/mw1442/code-generation-2.0/generated_code/CWE-416_UAF-1a.c:10:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
-Converting
-Parsing /home/mw1442/code-generation-2.0/generated_code/CWE-416_UAF-1a.c
-Parsing /home/mw1442/code-generation-2.0/generated_code/CWE-416_UAF-1a.c
-/home/mw1442/code-generation-2.0/generated_code/CWE-416_UAF-1a.c:10:9: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
-        printf("%c", buffer[i]);
-        ^
-/home/mw1442/code-generation-2.0/generated_code/CWE-416_UAF-1a.c:10:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
-Converting
-/home/mw1442/code-generation-2.0/generated_code/CWE-416_UAF-1a.c:10:9: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
-        printf("%c", buffer[i]);
-        ^
-/home/mw1442/code-generation-2.0/generated_code/CWE-416_UAF-1a.c:10:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
-Converting
-ERROR: main symbol `main' not found
-ERROR: CONVERSION ERROR
-ERROR: main symbol `main' not found
-ERROR: CONVERSION ERROR
-ERROR: main symbol `main' not found
-ERROR: CONVERSION ERROR
+Parsing /home/mw1442/code-generation-2.0/regenerate_gpt4/CWE-416_UAF-1a.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_gpt4/CWE-416_UAF-1a.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_gpt4/CWE-416_UAF-1a.c
+/home/mw1442/code-generation-2.0/regenerate_gpt4/CWE-416_UAF-1a.c:4:17: error: use of undeclared identifier 'buffer_size'
+    char buffer[buffer_size];
+                ^
+ERROR: PARSING ERROR
+/home/mw1442/code-generation-2.0/regenerate_gpt4/CWE-416_UAF-1a.c:4:17: error: use of undeclared identifier 'buffer_size'
+    char buffer[buffer_size];
+                ^
+ERROR: PARSING ERROR
+/home/mw1442/code-generation-2.0/regenerate_gpt4/CWE-416_UAF-1a.c:4:17: error: use of undeclared identifier 'buffer_size'
+    char buffer[buffer_size];
+                ^
+ERROR: PARSING ERROR
 WARNING: base case process crashed.
 ERROR: Message from unrecognized k-induction child process

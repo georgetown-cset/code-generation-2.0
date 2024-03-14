@@ -2,20 +2,183 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-78_INS-1a.c
-Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-78_INS-1a.c/home/mw1442/code-generation-2.0/generated_mistral/CWE-78_INS-1a.c:8:27: error: use of undeclared identifier 'FILENO_STDOUT_FILENO'
-    FILE *output = fdopen(FILENO_STDOUT_FILENO, "w+"); // redirect output to a file pointer
-                          ^
-Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-78_INS-1a.cERROR: PARSING ERROR
+Parsing /home/mw1442/code-generation-2.0/regenerate_mistral/CWE-78_INS-1a.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_mistral/CWE-78_INS-1a.c
+Converting
+Parsing /home/mw1442/code-generation-2.0/regenerate_mistral/CWE-78_INS-1a.c
+Converting
+Converting
+Generating GOTO Program
+Generating GOTO Program
+GOTO program creation time: 0.263s
+GOTO program processing time: 0.003sGOTO program creation time: 0.268s
+GOTO program processing time: 0.004s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+WARNING: no body for function tmpfile
+WARNING: no body for function system
+WARNING: no body for function perror
+
+Checking base case, k = 1
+
+Starting Bounded Model CheckingWARNING: no body for function perror
+
+Unwinding loop 3 iteration 1   file io.c line 184 column 3 function fread
+Not unwinding loop 3 iteration 2   file io.c line 184 column 3 function fread
+Unwinding loop 34 iteration 1   file CWE-78_INS-1a.c line 33 column 5 function main
+WARNING: no body for function tmpfile
+Unwinding loop 3 iteration 1   file io.c line 184 column 3 function fread
+Not unwinding loop 3 iteration 2   file io.c line 184 column 3 function fread
+WARNING: no body for function system
+WARNING: no body for function perror
+Not unwinding loop 34 iteration 2   file CWE-78_INS-1a.c line 33 column 5 function main
+WARNING: no body for function perror
+Symex completed in: 0.006s (139 assignments)
+Not unwinding loop 3 iteration 1   file io.c line 184 column 3 function fread
+Slicing time: 0.001s (removed 62 assignments)
+Generated 12 VCC(s), 11 remaining after simplification (77 assignments)
+No solver specified; defaulting to Boolector
+Not unwinding loop 34 iteration 1   file CWE-78_INS-1a.c line 33 column 5 function main
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Symex completed in: 0.005s (95 assignments)
+Slicing time: 0.000s (removed 41 assignments)
+Generated 11 VCC(s), 9 remaining after simplification (54 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: forgotten memory: dynamic_4_value (0.000s)Encoding to solver time: 0.003s
+Solving with solver Boolector 3.2.2
+
+Slicing time: 0.000s (removed 41 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: forgotten memory: dynamic_4_value' with solver Boolector 3.2.2
+Generating GOTO Program
+GOTO program creation time: 0.409s
+GOTO program processing time: 0.003s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+WARNING: Slicing for Claim dereference failure: invalid pointer freed (0.000s)
+Slicing time: 0.001s (removed 41 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: invalid pointer freed' with solver Boolector 3.2.2
+no body for function tmpfile
+WARNING: no body for function system
+WARNING: no body for function perror
+WARNING: no body for function perror
+Unwinding loop 3 iteration 1   file io.c line 184 column 3 function fread
+Not unwinding loop 3 iteration 2   file io.c line 184 column 3 function fread
+Unwinding loop 34 iteration 1   file CWE-78_INS-1a.c line 33 column 5 function main
+Unwinding loop 3 iteration 1   file io.c line 184 column 3 function fread
+Not unwinding loop 3 iteration 2   file io.c line 184 column 3 function fread
+Not unwinding loop 34 iteration 2   file CWE-78_INS-1a.c line 33 column 5 function main
+Symex completed in: 0.017s (133 assignments)
+Slicing time: 0.001s (removed 67 assignments)
+Generated 17 VCC(s), 12 remaining after simplification (66 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.009s
+Solving with solver Boolector 3.2.2
+
+[Counterexample]
 
 
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-78_INS-1a.c:8:27: error: use of undeclared identifier 'FILENO_STDOUT_FILENO'
-    FILE *output = fdopen(FILENO_STDOUT_FILENO, "w+"); // redirect output to a file pointer
-                          ^
-ERROR: PARSING ERROR
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-78_INS-1a.c:8:27: error: use of undeclared identifier 'FILENO_STDOUT_FILENO'
-    FILE *output = fdopen(FILENO_STDOUT_FILENO, "w+"); // redirect output to a file pointer
-                          ^
-ERROR: PARSING ERROR
-WARNING: base case process crashed.
-ERROR: Message from unrecognized k-induction child process
+State 3 file CWE-78_INS-1a.c line 11 column 5 function main thread 0
+----------------------------------------------------
+  output = &dynamic_4_value
+getent passwd  > output.txt
+
+State 5 file CWE-78_INS-1a.c line 16 column 14 function main thread 0
+----------------------------------------------------
+  status = -4 (11111111 11111111 11111111 11111100)
+
+State 6 file CWE-78_INS-1a.c line 24 column 5 function main thread 0
+----------------------------------------------------
+  fp = &dynamic_4_value
+
+State 8 file io.c line 100 column 3 function fclose thread 0
+----------------------------------------------------
+Violated property:
+  file io.c line 100 column 3 function fclose
+  dereference failure: invalid pointer freed
+
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 41 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.000s (removed 41 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalid pointer freed (0.000s)
+Slicing time: 0.001s (removed 41 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: invalid pointer freed' with solver Boolector 3.2.2
+Runtime decision procedure: 0.341sRuntime decision procedure: 0.509s
+Inductive process finished (safety not proven).
+
+Checking forward condition, k = 3
+Starting Bounded Model Checking
+WARNING: no body for function tmpfile
+WARNING: no body for function system
+WARNING: no body for function perror
+WARNING: no body for function perror
+Unwinding loop 3 iteration 1   file io.c line 184 column 3 function fread
+Unwinding loop 3 iteration 2   file io.c line 184 column 3 function fread
+Not unwinding loop 3 iteration 3   file io.c line 184 column 3 function fread
+Unwinding loop 34 iteration 1   file CWE-78_INS-1a.c line 33 column 5 function main
+Unwinding loop 3 iteration 1   file io.c line 184 column 3 function fread
+Unwinding loop 3 iteration 2   file io.c line 184 column 3 function fread
+Not unwinding loop 3 iteration 3   file io.c line 184 column 3 function fread
+Unwinding loop 34 iteration 2   file CWE-78_INS-1a.c line 33 column 5 function main
+Unwinding loop 3 iteration 1   file io.c line 184 column 3 function fread
+Unwinding loop 3 iteration 2   file io.c line 184 column 3 function fread
+Not unwinding loop 3 iteration 3   file io.c line 184 column 3 function fread
+Not unwinding loop 34 iteration 3   file CWE-78_INS-1a.c line 33 column 5 function main
+Symex completed in: 0.018s (183 assignments)
+Slicing time: 0.001s (removed 103 assignments)
+Generated 23 VCC(s), 13 remaining after simplification (80 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: invalid pointer freed (0.000s)
+Slicing time: 0.000s (removed 41 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: invalid pointer freed' with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.001s (removed 41 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 41 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 41 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

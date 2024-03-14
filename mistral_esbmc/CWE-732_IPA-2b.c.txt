@@ -2,38 +2,71 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c
-Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c
-Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c:8:52: error: use of undeclared identifier 'S_RDGRP'
-    const mode_t permissions = S_IRUSR | S_IWUSR | S_RDGRP | S_WRGRP | S_IXUSR | S_IXGRP | S_IXOTH;
-                                                   ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c:8:62: error: use of undeclared identifier 'S_WRGRP'
-    const mode_t permissions = S_IRUSR | S_IWUSR | S_RDGRP | S_WRGRP | S_IXUSR | S_IXGRP | S_IXOTH;
-                                                             ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c:19:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+Parsing /home/mw1442/code-generation-2.0/regenerate_mistral/CWE-732_IPA-2b.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_mistral/CWE-732_IPA-2b.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_mistral/CWE-732_IPA-2b.c
+/home/mw1442/code-generation-2.0/regenerate_mistral/CWE-732_IPA-2b.c:25:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
     close(file_descriptor);
     ^
-ERROR: PARSING ERROR
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c:8:52: error: use of undeclared identifier 'S_RDGRP'
-    const mode_t permissions = S_IRUSR | S_IWUSR | S_RDGRP | S_WRGRP | S_IXUSR | S_IXGRP | S_IXOTH;
-                                                   ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c:8:62: error: use of undeclared identifier 'S_WRGRP'
-    const mode_t permissions = S_IRUSR | S_IWUSR | S_RDGRP | S_WRGRP | S_IXUSR | S_IXGRP | S_IXOTH;
-                                                             ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c:19:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+Converting
+/home/mw1442/code-generation-2.0/regenerate_mistral/CWE-732_IPA-2b.c:25:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
     close(file_descriptor);
     ^
-ERROR: PARSING ERROR
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c:8:52: error: use of undeclared identifier 'S_RDGRP'
-    const mode_t permissions = S_IRUSR | S_IWUSR | S_RDGRP | S_WRGRP | S_IXUSR | S_IXGRP | S_IXOTH;
-                                                   ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c:8:62: error: use of undeclared identifier 'S_WRGRP'
-    const mode_t permissions = S_IRUSR | S_IWUSR | S_RDGRP | S_WRGRP | S_IXUSR | S_IXGRP | S_IXOTH;
-                                                             ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-732_IPA-2b.c:19:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+Converting
+/home/mw1442/code-generation-2.0/regenerate_mistral/CWE-732_IPA-2b.c:25:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
     close(file_descriptor);
     ^
-ERROR: PARSING ERROR
-WARNING: base case process crashed.
-ERROR: Message from unrecognized k-induction child process
+Converting
+Generating GOTO Program
+Generating GOTO Program
+GOTO program creation time: 0.294s
+GOTO program processing time: 0.003sGOTO program creation time: 0.304s
+
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+WARNING: no body for function open
+WARNING: no body for function __errno_location
+WARNING: no body for function perror
+WARNING: no body for function close
+GOTO program processing time: 0.003s
+Checking base case, k = 1
+
+Starting Bounded Model CheckingSymex completed in: 0.002s (37 assignments)
+
+Slicing time: 0.000s (removed 27 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (10 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+WARNING: no body for function open
+WARNING: no body for function __errno_location
+WARNING: no body for function perror
+WARNING: no body for function close
+Symex completed in: 0.002s (37 assignments)
+Slicing time: 0.000s (removed 27 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (10 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: invalid pointer (0.000s)
+Slicing time: 0.000s (removed 27 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'dereference failure: invalid pointer' with solver Boolector 3.2.2
+Runtime decision procedure: 0.003s
+[Counterexample]
+
+
+State 3 file CWE-732_IPA-2b.c line 11 column 23 function main thread 0
+----------------------------------------------------
+  file_descriptor = -2147483648 (10000000 00000000 00000000 00000000)
+
+State 4 file CWE-732_IPA-2b.c line 14 column 9 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-732_IPA-2b.c line 14 column 9 function main
+  dereference failure: invalid pointer
+
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

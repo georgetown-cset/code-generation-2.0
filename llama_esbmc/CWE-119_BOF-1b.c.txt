@@ -2,27 +2,27 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-119_BOF-1b.c
-/home/mw1442/code-generation-2.0/generated_llama/CWE-119_BOF-1b.c:12:5: error: conflicting types for 'strlen'
+Parsing /home/mw1442/code-generation-2.0/regenerate_llama/CWE-119_BOF-1b.c
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-119_BOF-1b.c:12:5: error: conflicting types for 'strlen'
 int strlen(char *str)
     ^
-/tmp/esbmc.7352-9999-3e45/headers/string.h:14:8: note: previous declaration is here
+/tmp/esbmc.8af5-ca63-c633/headers/string.h:14:8: note: previous declaration is here
 size_t strlen(const char *s);
        ^
 ERROR: PARSING ERROR
-Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-119_BOF-1b.c
-Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-119_BOF-1b.c
-/home/mw1442/code-generation-2.0/generated_llama/CWE-119_BOF-1b.c:12:5: error: conflicting types for 'strlen'
+Parsing /home/mw1442/code-generation-2.0/regenerate_llama/CWE-119_BOF-1b.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_llama/CWE-119_BOF-1b.c
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-119_BOF-1b.c:12:5: error: conflicting types for 'strlen'
 int strlen(char *str)
     ^
-/tmp/esbmc.dee6-3be0-ced2/headers/string.h:14:8: note: previous declaration is here
+/tmp/esbmc.430c-6527-c769/headers/string.h:14:8: note: previous declaration is here
 size_t strlen(const char *s);
        ^
 ERROR: PARSING ERROR
-/home/mw1442/code-generation-2.0/generated_llama/CWE-119_BOF-1b.c:12:5: error: conflicting types for 'strlen'
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-119_BOF-1b.c:12:5: error: conflicting types for 'strlen'
 int strlen(char *str)
     ^
-/tmp/esbmc.b44e-e0c8-0ef4/headers/string.h:14:8: note: previous declaration is here
+/tmp/esbmc.f150-5b74-9eb0/headers/string.h:14:8: note: previous declaration is here
 size_t strlen(const char *s);
        ^
 ERROR: PARSING ERROR

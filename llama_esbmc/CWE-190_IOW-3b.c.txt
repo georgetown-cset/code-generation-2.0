@@ -2,18 +2,18 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-190_IOW-3b.c
-Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-190_IOW-3b.c
-/home/mw1442/code-generation-2.0/generated_llama/CWE-190_IOW-3b.c:3:1: error: expected identifier or '('
+Parsing /home/mw1442/code-generation-2.0/regenerate_llama/CWE-190_IOW-3b.c
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-190_IOW-3b.c:3:1: error: expected identifier or '('
 for (int i = 0; i < 3; i++)
 ^
 ERROR: PARSING ERROR
-Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-190_IOW-3b.c
-/home/mw1442/code-generation-2.0/generated_llama/CWE-190_IOW-3b.c:3:1: error: expected identifier or '('
+Parsing /home/mw1442/code-generation-2.0/regenerate_llama/CWE-190_IOW-3b.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_llama/CWE-190_IOW-3b.c
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-190_IOW-3b.c:3:1: error: expected identifier or '('
 for (int i = 0; i < 3; i++)
 ^
 ERROR: PARSING ERROR
-/home/mw1442/code-generation-2.0/generated_llama/CWE-190_IOW-3b.c:3:1: error: expected identifier or '('
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-190_IOW-3b.c:3:1: error: expected identifier or '('
 for (int i = 0; i < 3; i++)
 ^
 ERROR: PARSING ERROR

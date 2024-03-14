@@ -2,20 +2,159 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-190_IOW-2c.c
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-190_IOW-2c.c:3:10: fatal error: 'stdlib. ' file not found
-#include <stdlib. >// For rand and RAND_MAX
-         ^~~~~~~~~~
-ERROR: PARSING ERROR
-Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-190_IOW-2c.c
-Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-190_IOW-2c.c
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-190_IOW-2c.c:3:10: fatal error: 'stdlib. ' file not found
-#include <stdlib. >// For rand and RAND_MAX
-         ^~~~~~~~~~
-ERROR: PARSING ERROR
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-190_IOW-2c.c:3:10: fatal error: 'stdlib. ' file not found
-#include <stdlib. >// For rand and RAND_MAX
-         ^~~~~~~~~~
-ERROR: PARSING ERROR
-WARNING: base case process crashed.
-ERROR: Message from unrecognized k-induction child process
+Parsing /home/mw1442/code-generation-2.0/regenerate_mistral/CWE-190_IOW-2c.c
+Converting
+Parsing /home/mw1442/code-generation-2.0/regenerate_mistral/CWE-190_IOW-2c.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_mistral/CWE-190_IOW-2c.c
+Converting
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.218s
+GOTO program processing time: 0.002s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Symex completed in: 0.002s (30 assignments)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 5 VCC(s), 5 remaining after simplification (14 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on sub (0.000s)
+Slicing time: 0.000s (removed 16 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on sub' with solver Boolector 3.2.2
+Generating GOTO Program
+GOTO program creation time: 0.269s
+GOTO program processing time: 0.002s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Symex completed in: 0.002s (30 assignments)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 5 VCC(s), 5 remaining after simplification (14 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Generating GOTO Program
+GOTO program creation time: 0.364s
+GOTO program processing time: 0.001s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+Symex completed in: 0.001s (30 assignments)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 5 VCC(s), 5 remaining after simplification (14 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 1.156s
+BMC program time: 1.159s
+Forward condition process finished (safety proven).
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 16 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on modulus (0.000s)
+Slicing time: 0.000s (removed 16 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on modulus' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 16 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on modulus (0.000s)
+Slicing time: 0.000s (removed 16 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on modulus' with solver Boolector 3.2.2
+BMC program time: 1.303s
+Checking base case, k = 2
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (30 assignments)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 5 VCC(s), 5 remaining after simplification (14 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on sub (0.000s)
+Slicing time: 0.001s (removed 16 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on sub' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 16 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on modulus (0.000s)
+Slicing time: 0.000s (removed 16 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on modulus' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 16 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on modulus (0.000s)
+Slicing time: 0.000s (removed 16 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on modulus' with solver Boolector 3.2.2
+BMC program time: 0.481s
+Checking base case, k = 3
+
+Starting Bounded Model Checking
+Symex completed in: 0.001s (30 assignments)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 5 VCC(s), 5 remaining after simplification (14 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on sub (0.000s)
+Slicing time: 0.000s (removed 16 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on sub' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 16 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on modulus (0.000s)
+Slicing time: 0.000s (removed 16 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on modulus' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.001s (removed 16 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on modulus (0.000s)
+Slicing time: 0.000s (removed 16 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on modulus' with solver Boolector 3.2.2
+BMC program time: 0.481s
+Base case process finished (no bug found).
+
+WARNING: inductive step process crashed.
+
+Solution found by the forward condition; all states are reachable (k = 2)
+VERIFICATION SUCCESSFUL

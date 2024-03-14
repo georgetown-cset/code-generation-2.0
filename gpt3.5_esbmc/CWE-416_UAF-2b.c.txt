@@ -2,20 +2,140 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-416_UAF-2b.c
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-416_UAF-2b.c:19:9: error: non-void function 'main' should return a value [-Wreturn-type]
-        return;
-        ^
-ERROR: PARSING ERROR
-Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-416_UAF-2b.c
-Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-416_UAF-2b.c
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-416_UAF-2b.c:19:9: error: non-void function 'main' should return a value [-Wreturn-type]
-        return;
-        ^
-ERROR: PARSING ERROR
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-416_UAF-2b.c:19:9: error: non-void function 'main' should return a value [-Wreturn-type]
-        return;
-        ^
-ERROR: PARSING ERROR
-WARNING: base case process crashed.
-ERROR: Message from unrecognized k-induction child process
+Parsing /home/mw1442/code-generation-2.0/regenerate_gpt3.5/CWE-416_UAF-2b.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_gpt3.5/CWE-416_UAF-2b.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_gpt3.5/CWE-416_UAF-2b.c
+Converting
+Converting
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.181s
+GOTO program processing time: 0.001s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Unwinding loop 3 iteration 1   file io.c line 184 column 3 function fread
+Not unwinding loop 3 iteration 2   file io.c line 184 column 3 function fread
+Unwinding loop 4 iteration 1   file CWE-416_UAF-2b.c line 19 column 5 function main
+Not unwinding loop 4 iteration 2   file CWE-416_UAF-2b.c line 19 column 5 function main
+Symex completed in: 0.004s (100 assignments)
+Slicing time: 0.001s (removed 52 assignments)
+Generated 20 VCC(s), 12 remaining after simplification (48 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+Generating GOTO Program
+GOTO program creation time: 0.264s
+GOTO program processing time: 0.001s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+Unwinding loop 3 iteration 1   file io.c line 184 column 3 function fread
+Not unwinding loop 3 iteration 2   file io.c line 184 column 3 function fread
+Unwinding loop 4 iteration 1   file CWE-416_UAF-2b.c line 19 column 5 function main
+Not unwinding loop 4 iteration 2   file CWE-416_UAF-2b.c line 19 column 5 function main
+Symex completed in: 0.004s (105 assignments)
+Slicing time: 0.000s (removed 46 assignments)
+Generated 13 VCC(s), 11 remaining after simplification (59 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving with solver Boolector 3.2.2
+Generating GOTO Program
+GOTO program creation time: 0.332s
+GOTO program processing time: 0.001s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Not unwinding loop 3 iteration 1   file io.c line 184 column 3 function fread
+Not unwinding loop 4 iteration 1   file CWE-416_UAF-2b.c line 19 column 5 function main
+Symex completed in: 0.004s (86 assignments)
+Slicing time: 0.000s (removed 45 assignments)
+Generated 13 VCC(s), 8 remaining after simplification (41 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: forgotten memory: dynamic_10_value (0.000s)
+Slicing time: 0.000s (removed 45 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: forgotten memory: dynamic_10_value' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: forgotten memory: dynamic_5_value (0.000s)
+Slicing time: 0.000s (removed 45 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: forgotten memory: dynamic_5_value' with solver Boolector 3.2.2
+Runtime decision procedure: 0.173s
+Checking forward condition, k = 3
+Starting Bounded Model Checking
+Unwinding loop 3 iteration 1   file io.c line 184 column 3 function fread
+Unwinding loop 3 iteration 2   file io.c line 184 column 3 function fread
+Not unwinding loop 3 iteration 3   file io.c line 184 column 3 function fread
+Unwinding loop 4 iteration 1   file CWE-416_UAF-2b.c line 19 column 5 function main
+Unwinding loop 4 iteration 2   file CWE-416_UAF-2b.c line 19 column 5 function main
+Not unwinding loop 4 iteration 3   file CWE-416_UAF-2b.c line 19 column 5 function main
+Symex completed in: 0.005s (113 assignments)
+Slicing time: 0.001s (removed 58 assignments)
+Generated 25 VCC(s), 14 remaining after simplification (55 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file CWE-416_UAF-2b.c line 5 column 5 function main thread 0
+----------------------------------------------------
+  buffer = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+
+State 3 file CWE-416_UAF-2b.c line 16 column 5 function main thread 0
+----------------------------------------------------
+  bytes_read = 0 (00000000 00000000 00000000 00000000)
+Error opening output file
+
+
+State 5 file CWE-416_UAF-2b.c line 44 column 1 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-416_UAF-2b.c line 44 column 1 function main
+  dereference failure: forgotten memory: dynamic_5_value
+
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 45 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.000s (removed 45 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.000s (removed 45 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.001s (removed 45 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.001s (removed 45 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 45 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

@@ -2,102 +2,370 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/code-generation-2.0/generated_code/CWE-79_INI-1c.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_gpt4/CWE-79_INI-1c.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_gpt4/CWE-79_INI-1c.c
 Converting
-Parsing /home/mw1442/code-generation-2.0/generated_code/CWE-79_INI-1c.c
-Parsing /home/mw1442/code-generation-2.0/generated_code/CWE-79_INI-1c.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_gpt4/CWE-79_INI-1c.c
 Converting
 Converting
 Generating GOTO Program
-GOTO program creation time: 0.266s
-GOTO program processing time: 0.003s
+Generating GOTO Program
+GOTO program creation time: 0.262sGOTO program creation time: 0.261s
+
+GOTO program processing time: 0.004s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+GOTO program processing time: 0.004s
 Checking base case, k = 1
 
 Starting Bounded Model Checking
-Symex completed in: 0.002s (13 assignments)Generating GOTO Program
+Unwinding loop 2 iteration 1   file io.c line 133 column 3 function fgets
+Not unwinding loop 2 iteration 2   file io.c line 133 column 3 function fgets
+Not unwinding loop 2 iteration 1   file io.c line 133 column 3 function fgetsUnwinding loop 20 iteration 1   file string.c line 127 column 3 function strchr
+Unwinding loop 24 iteration 1   file string.c line 182 column 3 function strcspn
+Unwinding loop 20 iteration 1   file string.c line 127 column 3 function strchr
+Not unwinding loop 24 iteration 2   file string.c line 182 column 3 function strcspn
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
 
-Slicing time: 0.000s (removed 13 assignments)
-Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
-BMC program time: 0.002s
-Checking base case, k = 2
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 20 iteration 1   file string.c line 127 column 3 function strchr
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 24 iteration 1   file string.c line 182 column 3 function strcspn
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlenNot unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
 
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Symex completed in: 0.022s (153 assignments)
+Slicing time: 0.001s (removed 89 assignments)Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+
+Generated 34 VCC(s), 13 remaining after simplification (64 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: forgotten memory: dynamic_3_value (0.000s)
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Slicing time: 0.000s (removed 89 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Encoding to solver time: 0.003sNot unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 34 iteration 1   file CWE-79_INI-1c.c line 11 column 5 function escape_html
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+
+Solving claim 'dereference failure: forgotten memory: dynamic_3_value' with solver Boolector 3.2.2
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 34 iteration 2   file CWE-79_INI-1c.c line 11 column 5 function escape_html
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpyGenerating GOTO Program
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Symex completed in: 0.073s (653 assignments)
+Slicing time: 0.005s (removed 333 assignments)
+
+Generated 190 VCC(s), 93 remaining after simplification (320 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.017s
+Solving with solver Boolector 3.2.2
+GOTO program creation time: 0.420s
+GOTO program processing time: 0.004s
+Checking inductive step, k = 2
 Starting Bounded Model Checking
-Symex completed in: 0.001s (13 assignments)
-Slicing time: 0.000s (removed 13 assignments)
-Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
-BMC program time: 0.007s
-Checking base case, k = 3
+Unwinding loop 2 iteration 1   file io.c line 133 column 3 function fgets
+Not unwinding loop 2 iteration 2   file io.c line 133 column 3 function fgets
+Unwinding loop 20 iteration 1   file string.c line 127 column 3 function strchr
+Not unwinding loop 20 iteration 2   file string.c line 127 column 3 function strchr
+Unwinding loop 24 iteration 1   file string.c line 182 column 3 function strcspn
+Unwinding loop 20 iteration 1   file string.c line 127 column 3 function strchr
+Not unwinding loop 20 iteration 2   file string.c line 127 column 3 function strchr
+Not unwinding loop 24 iteration 2   file string.c line 182 column 3 function strcspn
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 34 iteration 1   file CWE-79_INI-1c.c line 11 column 5 function escape_html
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 34 iteration 2   file CWE-79_INI-1c.c line 11 column 5 function escape_html
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Symex completed in: 0.083s (745 assignments)
+Slicing time: 0.006s (removed 290 assignments)
+Generated 89 VCC(s), 87 remaining after simplification (455 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.012s
+Solving with solver Boolector 3.2.2
 
+[Counterexample]
+
+
+State 1 file CWE-79_INI-1c.c line 54 column 5 function main thread 0
+----------------------------------------------------
+  req = 0
+
+State 2 file CWE-79_INI-1c.c line 55 column 5 function main thread 0
+----------------------------------------------------
+  res = &dynamic_3_value
+Error opening file
+
+
+State 4 file CWE-79_INI-1c.c line 64 column 1 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-79_INI-1c.c line 64 column 1 function main
+  dereference failure: forgotten memory: dynamic_3_value
+
+Slicing for Claim dereference failure: forgotten memory: dynamic_1_value (0.000s)
+Slicing time: 0.000s (removed 89 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: forgotten memory: dynamic_1_value' with solver Boolector 3.2.2
+Runtime decision procedure: 0.786s
+Checking forward condition, k = 3
 Starting Bounded Model Checking
-Symex completed in: 0.001s (13 assignments)
-Slicing time: 0.000s (removed 13 assignments)
-Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
-BMC program time: 0.002s
-Checking base case, k = 4
+Unwinding loop 2 iteration 1   file io.c line 133 column 3 function fgets
+Unwinding loop 2 iteration 2   file io.c line 133 column 3 function fgets
+Not unwinding loop 2 iteration 3   file io.c line 133 column 3 function fgets
+Unwinding loop 20 iteration 1   file string.c line 127 column 3 function strchr
+Unwinding loop 24 iteration 1   file string.c line 182 column 3 function strcspn
+Unwinding loop 20 iteration 1   file string.c line 127 column 3 function strchr
+Unwinding loop 24 iteration 2   file string.c line 182 column 3 function strcspn
+Unwinding loop 20 iteration 1   file string.c line 127 column 3 function strchr
+Not unwinding loop 24 iteration 3   file string.c line 182 column 3 function strcspn
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Unwinding loop 34 iteration 1   file CWE-79_INI-1c.c line 11 column 5 function escape_html
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Unwinding loop 34 iteration 2   file CWE-79_INI-1c.c line 11 column 5 function escape_html
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Not unwinding loop 34 iteration 3   file CWE-79_INI-1c.c line 11 column 5 function escape_html
+Unwinding loop 12 iteration 1   file string.c line 30 column 3 function strcpy
+Unwinding loop 12 iteration 2   file string.c line 30 column 3 function strcpy
+Not unwinding loop 12 iteration 3   file string.c line 30 column 3 function strcpy
+Symex completed in: 0.151s (1144 assignments)
+Slicing time: 0.022s (removed 562 assignments)
+Generated 337 VCC(s), 155 remaining after simplification (582 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
 
-Starting Bounded Model Checking
-Symex completed in: 0.001s (13 assignments)
-Slicing time: 0.000s (removed 13 assignments)
-Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
-BMC program time: 0.001s
-Checking base case, k = 5
+[Counterexample]
 
-Starting Bounded Model Checking
-Symex completed in: 0.001s (13 assignments)
-Slicing time: 0.000s (removed 13 assignments)
-Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
-BMC program time: 0.002s
-Checking base case, k = 6
 
-Starting Bounded Model Checking
-Symex completed in: 0.001s (13 assignments)
-Slicing time: 0.000s (removed 13 assignments)
-Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
-BMC program time: 0.001s
-Checking base case, k = 7
+State 1 file CWE-79_INI-1c.c line 54 column 5 function main thread 0
+----------------------------------------------------
+  req = &dynamic_1_value
 
-Starting Bounded Model Checking
-Symex completed in: 0.001s (13 assignments)GOTO program creation time: 0.300s
+State 2 file CWE-79_INI-1c.c line 55 column 5 function main thread 0
+----------------------------------------------------
+  res = 0
+Error opening file
 
-Slicing time: 0.000s (removed 13 assignments)
-Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
-BMC program time: 0.010s
-Checking base case, k = 8
 
-Starting Bounded Model Checking
-Symex completed in: 0.001s (13 assignments)
-Slicing time: 0.000s (removed 13 assignments)
-Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
-BMC program time: 0.002s
-Checking base case, k = 9
+State 4 file CWE-79_INI-1c.c line 64 column 1 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-79_INI-1c.c line 64 column 1 function main
+  dereference failure: forgotten memory: dynamic_1_value
 
-Starting Bounded Model Checking
-GOTO program processing time: 0.003s
-Checking forward condition, k = 2
-Starting Bounded Model Checking
-Symex completed in: 0.001s (13 assignments)
-Slicing time: 0.000s (removed 13 assignments)
-Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
-BMC program time: 0.001s
-Checking base case, k = 10
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 89 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Encoding to solver time: 0.029sSlicing time: 0.000s (removed 89 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object (0.000s)
+Slicing time: 0.001s (removed 89 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
 
-Starting Bounded Model Checking
-Symex completed in: 0.001s (13 assignments)Symex completed in: 0.001s (13 assignments)
-Slicing time: 0.000s (removed 13 assignments)
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: invalidated dynamic object' with solver Boolector 3.2.2
+Solving with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalidated dynamic object freed (0.000s)
+Slicing time: 0.001s (removed 89 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'dereference failure: invalidated dynamic object freed' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.001s (removed 89 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on sub (0.000s)
+Slicing time: 0.001s (removed 89 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'arithmetic overflow on sub' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.001s (removed 89 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on neg (0.000s)
+Slicing time: 0.001s (removed 89 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'arithmetic overflow on neg' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on sub (0.000s)
+Slicing time: 0.000s (removed 89 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'arithmetic overflow on sub' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on sub (0.000s)
+Slicing time: 0.000s (removed 89 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving claim 'arithmetic overflow on sub' with solver Boolector 3.2.2
+Slicing for Claim the pointer to a file object must be a valid argument (0.000s)
+Slicing time: 0.001s (removed 89 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'the pointer to a file object must be a valid argument' with solver Boolector 3.2.2
+Base case process finished (bug found).
 
-Slicing time: 0.001s (removed 13 assignments)Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
-BMC program time: 0.002s
-
-Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
-BMC program time: 0.002sChecking base case, k = 11
-
-Starting Bounded Model Checking
-
-Forward condition process finished (safety proven).
-Symex completed in: 0.001s (13 assignments)
-Slicing time: 0.000s (removed 13 assignments)
-Generated 0 VCC(s), 0 remaining after simplification (0 assignments)
-BMC program time: 0.001s
-
-Solution found by the forward condition; all states are reachable (k = 2)
-VERIFICATION SUCCESSFUL
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

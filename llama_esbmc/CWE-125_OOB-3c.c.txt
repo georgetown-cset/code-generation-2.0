@@ -2,17 +2,79 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-125_OOB-3c.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_llama/CWE-125_OOB-3c.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_llama/CWE-125_OOB-3c.c
 Converting
-Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-125_OOB-3c.c
-Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-125_OOB-3c.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_llama/CWE-125_OOB-3c.c
 Converting
 Converting
-ERROR: main symbol `main' not found
-ERROR: CONVERSION ERROR
-ERROR: main symbol `main' not found
-ERROR: CONVERSION ERROR
-ERROR: main symbol `main' not found
-ERROR: CONVERSION ERROR
-WARNING: base case process crashed.
-ERROR: Message from unrecognized k-induction child process
+Generating GOTO Program
+GOTO program creation time: 0.234sGenerating GOTO Program
+
+GOTO program processing time: 0.002s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Not unwinding loop 12 iteration 1   file CWE-125_OOB-3c.c line 10 column 5 function main
+Not unwinding loop 13 iteration 1   file CWE-125_OOB-3c.c line 14 column 5 function main
+Symex completed in: 0.004s (139 assignments)
+Slicing time: 0.001s (removed 128 assignments)
+Generated 6 VCC(s), 4 remaining after simplification (11 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 128 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim arithmetic overflow on add (0.000s)
+Slicing time: 0.000s (removed 128 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'arithmetic overflow on add' with solver Boolector 3.2.2
+Slicing for Claim buffer overflow on scanf (0.000s)
+Slicing time: 0.001s (removed 128 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'buffer overflow on scanf' with solver Boolector 3.2.2
+GOTO program creation time: 0.263s
+
+[Counterexample]
+
+
+State 1 file CWE-125_OOB-3c.c line 9 column 5 function main thread 0
+----------------------------------------------------
+  n = 3 (00000000 00000000 00000000 00000011)
+
+State 2 file CWE-125_OOB-3c.c line 12 column 9 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-125_OOB-3c.c line 12 column 9 function main
+  buffer overflow on scanf
+  0
+
+Slicing for Claim buffer overflow on scanf (0.000s)
+Slicing time: 0.000s (removed 128 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmeticGOTO program processing time: 0.003s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+
+Encoding to solver time: 0.000s
+Solving claim 'buffer overflow on scanf' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 1 file CWE-125_OOB-3c.c line 9 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-125_OOB-3c.c line 9 column 5 function main
+  buffer overflow on scanf
+  0
+
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

@@ -2,38 +2,68 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-78_INS-3b.c
-Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-78_INS-3b.c
-Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-78_INS-3b.c
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-78_INS-3b.c:14:5: error: use of undeclared identifier 'pid_t'
-    pid_t pid;
-    ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-78_INS-3b.c:30:5: warning: implicit declaration of function 'waitpid' is invalid in C99 [-Wimplicit-function-declaration]
-    waitpid(pid, &status, 0);
-    ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-78_INS-3b.c:30:13: error: use of undeclared identifier 'pid'
-    waitpid(pid, &status, 0);
-            ^
-ERROR: PARSING ERROR
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-78_INS-3b.c:14:5: error: use of undeclared identifier 'pid_t'
-    pid_t pid;
-    ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-78_INS-3b.c:30:5: warning: implicit declaration of function 'waitpid' is invalid in C99 [-Wimplicit-function-declaration]
-    waitpid(pid, &status, 0);
-    ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-78_INS-3b.c:30:13: error: use of undeclared identifier 'pid'
-    waitpid(pid, &status, 0);
-            ^
-ERROR: PARSING ERROR
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-78_INS-3b.c:14:5: error: use of undeclared identifier 'pid_t'
-    pid_t pid;
-    ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-78_INS-3b.c:30:5: warning: implicit declaration of function 'waitpid' is invalid in C99 [-Wimplicit-function-declaration]
-    waitpid(pid, &status, 0);
-    ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-78_INS-3b.c:30:13: error: use of undeclared identifier 'pid'
-    waitpid(pid, &status, 0);
-            ^
-ERROR: PARSING ERROR
-WARNING: base case process crashed.
-ERROR: Message from unrecognized k-induction child process
+Parsing /home/mw1442/code-generation-2.0/regenerate_mistral/CWE-78_INS-3b.c
+Converting
+Parsing /home/mw1442/code-generation-2.0/regenerate_mistral/CWE-78_INS-3b.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_mistral/CWE-78_INS-3b.c
+Converting
+Converting
+Generating GOTO Program
+Generating GOTO Program
+GOTO program creation time: 0.251s
+GOTO program processing time: 0.003sGOTO program creation time: 0.268s
+GOTO program processing time: 0.004s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+WARNING: no body for function system
+Symex completed in: 0.002s (21 assignments)
+Slicing time: 0.000s (removed 17 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+WARNING: no body for function system
+Symex completed in: 0.001s (21 assignments)
+Slicing time: 0.000s (removed 17 assignments)
+Generated 1 VCC(s), 1 remaining after simplification (4 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim buffer overflow on scanf (0.000s)
+Slicing time: 0.000s (removed 17 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving claim 'buffer overflow on scanf' with solver Boolector 3.2.2
+Generating GOTO Program
+GOTO program creation time: 0.351s
+GOTO program processing time: 0.004s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+WARNING: no body for function system
+Symex completed in: 0.001s (20 assignments)
+Slicing time: 0.000s (removed 17 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (3 assignments)
+BMC program time: 0.002s
+Forward condition process finished (safety proven).
+
+[Counterexample]
+
+Enter the directory path: 
+
+State 2 file CWE-78_INS-3b.c line 24 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-78_INS-3b.c line 24 column 5 function main
+  buffer overflow on scanf
+  0
+
+Base case process finished (bug found).
+
+WARNING: inductive step process crashed.
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

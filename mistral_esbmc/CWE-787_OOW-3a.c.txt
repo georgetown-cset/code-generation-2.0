@@ -2,59 +2,542 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c
-Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:22:37: warning: implicitly declaring library function 'isspace' with type 'int (int)' [-Wimplicit-function-declaration]
-    for (int i = len - 1; i >= 0 && isspace(trimmed_str[i]); --i) {
-                                    ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:22:37: note: include the header <ctype.h> or explicitly provide a declaration for 'isspace'
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:39:26: error: use of undeclared identifier 'i'
-    if (newline_free_ptr[i] == '\n') {
-                         ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:40:54: error: use of undeclared identifier 'i'
-        memmove(newline_free_ptr, newline_free_ptr + i + 1, len - i);
-                                                     ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:40:67: error: use of undeclared identifier 'i'
-        memmove(newline_free_ptr, newline_free_ptr + i + 1, len - i);
-                                                                  ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:41:16: error: use of undeclared identifier 'i'
-        len -= i + 1;
-               ^
-ERROR: PARSING ERROR
-Parsing /home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:22:37: warning: implicitly declaring library function 'isspace' with type 'int (int)' [-Wimplicit-function-declaration]
-    for (int i = len - 1; i >= 0 && isspace(trimmed_str[i]); --i) {
-                                    ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:22:37: note: include the header <ctype.h> or explicitly provide a declaration for 'isspace'
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:39:26: error: use of undeclared identifier 'i'
-    if (newline_free_ptr[i] == '\n') {
-                         ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:40:54: error: use of undeclared identifier 'i'
-        memmove(newline_free_ptr, newline_free_ptr + i + 1, len - i);
-                                                     ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:40:67: error: use of undeclared identifier 'i'
-        memmove(newline_free_ptr, newline_free_ptr + i + 1, len - i);
-                                                                  ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:41:16: error: use of undeclared identifier 'i'
-        len -= i + 1;
-               ^
-ERROR: PARSING ERROR
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:22:37: warning: implicitly declaring library function 'isspace' with type 'int (int)' [-Wimplicit-function-declaration]
-    for (int i = len - 1; i >= 0 && isspace(trimmed_str[i]); --i) {
-                                    ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:22:37: note: include the header <ctype.h> or explicitly provide a declaration for 'isspace'
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:39:26: error: use of undeclared identifier 'i'
-    if (newline_free_ptr[i] == '\n') {
-                         ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:40:54: error: use of undeclared identifier 'i'
-        memmove(newline_free_ptr, newline_free_ptr + i + 1, len - i);
-                                                     ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:40:67: error: use of undeclared identifier 'i'
-        memmove(newline_free_ptr, newline_free_ptr + i + 1, len - i);
-                                                                  ^
-/home/mw1442/code-generation-2.0/generated_mistral/CWE-787_OOW-3a.c:41:16: error: use of undeclared identifier 'i'
-        len -= i + 1;
-               ^
-ERROR: PARSING ERROR
-WARNING: base case process crashed.
-ERROR: Message from unrecognized k-induction child process
+Parsing /home/mw1442/code-generation-2.0/regenerate_mistral/CWE-787_OOW-3a.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_mistral/CWE-787_OOW-3a.c
+Converting
+Parsing /home/mw1442/code-generation-2.0/regenerate_mistral/CWE-787_OOW-3a.c
+Converting
+Converting
+Generating GOTO Program
+Generating GOTO Program
+GOTO program creation time: 0.258s
+GOTO program processing time: 0.004s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 34 iteration 1   file CWE-787_OOW-3a.c line 16 column 5 function main
+Not unwinding loop 34 iteration 2   file CWE-787_OOW-3a.c line 16 column 5 function main
+Unwinding loop 35 iteration 1   file CWE-787_OOW-3a.c line 24 column 13 function main
+Not unwinding loop 35 iteration 2   file CWE-787_OOW-3a.c line 24 column 13 function main
+Unwinding loop 36 iteration 1   file CWE-787_OOW-3a.c line 22 column 5 function main
+Unwinding loop 35 iteration 1   file CWE-787_OOW-3a.c line 24 column 13 function mainGenerating GOTO Program
+
+Not unwinding loop 35 iteration 2   file CWE-787_OOW-3a.c line 24 column 13 function main
+Not unwinding loop 36 iteration 2   file CWE-787_OOW-3a.c line 22 column 5 function main
+Symex completed in: 0.018s (172 assignments)
+Slicing time: 0.002s (removed 49 assignments)
+Generated 75 VCC(s), 75 remaining after simplification (123 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving with solver Boolector 3.2.2
+GOTO program creation time: 0.321s
+GOTO program processing time: 0.004sGOTO program creation time: 0.324s
+GOTO program processing time: 0.004s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Unwinding loop 34 iteration 1   file CWE-787_OOW-3a.c line 16 column 5 function main
+Not unwinding loop 34 iteration 2   file CWE-787_OOW-3a.c line 16 column 5 function main
+Unwinding loop 35 iteration 1   file CWE-787_OOW-3a.c line 24 column 13 function mainNot unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+
+Not unwinding loop 35 iteration 2   file CWE-787_OOW-3a.c line 24 column 13 function main
+Unwinding loop 36 iteration 1   file CWE-787_OOW-3a.c line 22 column 5 function main
+Not unwinding loop 34 iteration 1   file CWE-787_OOW-3a.c line 16 column 5 function main
+Unwinding loop 35 iteration 1   file CWE-787_OOW-3a.c line 24 column 13 function main
+Not unwinding loop 35 iteration 2   file CWE-787_OOW-3a.c line 24 column 13 function main
+Not unwinding loop 36 iteration 2   file CWE-787_OOW-3a.c line 22 column 5 function main
+Not unwinding loop 35 iteration 1   file CWE-787_OOW-3a.c line 24 column 13 function mainSymex completed in: 0.008s (171 assignments)
+Slicing time: 0.001s (removed 56 assignments)
+Generated 31 VCC(s), 31 remaining after simplification (115 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.004s
+Solving with solver Boolector 3.2.2
+
+Not unwinding loop 36 iteration 1   file CWE-787_OOW-3a.c line 22 column 5 function main
+Symex completed in: 0.013s (88 assignments)
+Slicing time: 0.000s (removed 36 assignments)
+Generated 29 VCC(s), 29 remaining after simplification (52 assignments)
+No solver specified; defaulting to Boolector
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalid pointer (0.000s)
+Slicing time: 0.000s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalid pointer' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[2] = 0
+
+State 4 file CWE-787_OOW-3a.c line 33 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-787_OOW-3a.c line 33 column 5 function main
+  dereference failure: invalid pointer
+
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[2] = 0
+
+State 4 file CWE-787_OOW-3a.c line 33 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-787_OOW-3a.c line 33 column 5 function main
+  dereference failure: NULL pointer
+
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalid pointer (0.000s)
+Slicing time: 0.000s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalid pointer' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[2] = 0
+
+State 4 file CWE-787_OOW-3a.c line 25 column 17 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-787_OOW-3a.c line 25 column 17 function main
+  dereference failure: invalid pointer
+
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[2] = 0
+
+State 4 file CWE-787_OOW-3a.c line 25 column 17 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-787_OOW-3a.c line 25 column 17 function main
+  dereference failure: NULL pointer
+
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalid pointer (0.000s)
+Slicing time: 0.000s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalid pointer' with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+Runtime decision procedure: 0.501s
+Checking forward condition, k = 3
+Starting Bounded Model Checking
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Unwinding loop 34 iteration 1   file CWE-787_OOW-3a.c line 16 column 5 function main
+Unwinding loop 34 iteration 2   file CWE-787_OOW-3a.c line 16 column 5 function main
+Not unwinding loop 34 iteration 3   file CWE-787_OOW-3a.c line 16 column 5 function main
+Unwinding loop 35 iteration 1   file CWE-787_OOW-3a.c line 24 column 13 function main
+Unwinding loop 35 iteration 2   file CWE-787_OOW-3a.c line 24 column 13 function main
+Not unwinding loop 35 iteration 3   file CWE-787_OOW-3a.c line 24 column 13 function main
+Unwinding loop 36 iteration 1   file CWE-787_OOW-3a.c line 22 column 5 function main
+Unwinding loop 35 iteration 1   file CWE-787_OOW-3a.c line 24 column 13 function main
+Unwinding loop 35 iteration 2   file CWE-787_OOW-3a.c line 24 column 13 function main
+Not unwinding loop 35 iteration 3   file CWE-787_OOW-3a.c line 24 column 13 function main
+Unwinding loop 36 iteration 2   file CWE-787_OOW-3a.c line 22 column 5 function main
+Unwinding loop 35 iteration 1   file CWE-787_OOW-3a.c line 24 column 13 function main
+Unwinding loop 35 iteration 2   file CWE-787_OOW-3a.c line 24 column 13 function main
+Not unwinding loop 35 iteration 3   file CWE-787_OOW-3a.c line 24 column 13 function main
+Not unwinding loop 36 iteration 3   file CWE-787_OOW-3a.c line 22 column 5 function main
+Symex completed in: 0.019s (278 assignments)
+Slicing time: 0.007s (removed 68 assignments)
+Generated 135 VCC(s), 135 remaining after simplification (210 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.005s
+Solving with solver Boolector 3.2.2
+
+Found verified claim. Skipping...
+
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalid pointer (0.000s)
+Slicing time: 0.000s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalid pointer' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[2] = 0
+
+State 4 file CWE-787_OOW-3a.c line 24 column 13 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-787_OOW-3a.c line 24 column 13 function main
+  dereference failure: invalid pointer
+
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[2] = 0
+
+State 4 file CWE-787_OOW-3a.c line 24 column 13 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-787_OOW-3a.c line 24 column 13 function main
+  dereference failure: NULL pointer
+
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalid pointer (0.000s)
+Slicing time: 0.000s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalid pointer' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[2] = 0
+
+State 4 file CWE-787_OOW-3a.c line 23 column 9 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-787_OOW-3a.c line 23 column 9 function main
+  dereference failure: invalid pointer
+
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+Runtime decision procedure: 0.975s
+Inductive process finished (safety not proven).
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[2] = 0
+
+State 4 file CWE-787_OOW-3a.c line 23 column 9 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-787_OOW-3a.c line 23 column 9 function main
+  dereference failure: NULL pointer
+
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: invalid pointer (0.000s)
+Slicing time: 0.001s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalid pointer' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[2] = 0
+
+State 4 file string.c line 78 column 3 function strlen thread 0
+----------------------------------------------------
+Violated property:
+  file string.c line 78 column 3 function strlen
+  dereference failure: invalid pointer
+
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[2] = 0
+
+State 4 file string.c line 78 column 3 function strlen thread 0
+----------------------------------------------------
+Violated property:
+  file string.c line 78 column 3 function strlen
+  dereference failure: NULL pointer
+
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+Runtime decision procedure: 0.657s
+Checking forward condition, k = 4
+Starting Bounded Model Checking
+Unwinding loop 17 iteration 1   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 2   file string.c line 78 column 3 function strlen
+Unwinding loop 17 iteration 3   file string.c line 78 column 3 function strlen
+Not unwinding loop 17 iteration 4   file string.c line 78 column 3 function strlen
+Unwinding loop 34 iteration 1   file CWE-787_OOW-3a.c line 16 column 5 function main
+Unwinding loop 34 iteration 2   file CWE-787_OOW-3a.c line 16 column 5 function main
+Unwinding loop 34 iteration 3   file CWE-787_OOW-3a.c line 16 column 5 function main
+Not unwinding loop 34 iteration 4   file CWE-787_OOW-3a.c line 16 column 5 function main
+Unwinding loop 35 iteration 1   file CWE-787_OOW-3a.c line 24 column 13 function main
+Unwinding loop 35 iteration 2   file CWE-787_OOW-3a.c line 24 column 13 function main
+Unwinding loop 35 iteration 3   file CWE-787_OOW-3a.c line 24 column 13 function main
+Not unwinding loop 35 iteration 4   file CWE-787_OOW-3a.c line 24 column 13 function main
+Unwinding loop 36 iteration 1   file CWE-787_OOW-3a.c line 22 column 5 function main
+Unwinding loop 35 iteration 1   file CWE-787_OOW-3a.c line 24 column 13 function main
+Unwinding loop 35 iteration 2   file CWE-787_OOW-3a.c line 24 column 13 function main
+Unwinding loop 35 iteration 3   file CWE-787_OOW-3a.c line 24 column 13 function main
+Not unwinding loop 35 iteration 4   file CWE-787_OOW-3a.c line 24 column 13 function main
+Unwinding loop 36 iteration 2   file CWE-787_OOW-3a.c line 22 column 5 function main
+Unwinding loop 35 iteration 1   file CWE-787_OOW-3a.c line 24 column 13 function main
+Unwinding loop 35 iteration 2   file CWE-787_OOW-3a.c line 24 column 13 function main
+Unwinding loop 35 iteration 3   file CWE-787_OOW-3a.c line 24 column 13 function main
+Not unwinding loop 35 iteration 4   file CWE-787_OOW-3a.c line 24 column 13 function main
+Unwinding loop 36 iteration 3   file CWE-787_OOW-3a.c line 22 column 5 function main
+Unwinding loop 35 iteration 1   file CWE-787_OOW-3a.c line 24 column 13 function main
+Unwinding loop 35 iteration 2   file CWE-787_OOW-3a.c line 24 column 13 function main
+Unwinding loop 35 iteration 3   file CWE-787_OOW-3a.c line 24 column 13 function main
+Not unwinding loop 35 iteration 4   file CWE-787_OOW-3a.c line 24 column 13 function main
+Not unwinding loop 36 iteration 4   file CWE-787_OOW-3a.c line 22 column 5 function main
+Symex completed in: 0.031s (410 assignments)
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[2] = 0
+
+State 4 file CWE-787_OOW-3a.c line 16 column 43 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-787_OOW-3a.c line 16 column 43 function main
+  dereference failure: NULL pointer
+
+Slicing for Claim dereference failure: invalid pointer (0.000s)
+Slicing time: 0.001s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalid pointer' with solver Boolector 3.2.2
+Slicing time: 0.014s (removed 91 assignments)
+Generated 213 VCC(s), 213 remaining after simplification (319 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[2] = 0
+
+State 4 file CWE-787_OOW-3a.c line 16 column 43 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-787_OOW-3a.c line 16 column 43 function main
+  dereference failure: invalid pointer
+
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.000s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.001s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[2] = 0
+
+State 4 file CWE-787_OOW-3a.c line 17 column 9 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-787_OOW-3a.c line 17 column 9 function main
+  dereference failure: NULL pointer
+
+Slicing for Claim dereference failure: invalid pointer (0.000s)
+Slicing time: 0.001s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalid pointer' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[2] = 0
+
+State 4 file CWE-787_OOW-3a.c line 17 column 9 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-787_OOW-3a.c line 17 column 9 function main
+  dereference failure: invalid pointer
+
+Slicing for Claim dereference failure: array bounds violated (0.000s)
+Slicing time: 0.001s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: array bounds violated' with solver Boolector 3.2.2
+Slicing for Claim dereference failure: NULL pointer (0.000s)
+Slicing time: 0.000s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: NULL pointer' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[2] = 0
+
+State 4 file CWE-787_OOW-3a.c line 22 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-787_OOW-3a.c line 22 column 5 function main
+  dereference failure: NULL pointer
+
+Slicing for Claim dereference failure: invalid pointer (0.000s)
+Slicing time: 0.001s (removed 36 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving claim 'dereference failure: invalid pointer' with solver Boolector 3.2.2
+
+[Counterexample]
+
+
+State 3  thread 0
+----------------------------------------------------
+  argv[2] = 0
+
+State 4 file CWE-787_OOW-3a.c line 22 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file CWE-787_OOW-3a.c line 22 column 5 function main
+  dereference failure: invalid pointer
+
+
+Bug found by the base case (k = 1)
+VERIFICATION FAILED

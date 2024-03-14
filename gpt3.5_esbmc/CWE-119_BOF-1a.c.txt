@@ -2,29 +2,704 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-119_BOF-1a.c
-Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-119_BOF-1a.c
-Parsing /home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-119_BOF-1a.c
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-119_BOF-1a.c:9:9: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
-        printf("Error: Number of bytes to copy exceeds buffer size.\n");
-        ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-119_BOF-1a.c:9:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+Parsing /home/mw1442/code-generation-2.0/regenerate_gpt3.5/CWE-119_BOF-1a.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_gpt3.5/CWE-119_BOF-1a.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_gpt3.5/CWE-119_BOF-1a.c
 Converting
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-119_BOF-1a.c:9:9: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
-        printf("Error: Number of bytes to copy exceeds buffer size.\n");
-        ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-119_BOF-1a.c:9:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
 Converting
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-119_BOF-1a.c:9:9: warning: implicitly declaring library function 'printf' with type 'int (const char *, ...)' [-Wimplicit-function-declaration]
-        printf("Error: Number of bytes to copy exceeds buffer size.\n");
-        ^
-/home/mw1442/code-generation-2.0/generated_gpt_3.5/CWE-119_BOF-1a.c:9:9: note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
 Converting
-ERROR: main symbol `main' not found
-ERROR: CONVERSION ERROR
-ERROR: main symbol `main' not found
-ERROR: CONVERSION ERROR
-ERROR: main symbol `main' not found
-ERROR: CONVERSION ERROR
-WARNING: base case process crashed.
-ERROR: Message from unrecognized k-induction child process
+Generating GOTO Program
+GOTO program creation time: 0.450s
+GOTO program processing time: 0.006s
+Checking base case, k = 1
+
+Starting Bounded Model Checking
+Not unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.002s (20 assignments)
+Slicing time: 0.000s (removed 19 assignments)
+Generated 2 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.002s
+Checking base case, k = 2
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.002s (23 assignments)
+Slicing time: 0.000s (removed 22 assignments)
+Generated 4 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.002s
+Checking base case, k = 3
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.003s (26 assignments)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.003s
+Checking base case, k = 4
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.012s (29 assignments)
+Slicing time: 0.000s (removed 28 assignments)
+Generated 8 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.012s
+Checking base case, k = 5
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.004s (32 assignments)
+Slicing time: 0.000s (removed 31 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.004s
+Checking base case, k = 6
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.010s (35 assignments)
+Slicing time: 0.001s (removed 34 assignments)Generating GOTO Program
+GOTO program creation time: 0.500s
+GOTO program processing time: 0.000s
+Checking inductive step, k = 2
+Starting Bounded Model Checking
+
+Generated 12 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.021s
+Checking base case, k = 7
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.004s (35 assignments)
+Slicing time: 0.000s (removed 21 assignments)
+Generated 2 VCC(s), 2 remaining after simplification (14 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.006s (38 assignments)
+Slicing time: 0.000s (removed 37 assignments)
+Generated 14 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.006s
+Checking base case, k = 8
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.006s (41 assignments)
+Slicing time: 0.000s (removed 40 assignments)
+Generated 16 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.006s
+Checking base case, k = 9
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Encoding to solver time: 0.002s
+Solving with solver Boolector 3.2.2
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.008s (44 assignments)
+Slicing time: 0.000s (removed 43 assignments)
+Generated 18 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.009s
+Checking base case, k = 10
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.008s (47 assignments)
+Slicing time: 0.000s (removed 46 assignments)
+Generated 20 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.008s
+Checking base case, k = 11
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 11   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.009s (50 assignments)
+Slicing time: 0.001s (removed 49 assignments)
+Generated 22 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.010s
+Checking base case, k = 12
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 11   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 12   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.011s (53 assignments)
+Slicing time: 0.001s (removed 52 assignments)
+Generated 24 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.012s
+Checking base case, k = 13
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 11   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Generating GOTO ProgramUnwinding loop 4 iteration 12   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Not unwinding loop 4 iteration 13   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.011s (56 assignments)
+Slicing time: 0.000s (removed 55 assignments)
+Generated 26 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.011s
+Checking base case, k = 14
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 11   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 12   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 13   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 14   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.012s (59 assignments)
+Slicing time: 0.000s (removed 58 assignments)
+Generated 28 VCC(s), 0 remaining after simplification (1 assignments)
+BMC program time: 0.012s
+Checking base case, k = 15
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+GOTO program creation time: 0.584sUnwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 11   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+GOTO program processing time: 0.001s
+Checking forward condition, k = 2
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 12   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 13   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytesUnwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 14   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Symex completed in: 0.012s (62 assignments)
+Slicing time: 0.000s (removed 60 assignments)
+Generated 28 VCC(s), 0 remaining after simplification (2 assignments)
+BMC program time: 0.012s
+Checking base case, k = 16
+
+Starting Bounded Model Checking
+Not unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytesUnwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Symex completed in: 0.004s (23 assignments)
+Slicing time: 0.001s (removed 22 assignments)
+Generated 5 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Encoding remaining VCC(s) using bit-vector/floating-point arithmeticUnwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.001sUnwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Checking forward condition, k = 3
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 11   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 12   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 13   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 14   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.006s (26 assignments)Symex completed in: 0.012s (62 assignments)
+
+Slicing time: 0.000s (removed 25 assignments)
+Generated 7 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to BoolectorSlicing time: 0.000s (removed 60 assignments)
+Generated 28 VCC(s), 0 remaining after simplification (2 assignments)
+BMC program time: 0.012s
+
+Checking base case, k = 17
+
+Starting Bounded Model Checking
+Encoding remaining VCC(s) using bit-vector/floating-point arithmeticUnwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Checking forward condition, k = 4Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytesUnwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 11   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 12   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytesUnwinding loop 4 iteration 13   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Symex completed in: 0.008s (29 assignments)
+Slicing time: 0.000s (removed 28 assignments)
+Generated 9 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 4 iteration 14   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Encoding remaining VCC(s) using bit-vector/floating-point arithmeticSymex completed in: 0.012s (62 assignments)
+Slicing time: 0.000s (removed 60 assignments)
+Generated 28 VCC(s), 0 remaining after simplification (2 assignments)
+BMC program time: 0.012s
+
+Encoding to solver time: 0.000sChecking base case, k = 18
+
+Starting Bounded Model Checking
+
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000sUnwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Checking forward condition, k = 5
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytesUnwinding loop 4 iteration 11   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 12   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Unwinding loop 4 iteration 13   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 14   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.011s (32 assignments)
+Symex completed in: 0.012s (62 assignments)
+Slicing time: 0.000s (removed 31 assignments)
+Generated 11 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to BoolectorSlicing time: 0.000s (removed 60 assignments)
+Generated 28 VCC(s), 0 remaining after simplification (2 assignments)
+BMC program time: 0.012s
+
+Checking base case, k = 19
+
+Starting Bounded Model Checking
+Encoding remaining VCC(s) using bit-vector/floating-point arithmeticUnwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Encoding to solver time: 0.001s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Checking forward condition, k = 6
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytesUnwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 11   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 12   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytesUnwinding loop 4 iteration 13   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Unwinding loop 4 iteration 14   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.012s (62 assignments)
+Slicing time: 0.000s (removed 60 assignments)
+Generated 28 VCC(s), 0 remaining after simplification (2 assignments)
+BMC program time: 0.012s
+Checking base case, k = 20
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytesUnwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Symex completed in: 0.011s (35 assignments)
+Slicing time: 0.001s (removed 34 assignments)
+Generated 13 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Runtime decision procedure: 0.002s
+Checking forward condition, k = 7
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytesUnwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.006s (38 assignments)
+Slicing time: 0.000s (removed 37 assignments)
+Generated 15 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.001s
+Checking forward condition, k = 8
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 11   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 12   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytesUnwinding loop 4 iteration 13   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Symex completed in: 0.007s (41 assignments)
+Slicing time: 0.000s (removed 40 assignments)
+Generated 17 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 4 iteration 14   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Symex completed in: 0.021s (62 assignments)
+Slicing time: 0.000s (removed 60 assignments)
+Generated 28 VCC(s), 0 remaining after simplification (2 assignments)
+BMC program time: 0.021s
+Runtime decision procedure: 0.000s
+Checking base case, k = 21
+
+Starting Bounded Model Checking
+Checking forward condition, k = 9
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.009s (44 assignments)
+Slicing time: 0.000s (removed 43 assignments)
+Generated 19 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.001s
+Checking forward condition, k = 10
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytesUnwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 11   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 12   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 13   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 14   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.016s (62 assignments)
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Slicing time: 0.000s (removed 60 assignments)
+Generated 28 VCC(s), 0 remaining after simplification (2 assignments)
+BMC program time: 0.016s
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.009s (47 assignments)
+Slicing time: 0.000s (removed 46 assignments)
+Generated 21 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+Checking forward condition, k = 11
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Checking base case, k = 22
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 11   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.010s (50 assignments)
+Slicing time: 0.000s (removed 49 assignments)
+Generated 23 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Runtime decision procedure: 0.000s
+Checking forward condition, k = 12
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Runtime decision procedure: 0.178s
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Inductive process finished (safety not proven).
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 11   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 12   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.010s (53 assignments)
+Slicing time: 0.000s (removed 52 assignments)
+Generated 25 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Runtime decision procedure: 0.000s
+Checking forward condition, k = 13
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 11   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 12   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 13   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 14   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.020s (62 assignments)
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Slicing time: 0.000s (removed 60 assignments)
+Generated 28 VCC(s), 0 remaining after simplification (2 assignments)
+BMC program time: 0.020s
+Checking base case, k = 23
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 11   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 12   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 13   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.012s (56 assignments)
+Slicing time: 0.000s (removed 55 assignments)
+Generated 27 VCC(s), 1 remaining after simplification (1 assignments)
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Runtime decision procedure: 0.000s
+Checking forward condition, k = 14
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytesUnwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 11   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 12   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 13   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 14   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.021s (62 assignments)Unwinding loop 4 iteration 11   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+
+Slicing time: 0.000s (removed 60 assignments)
+Generated 28 VCC(s), 0 remaining after simplification (2 assignments)
+BMC program time: 0.021s
+Checking base case, k = 24
+
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 12   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 13   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Not unwinding loop 4 iteration 14   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.013s (59 assignments)
+Slicing time: 0.000s (removed 58 assignments)
+Generated 29 VCC(s), 1 remaining after simplification (1 assignments)
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+No solver specified; defaulting to Boolector
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Boolector 3.2.2
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Runtime decision procedure: 0.000s
+Checking forward condition, k = 15
+Starting Bounded Model Checking
+Unwinding loop 4 iteration 1   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 2   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 3   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 4   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 5   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 6   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 7   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 8   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 11   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 9   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 12   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 10   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 13   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 11   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 14   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.013s (62 assignments)
+Unwinding loop 4 iteration 12   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Slicing time: 0.000s (removed 60 assignments)
+Generated 28 VCC(s), 0 remaining after simplification (2 assignments)
+BMC program time: 0.014s
+Forward condition process finished (safety proven).
+Unwinding loop 4 iteration 13   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Unwinding loop 4 iteration 14   file CWE-119_BOF-1a.c line 4 column 5 function copy_bytes
+Symex completed in: 0.019s (62 assignments)
+Slicing time: 0.001s (removed 60 assignments)
+Generated 28 VCC(s), 0 remaining after simplification (2 assignments)
+BMC program time: 0.020s
+Base case process finished (no bug found).
+
+
+Solution found by the forward condition; all states are reachable (k = 15)
+VERIFICATION SUCCESSFUL

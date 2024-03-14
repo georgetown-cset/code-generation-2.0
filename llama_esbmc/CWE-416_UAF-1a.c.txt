@@ -2,41 +2,56 @@ ESBMC version 7.4.0 64-bit x86_64 linux
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
 Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
-Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-416_UAF-1a.c
-/home/mw1442/code-generation-2.0/generated_llama/CWE-416_UAF-1a.c:2:16: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
+Parsing /home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:2:16: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
 char *buffer = malloc(buffer_size);
                ^
-/home/mw1442/code-generation-2.0/generated_llama/CWE-416_UAF-1a.c:2:16: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
-/home/mw1442/code-generation-2.0/generated_llama/CWE-416_UAF-1a.c:2:23: error: use of undeclared identifier 'buffer_size'
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:2:16: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:2:23: error: use of undeclared identifier 'buffer_size'
 char *buffer = malloc(buffer_size);
                       ^
-/home/mw1442/code-generation-2.0/generated_llama/CWE-416_UAF-1a.c:3:1: error: expected identifier or '('
-for (int i = 0; i < buffer_size; i++) {
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:3:16: error: expected identifier
+memset(buffer, 'A', buffer_size);
+               ^
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:3:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+memset(buffer, 'A', buffer_size);
 ^
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:3:1: warning: incompatible redeclaration of library function 'memset' [-Wincompatible-library-redeclaration]
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:3:1: note: 'memset' is a builtin with type 'void *(void *, int, unsigned long)'
 ERROR: PARSING ERROR
-Parsing /home/mw1442/code-generation-2.0/generated_llama/CWE-416_UAF-1a.c
-/home/mw1442/code-generation-2.0/generated_llama/CWE-416_UAF-1a.cParsing /home/mw1442/code-generation-2.0/generated_llama/CWE-416_UAF-1a.c
-:2:16: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
+Parsing /home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c
+Parsing /home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:2:16: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
 char *buffer = malloc(buffer_size);
                ^
-/home/mw1442/code-generation-2.0/generated_llama/CWE-416_UAF-1a.c:2:16: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
-/home/mw1442/code-generation-2.0/generated_llama/CWE-416_UAF-1a.c:2:23: error: use of undeclared identifier 'buffer_size'
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:2:16: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:2:23: error: use of undeclared identifier 'buffer_size'
 char *buffer = malloc(buffer_size);
                       ^
-/home/mw1442/code-generation-2.0/generated_llama/CWE-416_UAF-1a.c:3:1: error: expected identifier or '('
-for (int i = 0; i < buffer_size; i++) {
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:3:16: error: expected identifier
+memset(buffer, 'A', buffer_size);
+               ^
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:3:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+memset(buffer, 'A', buffer_size);
 ^
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:3:1: warning: incompatible redeclaration of library function 'memset' [-Wincompatible-library-redeclaration]
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:3:1: note: 'memset' is a builtin with type 'void *(void *, int, unsigned long)'
 ERROR: PARSING ERROR
-/home/mw1442/code-generation-2.0/generated_llama/CWE-416_UAF-1a.c:2:16: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:2:16: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
 char *buffer = malloc(buffer_size);
                ^
-/home/mw1442/code-generation-2.0/generated_llama/CWE-416_UAF-1a.c:2:16: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
-/home/mw1442/code-generation-2.0/generated_llama/CWE-416_UAF-1a.c:2:23: error: use of undeclared identifier 'buffer_size'
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:2:16: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:2:23: error: use of undeclared identifier 'buffer_size'
 char *buffer = malloc(buffer_size);
                       ^
-/home/mw1442/code-generation-2.0/generated_llama/CWE-416_UAF-1a.c:3:1: error: expected identifier or '('
-for (int i = 0; i < buffer_size; i++) {
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:3:16: error: expected identifier
+memset(buffer, 'A', buffer_size);
+               ^
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:3:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+memset(buffer, 'A', buffer_size);
 ^
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:3:1: warning: incompatible redeclaration of library function 'memset' [-Wincompatible-library-redeclaration]
+/home/mw1442/code-generation-2.0/regenerate_llama/CWE-416_UAF-1a.c:3:1: note: 'memset' is a builtin with type 'void *(void *, int, unsigned long)'
 ERROR: PARSING ERROR
 WARNING: base case process crashed.
 ERROR: Message from unrecognized k-induction child process
