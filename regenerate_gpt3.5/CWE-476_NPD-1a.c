@@ -1,34 +1,34 @@
-// Define a struct for a person
+#include <stdio.h>
+#include <stdlib.h>
+
 typedef struct {
     char name[50];
     int age;
 } person;
 
-// Function to allocate memory for a person struct
 person* allocate_memory() {
-    person* ptr = (person*) malloc(sizeof(person));
-    return ptr;
+    return (person*)malloc(sizeof(person));
 }
 
-// Example of how to use the allocate_memory function
 int main() {
-    person* new_person = allocate_memory();
+    person* p = allocate_memory();
     
-    if (new_person == NULL) {
-        printf("Memory allocation failed.");
+    if(p == NULL) {
+        printf("Memory allocation failed.\n");
         return 1;
     }
     
-    // Accessing and setting values using the -> operator
-    strcpy(new_person->name, "John Doe");
-    new_person->age = 30;
+    // Accessing members of struct through pointer
+    printf("Enter name: ");
+    scanf("%s", p->name);
     
-    // Print out values
-    printf("Name: %s\n", new_person->name);
-    printf("Age: %d\n", new_person->age);
+    printf("Enter age: ");
+    scanf("%d", &p->age);
     
-    // Free allocated memory
-    free(new_person);
+    printf("Name: %s\n", p->name);
+    printf("Age: %d\n", p->age);
+    
+    free(p);
     
     return 0;
 }

@@ -2,18 +2,18 @@
 #include <stdlib.h>
 
 int main() {
-    char *buf = (char *) malloc(1024 * sizeof(char));
-    
+    char *buf = (char *)malloc(1024);
+
     if(buf == NULL) {
-        printf("Memory allocation failed. Exiting program.\n");
-        return -1;
+        printf("Memory allocation failed.\n");
+        return 1;
     }
-    
-    printf("Enter up to 10 characters: ");
+
     fgets(buf, 10, stdin);
-    
-    printf("Characters stored in buf: %s\n", buf);
-    
+
+    printf("Input stored in buffer: %s\n", buf);
+
     free(buf);
+
     return 0;
 }
