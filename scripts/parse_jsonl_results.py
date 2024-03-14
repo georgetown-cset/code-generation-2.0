@@ -6,7 +6,7 @@ import pandas as pd
 
 
 #move this to individual model files later
-DEST_PATH = "/Users/maggiewu/Desktop/projects/code-generation-2.0/generated_llama"
+DEST_PATH = "/Users/maggiewu/Desktop/projects/code-generation-2.0/regenerate_mistral"
 
 PROMPTS = pd.read_csv("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/LLMSecEval-prompts.csv")
 
@@ -86,10 +86,20 @@ if __name__ == "__main__":
         
     # extract_llama(results)  
     
-    with open("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/llama_final_results.jsonl", "r") as file:
+    # with open("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/llama_final_results.jsonl", "r") as file:
+    #     results = file.read()
+        
+    # extract_llama(results)  
+    
+    # with open("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/llama_error_fill.jsonl", "r") as file:
+    #     results = file.read()
+        
+    # extract_llama(results)
+    
+    with open("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/mistral_error_fill.jsonl", "r") as file:
         results = file.read()
         
-    extract_llama(results)  
+    extract_mistral(results)    
     
     
     # with open("/Users/maggiewu/Desktop/projects/code-generation-2.0/scripts/mistral_results.jsonl", "r") as file:
