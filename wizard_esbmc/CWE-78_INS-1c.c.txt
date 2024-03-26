@@ -1,0 +1,30 @@
+ESBMC version 7.4.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing /home/mw1442/code-generation-2.0/regenerate_wizard/CWE-78_INS-1c.cParsing /home/mw1442/code-generation-2.0/regenerate_wizard/CWE-78_INS-1c.c
+
+Parsing /home/mw1442/code-generation-2.0/regenerate_wizard/CWE-78_INS-1c.c
+/home/mw1442/code-generation-2.0/regenerate_wizard/CWE-78_INS-1c.c/home/mw1442/code-generation-2.0/regenerate_wizard/CWE-78_INS-1c.c:12:30: error: expected ')'
+    FILE *pipe = popen("id " username, "r");
+                             ^
+/home/mw1442/code-generation-2.0/regenerate_wizard/CWE-78_INS-1c.c:12:23: note: to match this '('
+    FILE *pipe = popen("id " username, "r");
+                      ^
+:12:30: error: expected ')'
+    FILE *pipe = popen("id " username, "r");
+                             ^
+/home/mw1442/code-generation-2.0/regenerate_wizard/CWE-78_INS-1c.c:12:23: note/home/mw1442/code-generation-2.0/regenerate_wizard/CWE-78_INS-1c.c: :12:30: error: expected ')'
+to match this '('
+    FILE *pipe = popen("id " username, "r");
+                             ^
+/home/mw1442/code-generation-2.0/regenerate_wizard/CWE-78_INS-1c.c:12:23: note: to match this '('
+    FILE *pipe = popen("id " username, "r");
+                      ^
+    FILE *pipe = popen("id " username, "r");
+                      ^
+ERROR: ERROR: PARSING ERROR
+PARSING ERROR
+ERROR: PARSING ERROR
+WARNING: base case process crashed.
+ERROR: Message from unrecognized k-induction child process
