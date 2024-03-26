@@ -72,17 +72,20 @@ if __name__ == "__main__":
     # for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "generated_llama")):
     #     esbmc_run(code_snippet, "generated_llama", "llama_esbmc")
     
-    for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "regenerate_gpt3.5")):
-        esbmc_run(code_snippet, "regenerate_gpt3.5", "gpt3.5_esbmc")
+    # for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "regenerate_gpt3.5")):
+    #     esbmc_run(code_snippet, "regenerate_gpt3.5", "gpt3.5_esbmc")
 
-    for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "regenerate_gpt4")):
-        esbmc_run(code_snippet, "regenerate_gpt4", "gpt4_esbmc")
+    # for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "regenerate_gpt4")):
+    #     esbmc_run(code_snippet, "regenerate_gpt4", "gpt4_esbmc")
 
-    for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "regenerate_mistral")):
-        esbmc_run(code_snippet, "regenerate_mistral", "mistral_esbmc")
+    # for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "regenerate_mistral")):
+    #     esbmc_run(code_snippet, "regenerate_mistral", "mistral_esbmc")
 
-    for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "regenerate_llama")):
-        esbmc_run(code_snippet, "regenerate_llama", "llama_esbmc")
+    # for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "regenerate_llama")):
+    #     esbmc_run(code_snippet, "regenerate_llama", "llama_esbmc")
+    
+    for code_snippet in os.listdir(os.path.join(CURRENT_DIRECTORY, "regenerate_wizard")):
+        esbmc_run(code_snippet, "regenerate_wizard", "wizard_esbmc")
 
 
 
