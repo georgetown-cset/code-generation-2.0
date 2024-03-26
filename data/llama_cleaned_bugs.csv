@@ -1,0 +1,7 @@
+Bugs,count
+dereference failure: NULL pointer,32
+buffer overflow,14
+memory leak failure,9
+dereference failure: invalid pointer,8
+dereference failure: invalidated dynamic object,2
+dereference failure: array bounds violated,1

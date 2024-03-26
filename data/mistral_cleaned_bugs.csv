@@ -1,0 +1,6 @@
+Bugs,count
+dereference failure: NULL pointer,27
+dereference failure: invalid pointer,21
+buffer overflow,13
+dereference failure: invalid pointer freed,1
+array bounds violated,1

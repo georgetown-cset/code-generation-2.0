@@ -1,0 +1,7 @@
+Bug_Cat,count
+dereference failure: NULL pointer,15
+dereference failure: invalid pointer,13
+buffer overflow,13
+memory leak failure,9
+dereference failure: invalidated dynamic object,2
+dereference failure: invalid pointer freed,1

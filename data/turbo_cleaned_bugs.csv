@@ -1,0 +1,7 @@
+Bugs,count
+dereference failure: invalid pointer,13
+dereference failure: NULL pointer,13
+buffer overflow,12
+memory leak failure,7
+dereference failure: invalidated dynamic object,1
+arithmetic overflow on add,1

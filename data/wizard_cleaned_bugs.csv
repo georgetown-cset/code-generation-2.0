@@ -1,0 +1,9 @@
+Bugs,count
+dereference failure: NULL pointer,44
+buffer overflow,17
+dereference failure: invalid pointer,16
+dereference failure: array bounds violated,2
+array bounds violated,2
+memory leak failure,2
+the pointer to a file object must be a valid argument,2
+arithmetic overflow on sub,1
