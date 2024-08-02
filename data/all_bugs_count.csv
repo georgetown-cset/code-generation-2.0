@@ -1,12 +1,12 @@
-,GPT-4,wizard_coder,mistral,GPT-3.5,llama
-dereference failure: NULL pointer,15.0,44.0,27.0,13.0,32.0
-dereference failure: invalid pointer,13.0,16.0,21.0,13.0,8.0
-buffer overflow,13.0,17.0,13.0,12.0,14.0
-memory leak failure,9.0,2.0,,7.0,9.0
-dereference failure: invalidated dynamic object,2.0,,,1.0,2.0
-dereference failure: invalid pointer freed,1.0,,1.0,,
-dereference failure: array bounds violated,,2.0,,,1.0
-array bounds violated,,2.0,1.0,,
-the pointer to a file object must be a valid argument,,2.0,,,
-arithmetic overflow on sub,,1.0,,,
-arithmetic overflow on add,,,,1.0,
+,GPT-4,GPT-3.5,wizard_coder,mistral,llama
+dereference failure: NULL pointer,15.0,13.0,44.0,27.0,32.0
+dereference failure: invalid pointer,13.0,13.0,16.0,21.0,8.0
+buffer overflow,13.0,12.0,17.0,13.0,14.0
+memory leak failure,9.0,7.0,2.0,,9.0
+dereference failure: invalidated dynamic object,2.0,1.0,,,2.0
+dereference failure: invalid pointer freed,1.0,,,1.0,
+arithmetic overflow on add,,1.0,,,
+dereference failure: array bounds violated,,,2.0,,1.0
+array bounds violated,,,2.0,1.0,
+the pointer to a file object must be a valid argument,,,2.0,,
+arithmetic overflow on sub,,,1.0,,

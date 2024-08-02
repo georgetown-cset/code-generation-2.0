@@ -69,3 +69,22 @@ def clean_violations(violations, target_file):
     bugs = pd.merge(cleaned_failed_verification, prompts, on = "Prompt ID", how = "inner")
     bugs.to_csv(target_file)
 
+
+def parse_errors(esbmc_output_directory, target_file):
+    error_types = []
+    
+    for file in os.listdir(esbmc_output_directory):
+        file_path = os.path.join(esbmc_output_directory, file)
+        with open(file_path, "r") as esbmc_text_file:
+            esbmc_text = esbmc_text_file.read()
+            prompt_id = file.split(".")[0]
+            match = re.findall(r'ERROR: (PARSING ERROR|CONVERSION ERROR)', esbmc_text)
+            if match:
+                error_types.append([prompt_id] + [match[0]])
+            else:
+                next
+    
+    errors = pd.DataFrame(error_types, columns = ['Prompt ID', 'Error Type'])
+    print(errors.head())
+    errors.to_csv(target_file)
+    

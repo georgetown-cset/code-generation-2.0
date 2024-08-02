@@ -6,6 +6,7 @@ CURRENT_DIRECTORY = os.getcwd()
 ESBMC_OUTPUT_PATH = os.path.join(CURRENT_DIRECTORY, "gpt4_esbmc")
 STATUSES_TARGET_FILE_NAME = "data/gpt4_statuses.csv"
 VIOLATIONS_FILE_NAME = "data/gpt4_bugs.csv"
+ERROR_FILE_NAME = "data/gpt4_errors.csv"
 
 def main():
     
@@ -29,6 +30,8 @@ def main():
     violations = parse_esbmc.extract_violations(ESBMC_OUTPUT_PATH)
     
     parse_esbmc.clean_violations(violations, VIOLATIONS_FILE_NAME)
+    
+    parse_esbmc.parse_errors(ESBMC_OUTPUT_PATH, ERROR_FILE_NAME)
     
     
 

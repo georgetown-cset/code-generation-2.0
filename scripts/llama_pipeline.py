@@ -7,6 +7,7 @@ CURRENT_DIRECTORY = os.getcwd()
 ESBMC_OUTPUT_PATH = os.path.join(CURRENT_DIRECTORY, "llama_esbmc")
 STATUSES_TARGET_FILE_NAME = "data/llama_statuses.csv"
 VIOLATIONS_FILE_NAME = "data/llama_bugs.csv"
+ERROR_FILE_NAME = "data/llama_errors.csv"
 
 def main():
     
@@ -33,8 +34,7 @@ def main():
     
     parse_esbmc.clean_violations(violations, VIOLATIONS_FILE_NAME)
     
-    
-
+    parse_esbmc.parse_errors(ESBMC_OUTPUT_PATH, ERROR_FILE_NAME)
 
 if __name__ == "__main__":
     main()

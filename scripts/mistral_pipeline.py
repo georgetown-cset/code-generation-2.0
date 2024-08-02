@@ -6,6 +6,7 @@ CURRENT_DIRECTORY = os.getcwd()
 ESBMC_OUTPUT_PATH = os.path.join(CURRENT_DIRECTORY, "mistral_esbmc")
 STATUSES_TARGET_FILE_NAME = "data/mistral_statuses.csv"
 VIOLATIONS_FILE_NAME = "data/mistral_bugs.csv"
+ERROR_FILE_NAME = "data/mistral_errors.csv"
 
 def main():
     
@@ -30,6 +31,7 @@ def main():
     
     parse_esbmc.clean_violations(violations, VIOLATIONS_FILE_NAME)
     
+    parse_esbmc.parse_errors(ESBMC_OUTPUT_PATH, ERROR_FILE_NAME)
     
 
 
