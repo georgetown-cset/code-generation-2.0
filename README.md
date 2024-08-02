@@ -1,10 +1,11 @@
 # code-generation-2.0
 Repository for the CyberAI Code Generation Project
 
-Pipeline: 
+# Pipeline: 
+
 <img width="712" alt="Screenshot 2024-08-02 at 12 01 12 PM" src="https://github.com/user-attachments/assets/fbf30e6d-78a8-459a-b2f8-07b1197593fa">
 
-### The generated code for each model is in a folder called generated_[model name]. The ESBMC output for each model is in a folder called [model name]_ESBMC.
+The generated code for each model is in a folder called generated_[model name]. The ESBMC output for each model is in a folder called [model name]_ESBMC.
 
 ## The Scripts Folder
 - **esbmc_call.py**: calls the ESBMC model checker and runs it over the generated code folders
